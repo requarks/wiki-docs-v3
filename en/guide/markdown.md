@@ -2,7 +2,7 @@
 title: Markdown
 description: Syntax to write Markdown content
 published: true
-date: '2026-08-24T00:06:56.651Z'
+date: '2026-08-27T05:57:59.125Z'
 tags:
   - user-guide
   - editing
@@ -200,6 +200,36 @@ By default, a code block is rendered as plain preformatted text. It's however pr
 ````
 
 Refer to the [reference list](https://github.com/highlightjs/highlight.js/blob/main/SUPPORTED_LANGUAGES.md){target=_blank} of about 185 supported programming languages.
+::
+::block-tab{label="Customization"}
+The code block can be further customized by adding a series of properties on the first line.
+
+Add a space at the end of the first line *(after the language id)*, followed by one or more of the properties listed below. Multiple properties must be separated by a space.
+
+**Title**: `title`
+
+````
+```java title="Lorem Ipsum"
+// some code here
+```
+````
+
+**Line Numbering Offset**: `linesStart`
+
+````
+```java linesStart="3"
+// some code here
+```
+````
+
+**Line Highlighting**: `linesHighlight`
+
+````
+```java linesHighlight="1,3,5-8"
+// some code here
+```
+````
+
 ::
 :::
 
@@ -641,7 +671,7 @@ The super **secret** content to hide. :scream:
 Some blocks (like diagrams) require their content to be wrapped into code blocks. This is to ensure the content is only interpreted by the block and not the Markdown engine.
 
 In the example below, the diagram source is embedded into a `mermaid` code block:
-````
+````plain linesHighlight="2-7"
 ::block-diagram
 ```mermaid
 flowchart LR
@@ -843,7 +873,7 @@ Lorem **ipsum**{.text-primary} dolor sit amet
 ### Block Elements
 
 To add the `is-info` CSS class to the blockquote element, add `{.is-info}` on a line directly below the blockquote:
-```markdown
+```markdown linesHighlight="4"
 > Lorem ipsum
 > Line 1
 > Line 2
@@ -854,7 +884,7 @@ To add the `is-info` CSS class to the blockquote element, add `{.is-info}` on a 
 
 In some cases, using the `{.class-name}` syntax doesn't apply the styling class to the correct element because of ambiguous content. For example:
 
-```markdown
+```markdown linesHighlight="4"
 > Lorem ipsum
 > - Line 1
 > - Line 2
@@ -864,7 +894,7 @@ Because the parser doesn't know whether the `.is-info` class should be applied t
 
 You can specify the correct target by using the decorate syntax `<!-- {tag-name:.class-name} -->` instead. For example:
 
-```
+```markdown linesHighlight="4"
 > Lorem ipsum
 > - Line 1
 > - Line 2
