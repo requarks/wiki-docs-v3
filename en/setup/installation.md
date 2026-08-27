@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-08-25T07:57:36.762Z'
+date: '2026-08-27T06:08:15.486Z'
 tags:
   - setup
 editor: markdown
@@ -89,7 +89,7 @@ Once the container is started, browse to `http://YOUR-IP-ADDRESS:8080` and login
 
 Here's a full example of a Docker Compose file for Wiki.js listening on port 80: *(replace the values of `ADMIN_EMAIL` and `ADMIN_PASS` with your own)*:
 
-```yaml
+```yaml title="compose.yaml" linesHighlight="18,19"
 services:
 
   db:
@@ -193,7 +193,7 @@ This guide provides an easy, no docker knowledge required, step-by-step instruct
 3. Create a new file named `compose.yaml` *(under the same folder)* with the following contents:
     > [!IMPORTANT]
     > Replace `user@example.com` and `SuperSecret123` in the code below with your email address and a temporary password that you'll change on first login.
-    ```yaml
+    ```yaml title="compose.yaml" linesHighlight="18,19"
     services:
       db:
         image: postgres:18
@@ -253,7 +253,7 @@ By default, your wiki is accessible over unencrypted HTTP. This section adds aut
     > [!IMPORTANT]
     > Replace `wiki.example.com` with your domain name and `user@example.com` with your email address. Let's Encrypt uses this address to notify you of any certificate issues.
     > Do **NOT** modify anything on the `reverse_proxy` line *(line 6)*.
-    ```nginx
+    ```nginx title="Caddyfile"
     {
         email user@example.com
     }
@@ -266,7 +266,7 @@ By default, your wiki is accessible over unencrypted HTTP. This section adds aut
 3. Edit your `compose.yaml` file to match the following:
     > [!WARNING]
     > Note that the `ports` section was **removed** from the `wiki` service. Caddy now handles all incoming traffic, so the wiki container must no longer claim port 80 for itself.
-    ```yaml
+    ```yaml title="compose.yaml" linesHighlight="18,19,27-39,43,44"
     services:
       db:
         image: postgres:18
