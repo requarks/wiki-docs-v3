@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-08-27T06:08:15.486Z'
+date: '2026-08-27T06:08:52.145Z'
 tags:
   - setup
 editor: markdown
@@ -253,7 +253,7 @@ By default, your wiki is accessible over unencrypted HTTP. This section adds aut
     > [!IMPORTANT]
     > Replace `wiki.example.com` with your domain name and `user@example.com` with your email address. Let's Encrypt uses this address to notify you of any certificate issues.
     > Do **NOT** modify anything on the `reverse_proxy` line *(line 6)*.
-    ```nginx title="Caddyfile"
+    ```nginx title="Caddyfile" linesHighlight="2,5"
     {
         email user@example.com
     }
