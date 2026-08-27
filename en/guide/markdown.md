@@ -2,7 +2,7 @@
 title: Markdown
 description: Syntax to write Markdown content
 published: true
-date: '2026-08-27T05:57:59.125Z'
+date: '2026-08-27T06:04:48.420Z'
 tags:
   - user-guide
   - editing
@@ -208,7 +208,7 @@ Add a space at the end of the first line *(after the language id)*, followed by 
 
 **Title**: `title`
 
-````
+````plain title="Lorem Ipsum"
 ```java title="Lorem Ipsum"
 // some code here
 ```
@@ -216,7 +216,7 @@ Add a space at the end of the first line *(after the language id)*, followed by 
 
 **Line Numbering Offset**: `linesStart`
 
-````
+````plain linesStart="3"
 ```java linesStart="3"
 // some code here
 ```
@@ -224,11 +224,24 @@ Add a space at the end of the first line *(after the language id)*, followed by 
 
 **Line Highlighting**: `linesHighlight`
 
-````
+````plain linesHighlight="3,6,8-10"
 ```java linesHighlight="1,3,5-8"
-// some code here
+class Main {
+  public static void main(String[] args) {
+    
+    int first = 10;
+    int second = 20;
+
+    // add two numbers
+    int sum = first + second;
+    System.out.println(first + " + " + second + " = "  + sum);
+  }
+}
 ```
 ````
+
+> [!TIP]
+> If you combine both `linesStart` and `linesHighlight` properties, the `linesHighlight` values should reference the line numbers as they are displayed. For example, with `linesStart` set to `12` and `linesHighlight` set to `13`, the row labelled `13` will be highlighted, which is the second row being displayed.
 
 ::
 :::
