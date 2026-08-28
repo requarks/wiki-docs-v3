@@ -2,7 +2,7 @@
 title: Navigation
 description: Manage the sidebar navigation
 published: true
-date: '2026-08-28T07:58:08.177Z'
+date: '2026-08-28T08:04:07.895Z'
 tags:
   - user-guide
 editor: markdown
@@ -20,7 +20,7 @@ Additionally, the following buttons are present at the top:
 
 # Hierarchy / Visibility Modes
 
-Click the **:la:dharmachakra: Edit Nav** button at the bottom of the site navigation sidebar to open the **Edit Navigation** menu.
+Click the <kbd>**:la:dharmachakra: Edit Nav**</kbd> button at the bottom of the site navigation sidebar to open the **Edit Navigation** menu.
 
 > [!NOTE] Required Permission
 > You must have the `manage:navigation` global permission to edit the navigation. This button will not be shown otherwise.
