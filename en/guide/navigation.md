@@ -2,7 +2,7 @@
 title: Navigation
 description: Manage the sidebar navigation
 published: true
-date: '2026-08-28T07:40:47.743Z'
+date: '2026-08-28T07:41:55.101Z'
 tags:
   - user-guide
 editor: markdown
@@ -20,6 +20,6 @@ Additionally, the following buttons are present at the top:
 
 # Hierarchy / Visibility Modes
 
-![Edit Navigation](/guide/images/navigation-ui-modes.png)
+![Edit Navigation](/guide/images/navigation-ui-modes.png =480x){.shadow-md}
 
 # Edit Menu Items
