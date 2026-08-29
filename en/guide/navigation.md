@@ -2,7 +2,7 @@
 title: Navigation
 description: Manage the sidebar navigation
 published: true
-date: '2026-08-28T08:04:07.895Z'
+date: '2026-08-28T22:46:18.987Z'
 tags:
   - user-guide
 editor: markdown
@@ -49,3 +49,49 @@ On all other pages, you have the following options:
 # Edit Menu Items
 
 Click the orange <kbd>**:mdi:playlist-edit: Edit Menu Items**</kbd> button to open the **Edit Menu Items** overlay.
+
+![Edit Menu Items](/guide/images/navigation-ui-edit-overlay.png =820x){.shadow-md}
+
+Click the green <kbd>**:la:plus-circle: Add**</kbd> button to add one of: header, link or separator.
+
+- Click on a menu item to **edit** it.
+- Menu items can be **re-ordered** by dragging the :mdi:drag-horizontal: handle.
+- Right-click on a menu item to **duplicate**, **nest**/**unnest** or **delete** it.
+- Click the <kbd>:la:ellipsis-v:</kbd> button to access the <kbd>**:la:trash-alt: Clear All Items**</kbd> option.
+
+Any change is only persisted upon clicking the <kbd>**:la:check: Save**</kbd> button.
+
+## Header
+
+| Property | Description |
+| :-- | :-- |
+| Label | Text to display on the menu item. |
+| Visibility | Whether to show the menu item to everyone or just selected groups. |
+{.table-leading-col}
+
+## Link
+
+| Property | Description |
+| :-- | :-- |
+| Label | Text to display on the menu item. |
+| Icon | Icon or image to display to the left of the menu item. Click the :la:icons: button to open the icon picker. |
+| Expand by Default | Whether the submenu is already expanded when the page loads. *(only shown when menu items are nested under it)* |
+| Target | The target path or external link to point to. Click the :la:folder-open: button to open the page picker. |
+| Open in New Window | Whether to open the link in a new window or not. |
+| Visibility | Whether to show the menu item to everyone or just selected groups. |
+{.table-leading-col}
+
+### Submenu
+
+To create submenus, first create a normal link menu item to act as a the submenu trigger. Then create a second link menu item under it and click the <kbd>:mdi:format-indent-increase: Nest Item</kbd> to indent it. It is now nested under the first link and will only appear upon clicking the first link. You can nest any number of menu items.
+
+A nested link without a normal link or another nested link above it will be shown in red as invalid.
+
+## Separator
+
+| Property | Description |
+| :-- | :-- |
+| Visibility | Whether to show the menu item to everyone or just selected groups. |
+{.table-leading-col}
+
+

@@ -2,7 +2,7 @@
 title: Markdown
 description: Syntax to write Markdown content
 published: true
-date: '2026-08-27T06:04:48.420Z'
+date: '2026-08-28T23:05:37.946Z'
 tags:
   - user-guide
   - editing
@@ -16,6 +16,36 @@ This is the reference for the supported Markdown syntax in Wiki.js.
 > To learn about the interface of the Markdown editor itself and its features, check out the [Markdown Editor](/guide/editors/markdown) guide instead.
 
 # Basic Syntax
+
+## Abbreviations
+
+:::block-tabs
+::block-tab{label="Usage"}
+Define abbreviations using the `*[<TERM>]: <definition>` syntax.
+
+- One term definition per line.
+- Definitions can be placed anywhere in the content.
+- All matching terms on the page will automatically have the abbreviation styling.
+::
+
+::block-tab{label="Examples"}
+The following code:
+```markdown
+The HTML specification
+is maintained by the W3C.
+
+*[HTML]: Hyper Text Markup Language
+*[W3C]:  World Wide Web Consortium
+```
+becomes:
+
+The HTML specification
+is maintained by the W3C.
+
+*[HTML]: Hyper Text Markup Language
+*[W3C]:  World Wide Web Consortium
+::
+:::
 
 ## Admonitions
 

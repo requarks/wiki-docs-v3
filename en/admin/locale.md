@@ -2,7 +2,7 @@
 title: Locale
 description: Set localization options for your wiki
 published: true
-date: '2026-08-26T05:19:17.426Z'
+date: '2026-08-28T08:44:00.147Z'
 tags:
   - admin
 editor: markdown
