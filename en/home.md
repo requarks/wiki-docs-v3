@@ -2,7 +2,7 @@
 title: Wiki.js
 description: Official Documentation for 3.x
 published: true
-date: '2026-08-26T04:09:23.053Z'
+date: '2026-08-30T04:59:10.887Z'
 tags: []
 editor: markdown
 dateCreated: '2026-08-10T07:05:24.182Z'
@@ -32,6 +32,8 @@ The administration area [dashboard](/admin/dashboard) is your entry point to man
 ::
 
 # Developers
+
+Read the [getting started](/dev) page to setup your development environment first.
 
 ::block-index{path="dev"}
 ::
