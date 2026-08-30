@@ -2,7 +2,7 @@
 title: Dev - Getting Started
 description: Guide to setup a development environment for Wiki.js
 published: true
-date: '2026-08-30T04:54:23.401Z'
+date: '2026-08-30T04:57:21.100Z'
 tags:
   - dev
 editor: markdown
@@ -73,6 +73,13 @@ It's very easy to run a development instance of Wiki.js with all the necessary d
 1. Login using the default administrator user:
     - Email: `admin@example.com`
     - Password: `12345678`
+
+## Populate Sample Content
+
+A tool to quickly generate sample content is available in the **Administration Area** > **Utilities** page.
+
+- Click <kbd>Proceed</kbd> next to the **Generate Sample Content** action.
+- To delete all sample content, click <kbd>Proceed</kbd> next to the **Purge Sample Content** action instead.
 
 # Backend Development
 
