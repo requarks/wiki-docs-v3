@@ -1,8 +1,8 @@
 ---
-title: Dev - Getting Started
+title: Development Environment
 description: Guide to setup a development environment for Wiki.js
 published: true
-date: '2026-08-30T04:57:21.100Z'
+date: '2026-08-30T05:00:43.935Z'
 tags:
   - dev
 editor: markdown
