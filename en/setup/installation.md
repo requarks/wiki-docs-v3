@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-08-27T06:08:52.145Z'
+date: '2026-09-05T06:57:03.328Z'
 tags:
   - setup
 editor: markdown
@@ -27,13 +27,16 @@ Images are tagged to **major**, **major.minor** and **major.minor.patch** versio
 It's recommended to use the **major** version, unless you have a specific requirement to pin your deployment to specific version.
 
 > [!WARNING]
-> Note that Wiki.js 3.x is in alpha and images are currently tagged as `3.0.0-alpha`. The tags below won't work until the beta phase has started.
+> Note that Wiki.js 3.x is in beta and images are currently tagged as `3.0.0-beta`. The tags below won't work until the beta phase has started.
 
 ```sh
 # -----------------------------
-# ALPHA VERSION
+# BETA VERSION
 # -----------------------------
-ghcr.io/requarks/wiki:3.0.0-alpha
+ghcr.io/requarks/wiki:3.0.0-beta
+
+# or using a specific version:
+ghcr.io/requarks/wiki:3.0.0-beta.541
 
 # -----------------------------
 # NOT YET WORKING (read above)
