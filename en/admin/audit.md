@@ -2,7 +2,7 @@
 title: Audit Log
 description: A log of all events by users across the wiki for auditing purposes
 published: true
-date: '2026-09-06T07:27:25.933Z'
+date: '2026-09-06T08:21:11.810Z'
 tags:
   - admin
 editor: markdown
@@ -21,6 +21,9 @@ Click the <kbd>:la:search-plus: Details</kbd> button next to the desired row to 
 > - Page contents, as this is already stored by the page versioning. The page version ID is instead stored in the audit log, which can be referenced.
 > - Admin settings values *(e.g. auth and storage configs)*
 > - User authentication values *(e.g. passwords, keys, etc.)*
+
+> [!IMPORTANT]
+> If your wiki installation is behind a reverse-proxy, ensure the "**Trust X-Forwarded-\* Proxy Headers**" option under the **Admin :la:arrow-right: Security** page is turned on. Otherwise the recorded IP address will be the internal proxy IP instead of the client IP.
 
 ## Filters
 
