@@ -2,7 +2,7 @@
 title: Draw.io
 description: A diagram drawn in draw.io, stored as its own XML and edited on a canvas.
 published: true
-date: '2026-09-06T00:50:44.358Z'
+date: '2026-09-06T00:51:16.479Z'
 tags: []
 editor: markdown
 dateCreated: '2026-09-06T00:50:44.358Z'
@@ -10,7 +10,7 @@ dateCreated: '2026-09-06T00:50:44.358Z'
 
 # Description
 
-Draws an embedded Draw.io
+A diagram drawn in draw.io, stored as its own XML and edited on a canvas.
 
 # Demo
 
