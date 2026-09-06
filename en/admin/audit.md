@@ -2,7 +2,7 @@
 title: Audit Log
 description: A log of all events by users across the wiki for auditing purposes
 published: true
-date: '2026-09-06T07:10:58.451Z'
+date: '2026-09-06T07:27:25.933Z'
 tags:
   - admin
 editor: markdown
@@ -13,6 +13,15 @@ dateCreated: '2026-09-06T06:54:57.404Z'
 
 The audit log records all events initiated by a user.
 
+Click the <kbd>:la:search-plus: Details</kbd> button next to the desired row to view the context metadata *(e.g. which setting was changed, asset filename and path, etc.)*.
+
+> [!NOTE]
+> The goal of the audit log is not to store the exact state but to keep a log of which actions a user has taken.
+> The following are **NOT** stored in the logs:
+> - Page contents, as this is already stored by the page versioning. The page version ID is instead stored in the audit log, which can be referenced.
+> - Admin settings values *(e.g. auth and storage configs)*
+> - User authentication values *(e.g. passwords, keys, etc.)*
+
 ## Filters
 
 Logs can be filtered by:
@@ -20,6 +29,10 @@ Logs can be filtered by:
 - Area
 - Action
 - Date Range
+
+## Export
+
+Logs can be exported to NDJSON format *(Newline delimited JSON)* by clicking the **Export** button in the top-right corner of the Audit Log page. The currently active filters are respected.
 
 ## Retention
 
