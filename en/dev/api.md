@@ -2,7 +2,7 @@
 title: API
 description: Build automations by using the Wiki.js REST API
 published: true
-date: '2026-08-22T21:54:42.672Z'
+date: '2026-09-08T11:04:12.088Z'
 tags:
   - admin
   - dev
@@ -12,7 +12,7 @@ dateCreated: '2026-08-14T02:30:27.000Z'
 
 # Overview
 
-Your Wiki.js installation exposes a REST API at path `/_api`.
+Your Wiki.js installation exposes a REST API at path `/_api`. It's fully documented and OpenAPI 3.0 compliant.
 
 Open `https://wiki.example.com/_api` in your browser to see the list of all available endpoints and their parameters.
 
