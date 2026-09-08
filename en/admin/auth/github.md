@@ -2,7 +2,7 @@
 title: GitHub
 description: Authentication strategy
 published: true
-date: '2026-09-08T11:09:03.826Z'
+date: '2026-09-08T11:10:07.623Z'
 tags:
   - admin
   - auth
@@ -13,6 +13,10 @@ dateCreated: '2026-09-08T11:09:03.826Z'
 # Overview
 
 Sign in with a GitHub account, on github.com or a GitHub Enterprise Server.
+
+# Guide
+
+*Coming soon*
 
 # Configuration
 
