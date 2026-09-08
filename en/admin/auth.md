@@ -2,7 +2,7 @@
 title: Authentication
 description: Configure the authentication settings of your wiki
 published: true
-date: '2026-09-08T23:06:37.634Z'
+date: '2026-09-08T23:16:09.834Z'
 tags:
   - admin
   - auth
@@ -25,3 +25,5 @@ However, it's possible add 3rd-party authentication providers in order to login 
 ::block-index{path="admin/auth" showIcons="true"}
 ::
 
+> [!TIP]
+> If you're looking for strategies previously found in Wiki.js 2.x, such as **Dropbox**, **Facebook**, **GitLab**, **Keycloak**, **Okta**, **Rocket.chat**, **Slack** or **Twitch**, use the [OpenID Connect / OAuth2](/admin/auth/oidc) strategy instead.
