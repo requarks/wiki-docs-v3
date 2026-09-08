@@ -2,7 +2,7 @@
 title: Authentication
 description: Configure the authentication settings of your wiki
 published: true
-date: '2026-09-08T10:32:04.629Z'
+date: '2026-09-08T10:34:38.252Z'
 tags:
   - admin
 editor: markdown
@@ -21,4 +21,6 @@ However, it's possible add 3rd-party authentication providers in order to login 
 
 # Strategies
 
+::block-index{path="admin/auth" showIcons="true"}
+::
 
