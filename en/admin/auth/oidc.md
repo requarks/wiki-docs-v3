@@ -2,7 +2,7 @@
 title: OpenID Connect / OAuth2
 description: Authentication strategy
 published: true
-date: '2026-09-08T10:56:36.691Z'
+date: '2026-09-08T10:59:10.432Z'
 tags:
   - admin
   - auth
@@ -31,6 +31,9 @@ Some examples of services / websites that use it:
 - Twitch
 
 # Configuration
+
+> [!TIP]
+> To obtain the **Authorization Callback URL**, you must first click **Apply** on the newly added strategy *(It won't be active until you check the **Enabled** checkbox)*. The endpoint URL will then be displayed at the bottom of the page under the **Configuration Reference** section.
 
 | Property | Description | Default Value |
 | :-- | :-- | :-- |
