@@ -2,7 +2,7 @@
 title: GitHub
 description: Authentication strategy
 published: true
-date: '2026-09-09T08:47:20.473Z'
+date: '2026-09-09T09:02:42.343Z'
 tags:
   - admin
   - auth
@@ -20,7 +20,23 @@ Sign in with a GitHub account, on github.com or a GitHub Enterprise Server.
     1. Add a new **GitHub** strategy.
     1. Click **Apply** in order to generate the *Authorization Callback URL*.
     1. Copy the the **Authorization Callback URL** shown at the bottom (under the **Configuration Reference** section).
-1. Sign in to GitHub and go to [**Settings :la:arrow-right: Developer settings :la:arrow-right: OAuth Apps**](https://github.com/settings/developers)
+    1. Leave this page opened.
+1. In a new tab, sign in to GitHub and go to [**Settings :la:arrow-right: Developer settings :la:arrow-right: OAuth Apps**](https://github.com/settings/developers) for personal accounts or **Organization Settings :la:arrow-right: Developer settings :la:arrow-right: OAuth Apps** for organizations.
+    1. Click **New OAuth App**
+    1. Fill in the **Application name** (e.g. `My Wiki`) and the **Homepage URL** (e.g. `https://wiki.example.org`) fields.
+    1. Enter the URL you copied in step 1 in the **Redirect URI** field.
+    1. Click **Register application** and copy the **Client ID**.
+    1. Click **Generate a new client secret** and copy the generated **Client Secret**.
+1. Go back to the Wiki.js page from step 1.
+    1. Paste the **Client ID** and **Client Secret** you copied in step 2.
+    1. Set **Enabled** to on at the top.
+    1. Click **Apply**.
+1. For the desired wiki site, go to **Login**.
+    1. Enable the **GitHub** strategy you just created.
+    2. Click **Apply**.
+
+> [!IMPORTANT]
+> If you want any GitHub account to be able to login, you need to enable **Registration** option on the GitHub strategy you created. Otherwise, only existing accounts with an email address that match the GitHub account will be allowed to login.
 
 # Configuration
 
