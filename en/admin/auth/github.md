@@ -2,7 +2,7 @@
 title: GitHub
 description: Authentication strategy
 published: true
-date: '2026-09-09T09:02:42.343Z'
+date: '2026-09-09T09:08:29.198Z'
 tags:
   - admin
   - auth
@@ -37,6 +37,15 @@ Sign in with a GitHub account, on github.com or a GitHub Enterprise Server.
 
 > [!IMPORTANT]
 > If you want any GitHub account to be able to login, you need to enable **Registration** option on the GitHub strategy you created. Otherwise, only existing accounts with an email address that match the GitHub account will be allowed to login.
+
+## Restricting to an organization
+
+Fill in the **Restrict to Organization** field to restrict login only to members of the organization.
+
+> [!IMPORTANT]
+> GitHub only reveals a private membership to an app the organization has approved. Therefore you need to either approve the app under **Organization Settings** :la:arrow-right: **OAuth app policy** or have each member set their membership to public.
+>
+> Failing to do so will result in authentication failure.
 
 # Configuration
 
