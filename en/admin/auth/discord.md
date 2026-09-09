@@ -2,7 +2,7 @@
 title: Discord
 description: Authentication strategy
 published: true
-date: '2026-09-09T09:27:43.966Z'
+date: '2026-09-09T09:33:04.974Z'
 tags:
   - admin
   - auth
@@ -35,6 +35,9 @@ Sign in with a Discord account, optionally only from the members of one Discord 
 1. For the desired wiki site, go to **Login**.
     1. Enable the **Discord** strategy you just created.
     2. Click **Apply**.
+
+> [!IMPORTANT]
+> If you want any Discord account to be able to login, you need to enable **Registration** option on the GitHub strategy you created. Otherwise, only existing accounts with an email address that match the Discord account will be allowed to login.
 
 ## Restricting to a server
 
