@@ -2,7 +2,7 @@
 title: GitHub
 description: Authentication strategy
 published: true
-date: '2026-09-08T11:10:07.623Z'
+date: '2026-09-09T08:47:20.473Z'
 tags:
   - admin
   - auth
@@ -16,7 +16,11 @@ Sign in with a GitHub account, on github.com or a GitHub Enterprise Server.
 
 # Guide
 
-*Coming soon*
+1. In your wiki installation, go to **Administration** :la:arrow-right: **Authentication**.
+    1. Add a new **GitHub** strategy.
+    1. Click **Apply** in order to generate the *Authorization Callback URL*.
+    1. Copy the the **Authorization Callback URL** shown at the bottom (under the **Configuration Reference** section).
+1. Sign in to GitHub and go to [**Settings :la:arrow-right: Developer settings :la:arrow-right: OAuth Apps**](https://github.com/settings/developers)
 
 # Configuration
 
