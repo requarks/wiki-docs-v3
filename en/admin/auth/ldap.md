@@ -2,7 +2,7 @@
 title: LDAP / Active Directory
 description: Authentication strategy
 published: true
-date: '2026-09-08T22:48:42.051Z'
+date: '2026-09-09T09:09:32.515Z'
 tags:
   - admin
   - auth
@@ -13,10 +13,6 @@ dateCreated: '2026-09-08T22:48:42.051Z'
 # Overview
 
 Lightweight Directory Access Protocol, as spoken by Active Directory, OpenLDAP, FreeIPA and everything else that holds a directory of people.
-
-# Guide
-
-*Coming soon*
 
 # Configuration
 
