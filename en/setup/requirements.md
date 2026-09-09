@@ -2,7 +2,7 @@
 title: Requirements
 description: Prerequisites to install Wiki.js
 published: true
-date: '2026-08-25T05:27:57.400Z'
+date: '2026-09-09T05:07:11.114Z'
 tags:
   - setup
 editor: markdown
@@ -54,6 +54,9 @@ The following endpoints called by Wiki.js for various functions:
 > [!IMPORTANT]
 > In addition to the endpoints above, you must also allow the endpoints required for the authentication and storage modules you enable. Refer the each module documentation for the endpoints to allow.
 ::
+
+> [!TIP] Privacy Focused
+> Wiki.js doesn't send any telemetry nor does it make any secret calls. We hate tracking as much as you do.
 :::
 
 # Hostname
