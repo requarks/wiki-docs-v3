@@ -2,7 +2,7 @@
 title: Discord
 description: Authentication strategy
 published: true
-date: '2026-09-09T09:22:09.550Z'
+date: '2026-09-09T09:27:43.966Z'
 tags:
   - admin
   - auth
@@ -27,7 +27,7 @@ Sign in with a Discord account, optionally only from the members of one Discord 
     1. Go to the **OAuth2** tab.
     1. Under the **Redirects** section, click **Add redirect** and paste the **Authorization Callback URL** you copied in step 1.
     1. Click outside the field and click **Save changes** at the bottom.
-    1. Copy the **Client ID** and click the **Reset secret** button to generate a new **Client Secret**. Copy it as well.
+    1. Copy the **Client ID** and click the **Reset secret** button to generate a new **Client Secret**. Copy it as it won't be shown again.
 1. Go back to the Wiki.js page from step 1.
     1. Paste the **Client ID** and **Client Secret** you copied in step 2.
     1. Set **Enabled** to on at the top.
@@ -35,6 +35,13 @@ Sign in with a Discord account, optionally only from the members of one Discord 
 1. For the desired wiki site, go to **Login**.
     1. Enable the **Discord** strategy you just created.
     2. Click **Apply**.
+
+## Restricting to a server
+
+Filling in the **Restrict to Server** field lets only members of that Discord server in. To find the ID:
+
+1. In the Discord client, open **User Settings** :la:arrow-right: **Advanced** and turn on **Developer Mode**.
+1. Right-click the server in the sidebar and choose **Copy Server ID**.
 
 # Configuration
 
