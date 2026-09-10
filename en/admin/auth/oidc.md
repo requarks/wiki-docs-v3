@@ -2,7 +2,7 @@
 title: OpenID Connect / OAuth2
 description: Authentication strategy
 published: true
-date: '2026-09-08T10:59:10.432Z'
+date: '2026-09-10T02:31:41.192Z'
 tags:
   - admin
   - auth
@@ -15,20 +15,6 @@ dateCreated: '2026-09-08T10:34:04.850Z'
 OpenID Connect 1.0 (OIDC) is a simple identity layer on top of the OAuth 2.0 protocol.
 
 Unless there's a dedicated strategy for your authentication provider already (e.g. [Discord](/admin/auth/discord), [Google](/admin/auth/google), [GitHub](/admin/auth/github)), this is most likely the strategy you're looking for.
-
-## Example Providers
-
-Some examples of services / websites that use it:
-
-- Authentik
-- Dropbox
-- Facebook
-- GitLab
-- Keycloak
-- Okta
-- Rocket.chat
-- Slack
-- Twitch
 
 # Configuration
 
@@ -70,3 +56,17 @@ The groups claim can be either a single string or an array of strings.
 > If the `groups` claim requires a special scope, make sure to add it to the **Scopes** field.
 
 By enabling the **Unassign from groups no longer present in claim** as well, the identity provider becomes the sole source of truth for group assignment. On login, the user will be unassigned from any Wiki.js group that isn't listed in the `groups` claim.
+
+## Providers Docs
+
+Below are some of the most popular OIDC / OAuth2 providers compatible with this strategy; with links to their documentation:
+
+- [Authentik](https://integrations.goauthentik.io/documentation/wiki-js/)
+- [Dropbox](https://developers.dropbox.com/oauth-guide){rel="nofollow"}
+- [Facebook](https://developers.facebook.com/documentation/facebook-login){rel="nofollow"}
+- [GitLab](https://docs.gitlab.com/integration/openid_connect_provider/){rel="nofollow"}
+- [Keycloak](https://www.keycloak.org/securing-apps/oidc-layers){rel="nofollow"}
+- [Okta](https://developer.okta.com/docs/api/openapi/okta-oauth/guides/overview){rel="nofollow"}
+- [Rocket.chat](https://docs.rocket.chat/docs/third-party-login){rel="nofollow"}
+- [Slack](https://docs.slack.dev/authentication/sign-in-with-slack/){rel="nofollow"}
+- [Twitch](https://dev.twitch.tv/docs/authentication/){rel="nofollow"}
