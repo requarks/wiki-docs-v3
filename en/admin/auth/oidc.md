@@ -2,7 +2,7 @@
 title: OpenID Connect / OAuth2
 description: Authentication strategy
 published: true
-date: '2026-09-10T02:31:41.192Z'
+date: '2026-09-10T02:32:21.291Z'
 tags:
   - admin
   - auth
@@ -14,7 +14,7 @@ dateCreated: '2026-09-08T10:34:04.850Z'
 
 OpenID Connect 1.0 (OIDC) is a simple identity layer on top of the OAuth 2.0 protocol.
 
-Unless there's a dedicated strategy for your authentication provider already (e.g. [Discord](/admin/auth/discord), [Google](/admin/auth/google), [GitHub](/admin/auth/github)), this is most likely the strategy you're looking for.
+Unless there's a dedicated strategy for your authentication provider already (e.g. [Discord](/admin/auth/discord), [Google](/admin/auth/google), [GitHub](/admin/auth/github)), this is most likely the strategy you're looking for. See the [Providers Docs](#providers-docs) section below.
 
 # Configuration
 
@@ -57,7 +57,7 @@ The groups claim can be either a single string or an array of strings.
 
 By enabling the **Unassign from groups no longer present in claim** as well, the identity provider becomes the sole source of truth for group assignment. On login, the user will be unassigned from any Wiki.js group that isn't listed in the `groups` claim.
 
-## Providers Docs
+# Providers Docs
 
 Below are some of the most popular OIDC / OAuth2 providers compatible with this strategy; with links to their documentation:
 
