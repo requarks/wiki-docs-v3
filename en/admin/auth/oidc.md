@@ -2,7 +2,7 @@
 title: OpenID Connect / OAuth2
 description: Authentication strategy
 published: true
-date: '2026-09-10T02:32:21.291Z'
+date: '2026-09-10T02:34:00.190Z'
 tags:
   - admin
   - auth
@@ -61,12 +61,12 @@ By enabling the **Unassign from groups no longer present in claim** as well, the
 
 Below are some of the most popular OIDC / OAuth2 providers compatible with this strategy; with links to their documentation:
 
-- [Authentik](https://integrations.goauthentik.io/documentation/wiki-js/)
-- [Dropbox](https://developers.dropbox.com/oauth-guide){rel="nofollow"}
-- [Facebook](https://developers.facebook.com/documentation/facebook-login){rel="nofollow"}
-- [GitLab](https://docs.gitlab.com/integration/openid_connect_provider/){rel="nofollow"}
-- [Keycloak](https://www.keycloak.org/securing-apps/oidc-layers){rel="nofollow"}
-- [Okta](https://developer.okta.com/docs/api/openapi/okta-oauth/guides/overview){rel="nofollow"}
-- [Rocket.chat](https://docs.rocket.chat/docs/third-party-login){rel="nofollow"}
-- [Slack](https://docs.slack.dev/authentication/sign-in-with-slack/){rel="nofollow"}
-- [Twitch](https://dev.twitch.tv/docs/authentication/){rel="nofollow"}
+- [Authentik](https://integrations.goauthentik.io/documentation/wiki-js/){target=_blank}
+- [Dropbox](https://developers.dropbox.com/oauth-guide){rel="nofollow" target=_blank}
+- [Facebook](https://developers.facebook.com/documentation/facebook-login){rel="nofollow" target=_blank}
+- [GitLab](https://docs.gitlab.com/integration/openid_connect_provider/){rel="nofollow" target=_blank}
+- [Keycloak](https://www.keycloak.org/securing-apps/oidc-layers){rel="nofollow" target=_blank}
+- [Okta](https://developer.okta.com/docs/api/openapi/okta-oauth/guides/overview){rel="nofollow" target=_blank}
+- [Rocket.chat](https://docs.rocket.chat/docs/third-party-login){rel="nofollow" target=_blank}
+- [Slack](https://docs.slack.dev/authentication/sign-in-with-slack/){rel="nofollow" target=_blank}
+- [Twitch](https://dev.twitch.tv/docs/authentication/){rel="nofollow" target=_blank}
