@@ -2,7 +2,7 @@
 title: OpenID Connect / OAuth2
 description: Authentication strategy
 published: true
-date: '2026-09-10T02:34:00.190Z'
+date: '2026-09-10T05:00:17.669Z'
 tags:
   - admin
   - auth
@@ -14,7 +14,9 @@ dateCreated: '2026-09-08T10:34:04.850Z'
 
 OpenID Connect 1.0 (OIDC) is a simple identity layer on top of the OAuth 2.0 protocol.
 
-Unless there's a dedicated strategy for your authentication provider already (e.g. [Discord](/admin/auth/discord), [Google](/admin/auth/google), [GitHub](/admin/auth/github)), this is most likely the strategy you're looking for. See the [Providers Docs](#providers-docs) section below.
+Unless there's a dedicated strategy for your authentication provider already (e.g. [Discord](/admin/auth/discord), [Google](/admin/auth/google), [GitHub](/admin/auth/github)), this is most likely the strategy you're looking for.
+
+[View guides for common providers :la:chevron-right:](#providers-docs)
 
 # Configuration
 
