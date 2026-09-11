@@ -2,7 +2,7 @@
 title: Troubleshooting / FAQs
 description: Solutions to common issues / Frequently Asked Questions
 published: true
-date: '2026-08-24T08:54:33.179Z'
+date: '2026-09-11T08:06:17.690Z'
 tags: []
 editor: markdown
 dateCreated: '2026-08-19T03:23:08.396Z'
@@ -14,6 +14,15 @@ dateCreated: '2026-08-19T03:23:08.396Z'
 
 **Cause:** You are most likely using a reverse proxy such as nginx or apache.
 **Resolution:** Increase your reverse proxy configuration for file uploads.
+
+## SEO page rendering
+
+Wiki.js is a Single-Page Application (SPA) which loads page contents lazily, on demand. While this is great for user experience, search engines may not render the page properly as a result.
+
+To address this, unauthenticated requests (e.g. search engines, AI bots, etc.) receive a response with the page prerendered content.
+**This allows for content to be indexed correctly by search engines and bots**, without the cost of server-side rendering.
+
+Users with javascript disabled are also able to view the page contents, but without the application shell around it. This provides a fallback for such users.
 
 ## Why are sub-folder installations not supported?
 
