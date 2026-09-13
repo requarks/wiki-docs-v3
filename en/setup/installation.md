@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-09-07T08:10:26.378Z'
+date: '2026-09-13T01:22:14.673Z'
 tags:
   - setup
 editor: markdown
@@ -151,6 +151,7 @@ This guide provides an easy, no docker knowledge required, step-by-step instruct
 
 #### Install dependencies
 
+::block-steps
 1. Update the machine
     ```sh
     sudo apt -qqy update
@@ -185,8 +186,11 @@ This guide provides an easy, no docker knowledge required, step-by-step instruct
 
     sudo ufw --force enable
     ```
+::
 
 #### Setup containers
+
+::block-steps
 1. Create a new folder in the location of your choice (e.g. `~/wiki`, replace in the commands below if different).
 2. Generate a random DB secret:
     ```sh
@@ -233,6 +237,8 @@ This guide provides an easy, no docker knowledge required, step-by-step instruct
     ```sh
     sudo docker compose up -d
     ```
+::
+
 #### Access your wiki
 On your browser, navigate to your server IP / domain name (e.g. `http://your-server-ip/`).
 
@@ -246,6 +252,7 @@ By default, your wiki is accessible over unencrypted HTTP. This section adds aut
 > [!IMPORTANT]
 > You need a **domain name** (e.g. `wiki.example.com`) with a DNS **A record** pointing to your server's public IP address.
 
+::block-steps
 1. Verify that your domain resolves to your server. From your local machine, run:
     ```sh
     ping wiki.example.com
@@ -321,6 +328,7 @@ By default, your wiki is accessible over unencrypted HTTP. This section adds aut
     cd ~/wiki
     sudo docker compose up -d
     ```
+::
 
 Your wiki is now available at `https://wiki.example.com/`. Visitors using `http://` are redirected to `https://` automatically.
 
