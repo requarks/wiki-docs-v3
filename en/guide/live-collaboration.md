@@ -2,7 +2,7 @@
 title: Live Collaboration
 description: Write pages with other users in real-time
 published: true
-date: '2026-08-24T00:06:45.545Z'
+date: '2026-09-13T01:24:58.203Z'
 tags:
   - user-guide
   - editing
@@ -21,6 +21,7 @@ Wiki.js has built-in support for editing pages in real-time with other users. Se
 
 # Usage
 
+::block-steps
 1. To get started, either...
     1. **Create** a new page and save it to the location of your choice.
     1. **Edit** an existing page.
@@ -28,6 +29,7 @@ Wiki.js has built-in support for editing pages in real-time with other users. Se
 3. Each user click the **Edit** button on the page.
 4. **Start editing!** All connected users will be shown as avatars in the top-right section of the editor. The user avatar pulses during edits.
 5. One of the user clicks **Save Changes** to commit the changes.
+::
 
 > [!IMPORTANT]
 > Ensure at least one user save the changes at the end. Otherwise any edits will be lost!
