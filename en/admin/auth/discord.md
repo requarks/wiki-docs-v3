@@ -2,7 +2,7 @@
 title: Discord
 description: Authentication strategy
 published: true
-date: '2026-09-09T09:33:04.974Z'
+date: '2026-09-13T01:26:05.824Z'
 tags:
   - admin
   - auth
@@ -16,6 +16,7 @@ Sign in with a Discord account, optionally only from the members of one Discord 
 
 # Guide
 
+::block-steps
 1. In your wiki installation, go to **Administration** :la:arrow-right: **Authentication**.
     1. Add a new **Discord** strategy.
     1. Click **Apply** in order to generate the *Authorization Callback URL*.
@@ -35,6 +36,7 @@ Sign in with a Discord account, optionally only from the members of one Discord 
 1. For the desired wiki site, go to **Login**.
     1. Enable the **Discord** strategy you just created.
     2. Click **Apply**.
+::
 
 > [!IMPORTANT]
 > If you want any Discord account to be able to login, you need to enable **Registration** option on the GitHub strategy you created. Otherwise, only existing accounts with an email address that match the Discord account will be allowed to login.
@@ -43,8 +45,10 @@ Sign in with a Discord account, optionally only from the members of one Discord 
 
 Filling in the **Restrict to Server** field lets only members of that Discord server in. To find the ID:
 
+::block-steps
 1. In the Discord client, open **User Settings** :la:arrow-right: **Advanced** and turn on **Developer Mode**.
 1. Right-click the server in the sidebar and choose **Copy Server ID**.
+::
 
 # Configuration
 
