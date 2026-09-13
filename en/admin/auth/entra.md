@@ -2,7 +2,7 @@
 title: Microsoft Entra ID
 description: Authentication strategy
 published: true
-date: '2026-09-09T10:09:10.043Z'
+date: '2026-09-13T01:27:18.789Z'
 tags:
   - admin
   - auth
@@ -16,6 +16,7 @@ Microsoft Entra ID (formerly Azure Active Directory) is Microsoft's cloud-based 
 
 # Guide
 
+::block-steps
 1. In your wiki installation, go to **Administration** :la:arrow-right: **Authentication**.
     1. Add a new **Microsoft Entra ID** strategy.
     1. Click **Apply** in order to generate the *Authorization Callback URL*.
@@ -36,7 +37,8 @@ Microsoft Entra ID (formerly Azure Active Directory) is Microsoft's cloud-based 
     1. Click **Apply**.
 1. For the desired wiki site, go to **Login**.
     1. Enable the **Microsoft Entra ID** strategy you just created.
-    2. Click **Apply**.
+    1. Click **Apply**.
+::
 
 > [!IMPORTANT]
 > Entry only fills the `email` claim when the account has a **Mail** attribute. If this isn't the case, set the **Email Claim** to `preferred_username` *(or add an optional `email` claim in Entra for the token)*.
@@ -47,11 +49,13 @@ Microsoft Entra ID (formerly Azure Active Directory) is Microsoft's cloud-based 
 
 Entra doesn't include that info by default. It needs to be added in the token configuration:
 
+::block-steps
 1. Open the app's **Token configuration** page and click **Add groups claim**.
 2. Choose which groups to emit: **Security groups** or **Groups assigned to the application** if the directory is large.
 3. Expand **ID** and pick what the claim carries:
    - **Group ID** *(default)*: Object GUIDs. A wiki group then has to be named as the GUID to match.
    - **sAMAccountName** or **NetBIOS Domain + sAMAccountName**: Group names and much easier to work with, but only available for groups synced from on-premises Active Directory.
+::
 
 Leave the strategy's **Groups Claim** as `groups` unless you emit it under another name.
 
