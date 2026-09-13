@@ -2,7 +2,7 @@
 title: Page Properties
 description: Edit page metadata and configuration
 published: true
-date: '2026-08-26T03:56:08.073Z'
+date: '2026-09-13T01:30:33.750Z'
 tags:
   - user-guide
   - editing
@@ -89,9 +89,24 @@ From the `livres/populaires` page in **French**, you can now change the locale t
 
 ## Javascript - On Load
 
+> [!NOTE]
+> You must have `write:scripts` permission to use this feature.
+
+Javascript code that will be executed upon loading the page.
+
 ## Javascript - On Unload
 
+> [!NOTE]
+> You must have `write:scripts` permission to use this feature.
+
+Javascript code that will be executed when unloading the page.
+
 ## CSS Styles
+
+> [!NOTE]
+> You must have `write:styles` permission to use this feature.
+
+CSS styles to add or override any CSS on the page.
 
 # Sidebar
 
