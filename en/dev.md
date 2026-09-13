@@ -2,7 +2,7 @@
 title: Dev Environment
 description: Guide to setup a development environment for Wiki.js
 published: true
-date: '2026-08-30T05:01:12.068Z'
+date: '2026-09-13T01:32:15.853Z'
 tags:
   - dev
 editor: markdown
@@ -53,6 +53,7 @@ It's very easy to run a development instance of Wiki.js with all the necessary d
 > [!WARNING]
 > All instructions below are written with **Visual Studio Code** in mind. The steps will defer for other editors.
 
+::block-steps
 1. Clone the project on your local machine.
 1. Open the project in Visual Studio Code.
 1. Reopen the project in container (from the popup in the lower-right corner of the screen when opening the project, or via the Command Palette (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> *or* <kbd>F1</kbd>) afterwards).
@@ -73,6 +74,7 @@ It's very easy to run a development instance of Wiki.js with all the necessary d
 1. Login using the default administrator user:
     - Email: `admin@example.com`
     - Password: `12345678`
+::
 
 ## Populate Sample Content
 
