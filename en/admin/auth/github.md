@@ -2,7 +2,7 @@
 title: GitHub
 description: Authentication strategy
 published: true
-date: '2026-09-09T09:08:29.198Z'
+date: '2026-09-13T01:26:22.808Z'
 tags:
   - admin
   - auth
@@ -16,6 +16,7 @@ Sign in with a GitHub account, on github.com or a GitHub Enterprise Server.
 
 # Guide
 
+::block-steps
 1. In your wiki installation, go to **Administration** :la:arrow-right: **Authentication**.
     1. Add a new **GitHub** strategy.
     1. Click **Apply** in order to generate the *Authorization Callback URL*.
@@ -34,6 +35,7 @@ Sign in with a GitHub account, on github.com or a GitHub Enterprise Server.
 1. For the desired wiki site, go to **Login**.
     1. Enable the **GitHub** strategy you just created.
     2. Click **Apply**.
+::
 
 > [!IMPORTANT]
 > If you want any GitHub account to be able to login, you need to enable **Registration** option on the GitHub strategy you created. Otherwise, only existing accounts with an email address that match the GitHub account will be allowed to login.
