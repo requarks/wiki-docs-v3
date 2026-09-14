@@ -2,7 +2,7 @@
 title: Permissions
 description: Manage access to your pages
 published: true
-date: '2026-09-14T01:51:18.619Z'
+date: '2026-09-14T01:53:17.951Z'
 tags:
   - admin
 editor: markdown
@@ -77,6 +77,10 @@ Select how this page rule will match pages:
 - **Has Any Tag...**
 - **Has All Tags...**
 - **Path is Exactly** (highest priority)
+
+> [!IMPORTANT]
+> - Don't include a leading slash `/` for **Path Starts With...** and **Path is Exactly...**
+> - Don't include the leading and trailing slash `/` for **Path Matches Regex**
 
 ## Specificity
 
