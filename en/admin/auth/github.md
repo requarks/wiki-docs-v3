@@ -2,13 +2,24 @@
 title: GitHub
 description: Authentication strategy
 published: true
-date: '2026-09-13T01:26:22.808Z'
+date: '2026-09-14T23:08:32.462Z'
 tags:
   - admin
   - auth
 editor: markdown
 dateCreated: '2026-09-08T11:09:03.826Z'
 ---
+
+::block-infobox{name="GitHub"}
+```yaml
+Protocol: OAuth 2.0
+Status:
+  Official: true
+  Supported: true
+Website: https://github.com
+```
+::
+
 
 # Overview
 
