@@ -2,7 +2,7 @@
 title: GitHub
 description: Authentication strategy
 published: true
-date: '2026-09-14T23:08:32.462Z'
+date: '2026-09-14T23:09:17.956Z'
 tags:
   - admin
   - auth
@@ -13,6 +13,7 @@ dateCreated: '2026-09-08T11:09:03.826Z'
 ::block-infobox{name="GitHub"}
 ```yaml
 Protocol: OAuth 2.0
+Verified Emails: true
 Status:
   Official: true
   Supported: true
