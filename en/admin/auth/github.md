@@ -2,7 +2,7 @@
 title: GitHub
 description: Authentication strategy
 published: true
-date: '2026-09-14T23:09:17.956Z'
+date: '2026-09-14T23:16:47.799Z'
 tags:
   - admin
   - auth
@@ -10,17 +10,17 @@ editor: markdown
 dateCreated: '2026-09-08T11:09:03.826Z'
 ---
 
-::block-infobox{name="GitHub"}
+::block-infobox{name="GitHub" image="/_files/admin/auth/images/logo-github.svg" imageCaption="GitHub Logo"}
 ```yaml
-Protocol: OAuth 2.0
-Verified Emails: true
 Status:
   Official: true
   Supported: true
+Specifications:
+  Protocol: OAuth 2.0
+  Verified Emails: true
 Website: https://github.com
 ```
 ::
-
 
 # Overview
 
