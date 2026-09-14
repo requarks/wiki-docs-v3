@@ -2,7 +2,7 @@
 title: Markdown
 description: Syntax to write Markdown content
 published: true
-date: '2026-08-28T23:05:37.946Z'
+date: '2026-09-14T23:54:35.718Z'
 tags:
   - user-guide
   - editing
@@ -892,6 +892,11 @@ Content of the second tab.
 :::
 
 Headers inside tabs are still displayed in the table of contents.
+
+> [!TIP] Tab Icon
+> An icon can be added to the left of the label by using the `icon` property. Any value from the "Insert Icon" dialog is accepted. e.g.:
+> ```
+> ::block-tab{label="Foo bar" icon="la:empire"}
 
 > [!TIP] Tab Label as Header
 > You can make a tab label act as a header so that it appears in the table of contents by using the `header` property to define the header level. For example:
