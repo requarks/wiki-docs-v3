@@ -2,13 +2,15 @@
 title: GitHub
 description: Authentication strategy
 published: true
-date: '2026-09-14T23:16:47.799Z'
+date: '2026-09-14T23:18:07.816Z'
 tags:
   - admin
   - auth
 editor: markdown
 dateCreated: '2026-09-08T11:09:03.826Z'
 ---
+
+# Overview
 
 ::block-infobox{name="GitHub" image="/_files/admin/auth/images/logo-github.svg" imageCaption="GitHub Logo"}
 ```yaml
@@ -21,8 +23,6 @@ Specifications:
 Website: https://github.com
 ```
 ::
-
-# Overview
 
 Sign in with a GitHub account, on github.com or a GitHub Enterprise Server.
 
