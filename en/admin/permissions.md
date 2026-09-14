@@ -2,7 +2,7 @@
 title: Permissions
 description: Manage access to your pages
 published: true
-date: '2026-09-14T01:38:35.093Z'
+date: '2026-09-14T01:51:18.619Z'
 tags:
   - admin
 editor: markdown
@@ -18,6 +18,7 @@ Permissions are managed at the [group](/admin/groups) level.
 - Until a user is assigned to a group, that user is not allowed to view or do anything.
 - A user can be part of **one or more** groups.
 - A group can have multiple [page rules](#page-rules) and a set of [global permissions](#global-permissions).
+- A group without any page rule isn't allowed to view or do anything.
 
 # Page Rules
 
@@ -34,9 +35,9 @@ A page rule consists of the following elements:
 
 The enformement mode determines whether the rule grants or deny permissions.
 
-- :white_check_mark: **Allow**: Grant the ability to perform the selected actions unless overriden by a **Deny** rule of the same specificity. *(lowest specificity)*
+- :white_check_mark: **Allow**: Grant the ability to perform the selected actions unless overriden by a **Deny** rule of the same specificity. *(lowest priority)*
 - :red_square: **Deny**: Deny the ability to perform the selected actions. This overrides an **Allow** rule of the same specificity.
-- :blue_square: **Force Allow**: Grant the ability to perform the selected actions, bypassing any **Deny** rule of the same specificity. (highest specificity)
+- :blue_square: **Force Allow**: Grant the ability to perform the selected actions, bypassing any **Deny** rule of the same specificity. (highest priority)
 
 ## Permissions
 
@@ -70,21 +71,30 @@ A locale filter can be applied to limit the page rule to only specific locales i
 
 Select how this page rule will match pages:
 
-- **Path Starts With...** (lowest specificity)
+- **Path Starts With...** (lowest priority)
 - **Path Ends With...**
 - **Path Matches Regex...**
 - **Has Any Tag...**
 - **Has All Tags...**
-- **Path is Exactly** (highest specificity)
+- **Path is Exactly** (highest priority)
 
 ## Specificity
 
 Rule specificity specifies which rule wins over another when they apply to the same page. The page with the highest specificity always win.
 
-The specificity is determined by:
-- **Enforcement Mode** *(lowest specificity)*
-- **Matching Pattern**
+The specificity is determined in order by:
 - **Path** *(highest specificity)*
+- **Matching Pattern**
+- **Enforcement Mode** *(lowest specificity)*
+
+In other terms,
+::block-steps
+1. A longer path takes precedence over a shorter path.
+2. If the 2 rules match the same path, the priority is given based on the [matching pattern](#matching-pattern).
+3. If 2 rules match the same path and use the same matching pattern, the [enforcement mode](#enforcement-mode) with the highest priority wins.
+::
+
+### Examples
 
 > [!TIP] Example 1 - Path
 > Assuming you have 2 rules:
