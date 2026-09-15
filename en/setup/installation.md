@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-09-13T01:22:14.673Z'
+date: '2026-09-15T04:57:24.079Z'
 tags:
   - setup
 editor: markdown
@@ -19,7 +19,7 @@ dateCreated: '2026-08-10T07:53:50.826Z'
 # Install using Containers
 
 :::block-tabs
-::block-tab{label="Docker" header="2"}
+::block-tab{label="Docker" header="2" icon="mdi:docker"}
 
 ### Tags
 
@@ -137,11 +137,11 @@ By default, the Wiki.js docker image runs as the user `wiki`. Some deployments r
 This is however **NOT** a secure way to run containers. **Make sure you understand the security implications before doing so.**
 ::
 
-::block-tab{label="Kubernetes" header="2"}
+::block-tab{label="Kubernetes" header="2" icon="mdi:kubernetes"}
 *Coming soon | Not available during beta phase*
 ::
 
-::block-tab{label="Guided Ubuntu Install" header="2"}
+::block-tab{label="Guided Ubuntu Install" header="2" icon="mdi:ubuntu"}
 This guide provides an easy, no docker knowledge required, step-by-step instructions to install Wiki.js on a fresh Ubuntu server using containers.
 
 #### Requirements
@@ -352,7 +352,7 @@ Common causes:
 # Install on Host
 
 :::block-tabs
-::block-tab{label="Linux" header="2"}
+::block-tab{label="Linux" header="2" icon="mdi:linux"}
 
 > [!TIP]
 > It's **highly recommended** to use containers, even if you're not familiar with Docker. See the [Guided Ubuntu Install](#guided-ubuntu-install) section for an easy, no docker knowledge required, guide to install Wiki.js on a Ubuntu machine.
@@ -360,11 +360,11 @@ Common causes:
 *Coming soon | Not available during beta phase*
 ::
 
-::block-tab{label="macOS" header="2"}
+::block-tab{label="macOS" header="2" icon="mdi:apple"}
 *Coming soon | Not available during beta phase*
 ::
 
-::block-tab{label="Windows" header="2"}
+::block-tab{label="Windows" header="2" icon="mdi:microsoft-windows"}
 *Coming soon | Not available during beta phase*
 ::
 :::
@@ -372,7 +372,17 @@ Common causes:
 # Install using Cloud Images
 
 :::block-tabs
-::block-tab{label="DigitalOcean" header="2"}
+::block-tab{label="DigitalOcean" header="2" icon="mdi:digital-ocean"}
 *Coming soon | Not available during beta phase*
+
+> [!TIP] Status
+> This image is officially maintained by the Wiki.js team.
+::
+::block-tab{label="PikaPods" header="2"}
+See the [Wiki.js page on PikaPods](https://www.pikapods.com/pods?run=wiki-js)
+
+> [!WARNING] Status
+> - Only the 2.x image available at the moment.
+> - This image is maintained by PikaPods.
 ::
 :::
