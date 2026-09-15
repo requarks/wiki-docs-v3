@@ -2,7 +2,7 @@
 title: Requirements
 description: Prerequisites to install Wiki.js
 published: true
-date: '2026-09-11T07:52:12.945Z'
+date: '2026-09-15T04:59:06.359Z'
 tags:
   - setup
 editor: markdown
@@ -18,7 +18,7 @@ This means it runs on **Linux**, **macOS**, **Windows** as well as container sol
 > It's highly recommended to run Wiki.js using **Docker**. It includes all necessary dependencies *(minus the database)* and provides the easiest ugprade path.
 
 :::block-tabs
-::block-tab{label="Recommended Specs" header="2"}
+::block-tab{label="Recommended Specs" header="2" icon="mdi:server"}
 
 ### CPU
 Wiki.js runs perfectly fine on a single CPU core. However, **2 cores or more are recommended** to fully make use of the background workers. Workers are responsible for maintenance tasks, updates, webhooks, search index rebuild, final page render, etc.
@@ -33,7 +33,7 @@ Storage requirements are based on the content you will enter. Wikis that consist
 
 ::
 
-::block-tab{label="Internet Access" header="2"}
+::block-tab{label="Internet Access" header="2" icon="mdi:internet"}
 
 Wiki.js requires internet access to perform certain functions. If you block all connections by default via a firewall, you must ensure the following are allowlisted:
 
