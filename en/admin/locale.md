@@ -2,7 +2,7 @@
 title: Locale
 description: Set localization options for your wiki
 published: true
-date: '2026-09-15T08:09:15.079Z'
+date: '2026-09-15T08:13:01.974Z'
 tags:
   - admin
 editor: markdown
@@ -49,7 +49,7 @@ When using multiple locales, extra care needs to be taken with your [storage tar
 
 The **English** locale is included by default in Wiki.js.
 
-You can fetch the latest list of locales by clicking the <kbd>Fetch Locales</kbd> button in the top-right corner of the page. This will download the list of available locales and updates for any installed locales.
+You can fetch the latest list of locales by clicking the <kbd>Fetch Updates</kbd> button in the top-right corner of the page. This will download the list of available locales and updates for any installed locales.
 
 To install a new locale, click the <kbd>:la:download: Install</kbd> button next to the desired locale to install it. It can then be activated in the **Active Locales** section.
 
