@@ -2,7 +2,7 @@
 title: Locale
 description: Set localization options for your wiki
 published: true
-date: '2026-08-28T08:44:00.147Z'
+date: '2026-09-15T08:09:15.079Z'
 tags:
   - admin
 editor: markdown
@@ -52,6 +52,18 @@ The **English** locale is included by default in Wiki.js.
 You can fetch the latest list of locales by clicking the <kbd>Fetch Locales</kbd> button in the top-right corner of the page. This will download the list of available locales and updates for any installed locales.
 
 To install a new locale, click the <kbd>:la:download: Install</kbd> button next to the desired locale to install it. It can then be activated in the **Active Locales** section.
+
+> [!NOTE]
+> - Localization updates are automatically downloaded every 24h.
+> - If you're not seeing translation updates, clear your browser cache and reload the page to load the new strings. If you're using a reverse proxy, it may be caching the old strings until the cache expires or is purged manually.
+
+## Manual Installation
+
+If your Wiki.js doesn't have access to the internet, you can install or load translation updates by either:
+- From the **Administration Area** :mdi:arrow-right: **Locale** page by clicking the **Import from file...** button.
+- Place the locale file(s) under `backend/locales` in your Wiki.js installation on disk, then **restarting** the server.
+
+The source files can be downloaded from the [requarks/wiki-locales](https://github.com/requarks/wiki-locales) repository.
 
 ## Custom Name / Short Code
 
