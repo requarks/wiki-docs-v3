@@ -2,7 +2,7 @@
 title: Dev Environment
 description: Guide to setup a development environment for Wiki.js
 published: true
-date: '2026-09-13T01:32:15.853Z'
+date: '2026-09-15T05:01:10.106Z'
 tags:
   - dev
 editor: markdown
@@ -16,7 +16,7 @@ It's very easy to run a development instance of Wiki.js with all the necessary d
 # Requirements
 
 :::block-tabs
-::block-tab{label="Linux" header="2"}
+::block-tab{label="Linux" header="2" icon="mdi:linux"}
 - An IDE that supports [Dev Containers](https://containers.dev/), for example:
   - [Visual Studio Code](https://code.visualstudio.com/) *(recommended)*
     - You must also install the **Dev Containers** extension.
@@ -28,7 +28,7 @@ It's very easy to run a development instance of Wiki.js with all the necessary d
 > Avoid Docker Desktop on Linux as it's known to cause issues. Install the Docker Engine directly instead.
 ::
 
-::block-tab{label="macOS" header="2"}
+::block-tab{label="macOS" header="2" icon="mdi:apple"}
 - An IDE that supports [Dev Containers](https://containers.dev/), for example:
   - [Visual Studio Code](https://code.visualstudio.com/) *(recommended)*
     - You must also install the **Dev Containers** extension.
@@ -37,7 +37,7 @@ It's very easy to run a development instance of Wiki.js with all the necessary d
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 ::
 
-::block-tab{label="Windows" header="2"}
+::block-tab{label="Windows" header="2" icon="mdi:microsoft-windows"}
 - An IDE that supports [Dev Containers](https://containers.dev/), for example:
   - [Visual Studio Code](https://code.visualstudio.com/) *(recommended)*
     - You must also install the **Dev Containers** and **WSL** extensions.
