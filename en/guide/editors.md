@@ -2,7 +2,7 @@
 title: Editors
 description: Discover the available editors to write content
 published: true
-date: '2026-08-24T00:05:29.479Z'
+date: '2026-09-15T00:01:30.548Z'
 tags:
   - user-guide
   - editing
