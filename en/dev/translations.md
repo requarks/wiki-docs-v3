@@ -2,7 +2,7 @@
 title: Translations
 description: Help translating Wiki.js in your language!
 published: true
-date: '2026-08-22T21:52:56.344Z'
+date: '2026-09-15T08:03:40.179Z'
 tags:
   - dev
 editor: markdown
@@ -34,6 +34,8 @@ If you can't find your language in the list, contact us on [Discord](https://dis
 
 ## Manual Installation
 
-If your Wiki.js doesn't have access to the internet, you can load translation updates manually via the **Import from file...** button.
+If your Wiki.js doesn't have access to the internet, you can load translation updates by either:
+- From the **Administration Area** :mdi:arrow-right: **Locale** page by clicking the **Import from file...** button.
+- Place the locale file(s) under `backend/locales` in your Wiki.js installation on disk, then **restarting** the server.
 
 The source files can be downloaded from the [requarks/wiki-locales](https://github.com/requarks/wiki-locales) repository.
