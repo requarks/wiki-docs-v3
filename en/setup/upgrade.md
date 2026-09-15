@@ -2,7 +2,7 @@
 title: Upgrade
 description: How to upgrade to the latest version
 published: true
-date: '2026-09-05T06:58:10.977Z'
+date: '2026-09-15T04:58:22.102Z'
 tags:
   - setup
 editor: markdown
@@ -15,7 +15,7 @@ dateCreated: '2026-08-11T05:04:17.122Z'
 # In-place upgrade
 
 :::block-tabs
-::block-tab{label="Docker" header="2"}
+::block-tab{label="Docker" header="2" icon="mdi:docker"}
 #### Standalone Container
 
 Upgrading is simply a matter of recreating the container with the latest image version:
@@ -44,19 +44,19 @@ docker compose up --force-recreate -d
 ```
 ::
 
-::block-tab{label="Kubernetes" header="2"}
+::block-tab{label="Kubernetes" header="2" icon="mdi:kubernetes"}
 *Coming soon*
 ::
 
-::block-tab{label="Linux" header="2"}
+::block-tab{label="Linux" header="2" icon="mdi:linux"}
 *Coming soon*
 ::
 
-::block-tab{label="macOS" header="2"}
+::block-tab{label="macOS" header="2" icon="mdi:apple"}
 *Coming soon*
 ::
 
-::block-tab{label="Windows" header="2"}
+::block-tab{label="Windows" header="2" icon="mdi:microsoft-windows"}
 *Coming soon*
 ::
 :::
