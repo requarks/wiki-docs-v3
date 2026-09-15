@@ -2,7 +2,7 @@
 title: Translations
 description: Help translating Wiki.js in your language!
 published: true
-date: '2026-09-15T08:03:40.179Z'
+date: '2026-09-15T08:13:16.675Z'
 tags:
   - dev
 editor: markdown
@@ -26,7 +26,7 @@ If you can't find your language in the list, contact us on [Discord](https://dis
 
 ## Via the Administration Area
 
-- From the **Administration Area**  :mdi:arrow-right: **Locale** page, click the **Fetch Locales** button to get the latest localization updates.
+- From the **Administration Area**  :mdi:arrow-right: **Locale** page, click the **Fetch Updates** button to get the latest localization updates.
 - Clear your browser cache and reload the page to load the new strings. If you're using a reverse proxy, it may be caching the old strings until the cache expires or is purged manually.
 
 > [!NOTE]
