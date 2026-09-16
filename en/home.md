@@ -2,7 +2,7 @@
 title: Wiki.js
 description: Official Documentation for 3.x
 published: true
-date: '2026-08-30T04:59:10.887Z'
+date: '2026-09-16T00:57:53.764Z'
 tags: []
 editor: markdown
 dateCreated: '2026-08-10T07:05:24.182Z'
