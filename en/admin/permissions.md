@@ -2,7 +2,7 @@
 title: Permissions
 description: Manage access to your pages
 published: true
-date: '2026-09-14T02:16:25.658Z'
+date: '2026-09-16T08:57:49.117Z'
 tags:
   - admin
 editor: markdown
@@ -74,16 +74,16 @@ A locale filter can be applied to limit the page rule to only specific locales i
 
 Select how this page rule will match pages:
 
-- **Path Starts With...** (lowest priority)
-- **Path Ends With...**
-- **Path Matches Regex...**
-- **Has Any Tag...**
-- **Has All Tags...**
-- **Path is Exactly** (highest priority)
-
-> [!IMPORTANT]
-> - Don't include a leading slash `/` for **Path Starts With...** and **Path is Exactly...**
-> - Don't include the leading and trailing slash `/` for **Path Matches Regex**
+| Pattern | Description | Priority |
+| :-- | :-- | :-: |
+| Path Starts With... | Matches any path that starts with the entered value. Do **NOT** include a leading slash `/`. | Lowest |
+| Path Ends With... | Matches any path that ends with the entered value. Do **NOT** include a trailing slash `/`. | :la:chevron-down: |
+| Path is Exactly... + Children | Matches both an exact path and its children (e.g. `foo/bar` and `foo/bar/*`, but not `foo/bard`). Do **NOT** include a leading and trailing slash `/`. | :la:chevron-down: |
+| Path Matches Regex... | Matches any path matching a regular expression. Do **NOT** include a leading and trailing slash `/`. | :la:chevron-down: |
+| Has Any Tag... | Matches any page that has at least one of the selected tag(s). | :la:chevron-down: |
+| Has All Tags... | Matches any page that has all of the tags selected. | :la:chevron-down: |
+| Path is Exactly | Matches an exact path. Do **NOT** include a leading slash `/`. | Highest |
+{.table-leading-col}
 
 ## Specificity
 
