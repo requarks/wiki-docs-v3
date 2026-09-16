@@ -2,7 +2,7 @@
 title: Basics
 description: Learn the basics of Wiki.js
 published: true
-date: '2026-08-27T00:09:09.308Z'
+date: '2026-09-16T00:59:19.912Z'
 tags:
   - user-guide
 editor: markdown
