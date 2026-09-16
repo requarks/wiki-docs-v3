@@ -2,7 +2,7 @@
 title: Requirements
 description: Prerequisites to install Wiki.js
 published: true
-date: '2026-09-15T04:59:06.359Z'
+date: '2026-09-16T00:58:58.105Z'
 tags:
   - setup
 editor: markdown
