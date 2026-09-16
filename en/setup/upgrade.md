@@ -2,7 +2,7 @@
 title: Upgrade
 description: How to upgrade to the latest version
 published: true
-date: '2026-09-15T04:58:22.102Z'
+date: '2026-09-16T00:59:12.289Z'
 tags:
   - setup
 editor: markdown
