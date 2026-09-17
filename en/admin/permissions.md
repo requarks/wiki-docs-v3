@@ -2,7 +2,7 @@
 title: Permissions
 description: Manage access to your pages
 published: true
-date: '2026-09-17T00:20:30.367Z'
+date: '2026-09-17T04:17:52.902Z'
 tags:
   - admin
 editor: markdown
@@ -148,5 +148,28 @@ Global permissions represents administrative actions a user can perform. They ar
 | `manage:navigation` | Can manage site navigation | |
 | `manage:theme` | Can modify site theme settings | |
 | `manage:sites` | Can create / manage sites | |
-| `manage:system` | Can manage and access everything. Root administrator. | :warning: **Use with caution when assigning this permission. This should normally not be assigned to anything other than the system administrator.** |
+| `manage:system` | Can manage and access everything. Root administrator. | :warning: **Use with caution when assigning this permission. This should normally not be assigned to anything other than the system administrator.** |
 {.table-leading-col}
+
+| Action / Group | read:users | write:users | manage:users | read:groups | write:groups | manage:groups | manage:system |
+| :-- | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| View user info | :green_circle: | :green_circle: | :green_circle: |  |  |  | :green_circle: |
+| Create new user |  | :green_circle: | :green_circle: |  |  |  | :green_circle: |
+| Edit user info^1^ |  |  | :green_circle: |  |  |  | :green_circle: |
+| Delete user^2^ |  |  | :green_circle: |  |  |  | :green_circle: |
+| Assign user to normal groups |  | :green_circle: | :green_circle: |  | :green_circle: | :green_circle: | :green_circle: |
+| Assign user to elevated groups |  |  | :green_circle: |  |  | :green_circle: | :green_circle: |
+| Assign user to root admin groups |  |  |  |  |  |  | :green_circle: |
+| View groups |  |  |  | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
+| Create new group |  |  |  |  | :green_circle: | :green_circle: | :green_circle: |
+| Edit group |  |  |  |  | :green_circle: | :green_circle: | :green_circle: |
+| Set rules |  |  |  |  | :green_circle: | :green_circle: | :green_circle: |
+| Set permissions^3^ |  |  |  |  |  | :green_circle: | :green_circle: |
+| Delete group^4^ |  |  |  |  |  | :green_circle: | :green_circle: |
+{.table-leading-col}
+
+1. Unless the user is part of any group with the `manage:system` (root admin) permission.
+2. Unless the user is part of any group with elevated admin permissions.
+3. Unless the group has any elevated admin permissions.
+4. Unless the group has the `manage:system` (root admin) permission.
+
