@@ -2,7 +2,7 @@
 title: Permissions
 description: Manage access to your pages
 published: true
-date: '2026-09-17T04:17:52.902Z'
+date: '2026-09-17T04:18:34.229Z'
 tags:
   - admin
 editor: markdown
@@ -150,6 +150,8 @@ Global permissions represents administrative actions a user can perform. They ar
 | `manage:sites` | Can create / manage sites | |
 | `manage:system` | Can manage and access everything. Root administrator. | :warning: **Use with caution when assigning this permission. This should normally not be assigned to anything other than the system administrator.** |
 {.table-leading-col}
+
+## User Management Permission Matrix
 
 | Action / Group | read:users | write:users | manage:users | read:groups | write:groups | manage:groups | manage:system |
 | :-- | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
