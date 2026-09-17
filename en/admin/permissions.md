@@ -2,7 +2,7 @@
 title: Permissions
 description: Manage access to your pages
 published: true
-date: '2026-09-17T04:53:10.299Z'
+date: '2026-09-17T05:25:57.613Z'
 tags:
   - admin
 editor: markdown
@@ -136,20 +136,8 @@ In other terms,
 
 Global permissions represents administrative actions a user can perform. They are not tied to specific pages or sites.
 
-| Name |Description | Note |
-| :-- | :-- | :-- |
-| `access:admin` | Can access the administration area. | This permission should be granted to anyone with one or more of the permissions below. |
-| `read:users` | Can view users, but not create or modify. | |
-| `manage:users` | Can create / manage users. | Cannot modify users with `manage:system` permissions. |
-| `read:groups` | Can view groups and their permissions, but not create or modify them. | |
-| `manage:groups` | Can create / manage groups and assign permissions / page rules. | Cannot modify groups with `manage:system` permissions. |
-| `read:audit` | Can read the audit log, i.e. the record of what everybody on this wiki has done. | Usually granted for security auditors. |
-| `read:metrics` | Can scrape the Prometheus metrics endpoint from an address it is not open to anonymously. | Usually for use by APIs and automations. |
-| `manage:navigation` | Can manage site navigation | |
-| `manage:theme` | Can modify site theme settings | |
-| `manage:sites` | Can create / manage sites | |
-| `manage:system` | Can manage and access everything. Root administrator. | :warning: **Use with caution when assigning this permission. This should normally not be assigned to anything other than the system administrator.** |
-{.table-leading-col}
+> [!IMPORTANT]
+> Some granular permissions are **cummulative**. For example, a group that should be able to create new users and list existing users should have both the `read:users` and `write:users`. A `write` prefix doesn't necessarily imply `read`. Refer to the matrix tables below for details.
 
 ## General Permissions Matrix
 
@@ -157,8 +145,11 @@ Global permissions represents administrative actions a user can perform. They ar
 | :-- | :-: | :-: | :-: | :-: |
 | Access the admin dashboard| :green_circle: |  |  | :green_circle: |
 | View / download the audit log |  | :green_circle: |  | :green_circle: |
-| Access the Prometheus metrics endpoint |  |  | :green_circle: | :green_circle: |
+| Access the Prometheus metrics endpoint^1^ |  |  | :green_circle: | :green_circle: |
 {.table-leading-col}
+
+1. This is different than the [Metrics administration page](/admin/metrics) which requires the `manage:system` permission. The `read:metrics` permission is strictly for accessing the Prometheus metrics endpoint for sources that require authentication.
+{.text-sm}
 
 ## Site Management Matrix
 
@@ -172,15 +163,18 @@ Global permissions represents administrative actions a user can perform. They ar
 {.table-leading-col}
 
 1. With the exception of site theme and storage settings.
+{.text-sm}
 
 ## Webhooks Management Matrix
 
 | Action / Group | read:webhooks | manage:webhooks | manage:system |
 | :-- | :-: | :-: | :-: | :-: |
-| List and view webhooks configuration | :green_circle: |  | :green_circle: |
-| View / download the audit log |  | :green_circle: | :green_circle: |
-| Access the Prometheus metrics endpoint |  |  | :green_circle: |
+| List and view webhooks configuration^1^ | :green_circle: |  | :green_circle: |
+| Create, modify and delete webhooks |  | :green_circle: | :green_circle: |
 {.table-leading-col}
+
+1. The authentication header secret is masked and cannot be read with this permission alone.
+{.text-sm}
 
 ## User Management Matrix
 
@@ -205,6 +199,7 @@ Global permissions represents administrative actions a user can perform. They ar
 2. Unless the user is part of any group with elevated admin permissions.
 3. Unless the group has any elevated admin permissions.
 4. Unless the group has the `manage:system` (root admin) permission.
+{.text-sm}
 
 ## Full Access
 
