@@ -2,7 +2,7 @@
 title: Permissions
 description: Manage access to your pages
 published: true
-date: '2026-09-17T05:25:57.613Z'
+date: '2026-09-17T05:29:34.649Z'
 tags:
   - admin
 editor: markdown
@@ -55,6 +55,7 @@ One or more permissions can be selected for a page rule:
 | Use JavaScript | `write:scripts` | Can insert JavaScript in pages. | :warning: **Use with caution as users could inject malicious scripts.** |
 | View Page Source | `read:source` | Can view the pages source. | |
 | View Page History | `read:history` | Can view previous versions of pages. | |
+| Manage Navigation | `manage:navigation` | Can change how pages here resolve their sidebar, and edit the menu itself where this rule also covers the page the menu belongs to. | |
 | View Assets | `read:assets` | Can view / use assets *(such as images and files)* in pages. | |
 | Upload Assets | `write:assets` | Can upload new assets *(such as images and files)*. | |
 | Manage Assets | `manage:assets` | Can edit and delete existing assets *(such as images and files)*. | |
