@@ -2,7 +2,7 @@
 title: Permissions
 description: Manage access to your pages
 published: true
-date: '2026-09-16T08:57:49.117Z'
+date: '2026-09-17T00:20:30.367Z'
 tags:
   - admin
 editor: markdown
@@ -48,8 +48,9 @@ One or more permissions can be selected for a page rule:
 | Read Pages | `read:pages` | Can view and search pages. | |
 | Write Pages | `write:pages` | Can create and edit pages. | |
 | Review Pages | `review:pages` | Can review and approve edits submitted by users. | |
-| Manage Pages | `manage:pages` | **Can** move existing pages to other locations the user has write access to. | |
+| Manage Pages | `manage:pages` | Can move existing pages to other locations the user has write access to. | |
 | Delete Pages | `delete:pages` | Can delete existing pages. | |
+| Assign Tags | `write:tags` | Can assign / unassign tags on pages. | |
 | Use CSS | `write:styles` | Can insert CSS styles in pages. | |
 | Use JavaScript | `write:scripts` | Can insert JavaScript in pages. | :warning: **Use with caution as users could inject malicious scripts.** |
 | View Page Source | `read:source` | Can view the pages source. | |
