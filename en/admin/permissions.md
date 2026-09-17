@@ -2,7 +2,7 @@
 title: Permissions
 description: Manage access to your pages
 published: true
-date: '2026-09-17T04:18:57.441Z'
+date: '2026-09-17T04:53:10.299Z'
 tags:
   - admin
 editor: markdown
@@ -151,15 +151,42 @@ Global permissions represents administrative actions a user can perform. They ar
 | `manage:system` | Can manage and access everything. Root administrator. | :warning: **Use with caution when assigning this permission. This should normally not be assigned to anything other than the system administrator.** |
 {.table-leading-col}
 
+## General Permissions Matrix
+
+| Action / Group | access:admin | read:audit | read:metrics | manage:system |
+| :-- | :-: | :-: | :-: | :-: |
+| Access the admin dashboard| :green_circle: |  |  | :green_circle: |
+| View / download the audit log |  | :green_circle: |  | :green_circle: |
+| Access the Prometheus metrics endpoint |  |  | :green_circle: | :green_circle: |
+{.table-leading-col}
+
 ## Site Management Matrix
 
+| Action / Group | manage:sites | manage:theme | manage:storage | manage:system |
+| :-- | :-: | :-: | :-: | :-: |
+| Create new site | :green_circle: |  |  | :green_circle: |
+| Enable / disable a site | :green_circle: |  |  | :green_circle: |
+| Modify site configuration^1^ | :green_circle: |  |  | :green_circle: |
+| Modify site theme |  | :green_circle: |  | :green_circle: |
+| Modify site storage |  |  | :green_circle: | :green_circle: |
+{.table-leading-col}
 
+1. With the exception of site theme and storage settings.
+
+## Webhooks Management Matrix
+
+| Action / Group | read:webhooks | manage:webhooks | manage:system |
+| :-- | :-: | :-: | :-: | :-: |
+| List and view webhooks configuration | :green_circle: |  | :green_circle: |
+| View / download the audit log |  | :green_circle: | :green_circle: |
+| Access the Prometheus metrics endpoint |  |  | :green_circle: |
+{.table-leading-col}
 
 ## User Management Matrix
 
 | Action / Group | read:users | write:users | manage:users | read:groups | write:groups | manage:groups | manage:system |
 | :-- | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| View user info | :green_circle: | :green_circle: | :green_circle: |  |  |  | :green_circle: |
+| List and view user info | :green_circle: |  | :green_circle: |  |  |  | :green_circle: |
 | Create new user |  | :green_circle: | :green_circle: |  |  |  | :green_circle: |
 | Edit user info^1^ |  |  | :green_circle: |  |  |  | :green_circle: |
 | Delete user^2^ |  |  | :green_circle: |  |  |  | :green_circle: |
@@ -179,3 +206,10 @@ Global permissions represents administrative actions a user can perform. They ar
 3. Unless the group has any elevated admin permissions.
 4. Unless the group has the `manage:system` (root admin) permission.
 
+## Full Access
+
+The `manage:system` grants complete access to absolutely everything and **bypasses any restriction**. A group rule with **DENY** enforcement has no effect on this group.
+
+> [!CAUTION]
+> This permission should only be given to **root administrators** managing the wiki instance.
+> A user with this permission can essentially **delete everything and cause irreparable damage**. Use with caution.
