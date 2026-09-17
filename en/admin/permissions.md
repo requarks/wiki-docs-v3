@@ -2,7 +2,7 @@
 title: Permissions
 description: Manage access to your pages
 published: true
-date: '2026-09-17T05:29:34.649Z'
+date: '2026-09-17T09:13:49.255Z'
 tags:
   - admin
 editor: markdown
@@ -201,6 +201,14 @@ Global permissions represents administrative actions a user can perform. They ar
 3. Unless the group has any elevated admin permissions.
 4. Unless the group has the `manage:system` (root admin) permission.
 {.text-sm}
+
+> [!TIP] Elevated Admin Permissions
+> The following permissions are considered **Elevated Admin Permissions**:
+> - write:users
+> - manage:users
+> - write:groups
+> - manage:groups
+> - manage:system
 
 ## Full Access
 
