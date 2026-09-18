@@ -2,7 +2,7 @@
 title: Authentication
 description: Configure the authentication settings of your wiki
 published: true
-date: '2026-09-10T04:56:26.192Z'
+date: '2026-09-18T07:42:21.431Z'
 tags:
   - admin
   - auth
