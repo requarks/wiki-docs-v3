@@ -2,7 +2,7 @@
 title: Editors
 description: Manage editors and their configuration
 published: true
-date: '2026-08-20T07:06:26.917Z'
+date: '2026-09-18T05:55:47.553Z'
 tags:
   - admin
 editor: markdown
@@ -18,11 +18,27 @@ Wiki.js ships with multiple editors.
 - Editors can be enabled or disabled by using the "**Active**" toggle on the right of the desired editor.
 - Some editors have additional options you can configure by clicking the <kbd>:mdi:cog-outline: **Configuration**</kbd> button on the corresponding row. See the associated section below to learn about the various options.
 
-# Markdown
+# AsciiDoc Editor
+
+The alternative plain-text editor using AsciiDoc syntax.
+
+### Configuration
+
+*There's no configuration for this editor.*
+
+# Blog
+
+Create a blog inside your wiki.
+
+### Configuration
+
+*There's no configuration for this editor.*
+
+# Markdown Editor
 
 The markdown editor is the fully-featured flagship editor for Wiki.js.
 
-## Configuration
+### Configuration
 
 | Parameter | Description | Default Value | Notes |
 | :-- | :-- | :-- | :-- |
@@ -37,10 +53,18 @@ The markdown editor is the fully-featured flagship editor for Wiki.js.
 {.table-leading-col}
 
 
-# Redirect
+# Redirection
 
 The redirect editor allows users to create redirections to other pages or URLs.
 
-## Configuration
+### Configuration
+
+*There's no configuration for this editor.*
+
+# Visual Editor
+
+The editor for non-technical users.
+
+### Configuration
 
 *There's no configuration for this editor.*
