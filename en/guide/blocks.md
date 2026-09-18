@@ -2,7 +2,7 @@
 title: Content Blocks
 description: Add dynamic content to your pages
 published: true
-date: '2026-09-15T08:35:10.830Z'
+date: '2026-09-18T07:42:00.649Z'
 tags:
   - user-guide
   - editing
