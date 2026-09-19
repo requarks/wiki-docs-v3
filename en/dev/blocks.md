@@ -2,7 +2,7 @@
 title: Custom Blocks
 description: Create your own content blocks
 published: true
-date: '2026-09-19T05:53:57.901Z'
+date: '2026-09-19T05:54:33.655Z'
 tags:
   - dev
 editor: markdown
@@ -30,7 +30,7 @@ dateCreated: '2026-09-19T03:07:35.984Z'
 
 :::block-tabs
 ::block-tab{label="Minimal Example"}
-```js
+```js title=component.js
 import { css, html, LitElement } from 'lit'
 
 export class BlockExampleElement extends LitElement {
@@ -100,7 +100,7 @@ window.customElements.define('block-example', BlockExampleElement)
 ::
 
 ::block-tab{label="Full Annotated Example"}
-```js
+```js title=component.js
 /**
  * A starting point for a block of your own.
  *
