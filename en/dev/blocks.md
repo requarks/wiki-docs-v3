@@ -2,7 +2,7 @@
 title: Custom Blocks
 description: Create your own content blocks
 published: true
-date: '2026-09-19T05:54:33.655Z'
+date: '2026-09-19T07:30:54.114Z'
 tags:
   - dev
 editor: markdown
@@ -11,7 +11,8 @@ dateCreated: '2026-09-19T03:07:35.984Z'
 
 # Overview
 
-*coming soon*
+Write your own custom content blocks for use in your personal wiki, your organization or to be shared with the community.
+Content blocks are built using web standards and offer infinite flexibility.
 
 # Getting Started
 
@@ -20,9 +21,9 @@ dateCreated: '2026-09-19T03:07:35.984Z'
     > [!IMPORTANT] Requirements
     > Either open the project inside the [devcontainer](/dev)
     > **or** install **Node.js 26.x or later** on your system
-2. Open the `blocks` folder into your editor.
-3. Create a new folder named `block-xyz` *(where `xyz` is the name of your custom block)*.
-4. Inside this new folder, create a file named `component.js`.
+2. Open the `blocks` directory into your editor.
+3. Create a new directory named `block-xyz` *(where `xyz` is the name of your custom block)*.
+4. Inside this new directory, create a file named `component.js`.
 5. Use one of the base templates below to write your block.
 ::
 
@@ -481,4 +482,156 @@ window.customElements.define('block-example', BlockExampleElement)
 ```
 ::
 :::
+
+# Reference
+
+A block is a [Lit component](https://lit.dev/docs/components/overview/), with it's own logic, template, styles and internal state.
+Lit components are standard [Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_components) and are compatible with all modern browsers.
+
+At its core, a block must extend a LitElement and export it in the window `customElements`:
+```js
+export class BlockExampleElement extends LitElement {
+  ...
+}
+window.customElements.define('block-example', BlockExampleElement)
+```
+
+## Definition
+
+A static `definition` object describes the configuration of the block.
+
+| Attribute | Description | Example Value |
+| :-- | :-- | :-- |
+| block | The key. Must match this directory's name, minus `block-`. Lowercase, digits and dashes. | `example` |
+| name | The human readable name, shown in the admin and block picker. | `My Example` |
+| description | A short description of the block, shown in the admin and block picker. | `An example block that does X and Y.` |
+| icon | Icon key matching one of the bundled `ultraviolet-*` icons. Use `plugin` by default. | `plugin` |
+| template | Sample content that gets inserted between the opening and closing tags of your block. **Omit if not needed.** | `Your content here.` |
+| asciidocTemplate | Sample content but in AsciiDoc syntax. **Omit if the same as template or not needed.** |  |
+| contentEditor | The editor to use to edit the content of the block. **Omit unless your block has nested code that needs an editor.** |  |
+| props | An array of properties the user can configure when inserting your block. **See reference below.** | `[]` |
+{.table-leading-col}
+
+### Props
+
+The `props` attribute describes what the user can change. Only properties defined here are presented as a form to the user and saved alongside the page content.
+
+| Attribute | Description | Example Value |
+| :-- | :-- | :-- |
+| name | The property key, in camelCase. | `myCustomProperty` |
+| type | The type of the property: `string`, `number`, `boolean`, `select` or `icon` | `string` |
+| label | The human readable title of the property. | `My Custom Property` |
+| hint | A short helper text or description of the property. | `Heading shown above the content. Leave empty for none.` |
+| options | **For select properties only**, an array of strings or objects the user can choose from. | `['abc', 'def', 'ghi']`<br>or<br>`[{ label: 'Option A', value: 'abc'}, {label: 'Option B', value: 'def'}]` |
+| default | The default value. This should always be set, even if empty, false or 0. | `abc` |
+{.table-leading-col}
+
+## Properties
+
+The static `properties()` method holds the internal state of the block. It **MUST** include all the props defined in the definition above.
+
+Refer to the [Lit Reactive Properties Documentation](https://lit.dev/docs/components/properties/) on how to define properties and the internal state.
+
+## Styles
+
+CSS is embedded using the static `styles()` method. Styles are scoped to the block element, so there's no possible conflict with the page or other blocks.
+
+Refer to the [Lit Styles Documentation](https://lit.dev/docs/components/styles/) for more details.
+
+```js
+static get styles() {
+  return css`
+    /* -> Custom elements are inline by default, which is almost never what a block wants */
+    :host {
+      display: block;
+    }
+
+    .something {
+      padding: 16px;
+      border-radius: 5px;
+      background-color: var(--example-bg);
+      color: var(--example-fg);
+    }
+
+    /*
+      Dark mode. The DarkMode controller in the constructor puts a "dark" attribute on this element
+      whenever the app is dark, and takes it off again -- so the two rules below are the whole of
+      it, and the rest of the stylesheet never mentions the theme.
+
+      Declare the colours as custom properties in one place, rather than restating every rule under :host([dark])
+    */
+    :host {
+      --example-bg: #f5f5f5;
+      --example-fg: #424242;
+    }
+    :host([dark]) {
+      --example-bg: #161b22;
+      --example-fg: rgba(255, 255, 255, 0.75);
+    }
+  `
+}
+```
+
+## Render
+
+The `render()` method is responsible for generating the HTML template.
+
+Refer to the [Lit Rendering Documentation](https://lit.dev/docs/components/rendering/) for more details.
+
+```js
+render() {
+  return html`<p>Hello from my template.</p>`;
+}
+```
+
+## Advanced Capabilities
+
+Your block can use much more advanced capabilities like [lifecycle methods](https://lit.dev/docs/components/lifecycle/), [handling events](https://lit.dev/docs/components/events/), work with the [ShadowDOM](https://lit.dev/docs/components/shadow-dom/), [templates expressions](https://lit.dev/docs/templates/overview/), [async tasks](https://lit.dev/docs/data/task/) and more.
+
+Refer to the [Lit Components Documentation](https://lit.dev/docs/components/overview/) for more details.
+
+## Worker
+
+For use cases where a worker is used to offload processing off the page's thread, it can be registered by naming it `worker.js` and place it alongside `component.js`.
+
+A worker is loaded by URL rather than imported, so it cannot be part of the bundle that starts it. Once installed in a wiki, it becomes accessible as `block-example.worker.js` (where `example` is the name of your block) alongside your block, e.g.:
+
+```js
+new URL('block-example.worker.js', import.meta.url).href
+```
+
+## Assets
+
+Your block may contain additional runtime data files like libraries, fonts, images, etc. where including them in the component directly doesn't make sense.
+
+Create an `assets.json` file alongside your `component.js` which contains the list of directories/files to bundle.
+
+Each property corresponds to a `"source": "destination"` pair. The source can be either a directory or a file, e.g.:
+
+```json
+{
+  "data/reference.csv": "reference.csv"
+  "images": "images",
+  "libs/foobar": "foobar",
+  "ics/current": "ics/current"
+}
+```
+
+All 4 directories/files will end up inside the package, and be served from `/_blocks/block-example/`.
+
+> [!CAUTION]
+> - **DO NOT** include `component.js` or `worker.js` in the `assets.json` file. They are already bundled automatically during packaging.
+> - **AVOID** bundling large files as part of the block. Large files should instead be hosted elsewhere and have your block load them remotely asynchronously.
+
+# Packaging
+
+Once your custom block is ready, it's time to package it so that it can be installed into a Wiki.js instance.
+
+From the `./blocks` directory, run the command *(replacing `example` with the name of your block)*:
+```sh
+npm run package -- block-example
+```
+
+A `.wkblock` file will be generated and stored in the `packages` subdirectory. It contains everything necessary to install your custom block.
+
 
