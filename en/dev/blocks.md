@@ -2,7 +2,7 @@
 title: Custom Blocks
 description: Create your own content blocks
 published: true
-date: '2026-09-19T07:30:54.114Z'
+date: '2026-09-19T07:32:12.521Z'
 tags:
   - dev
 editor: markdown
@@ -634,4 +634,4 @@ npm run package -- block-example
 
 A `.wkblock` file will be generated and stored in the `packages` subdirectory. It contains everything necessary to install your custom block.
 
-
+Refer to the [Administration :la:arrow-right: Content Blocks guide](/admin/blocks#install-a-custom-block) on how to install a `.wkblock` in a Wiki.js instance.
