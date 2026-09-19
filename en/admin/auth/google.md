@@ -2,7 +2,7 @@
 title: Google
 description: Authentication strategy
 published: true
-date: '2026-09-13T01:26:47.953Z'
+date: '2026-09-19T11:34:25.816Z'
 tags:
   - admin
   - auth
@@ -11,6 +11,17 @@ dateCreated: '2026-09-08T22:22:52.363Z'
 ---
 
 # Overview
+
+::block-infobox{name="Google" image="/_files/admin/auth/images/logo-google.svg" imageCaption="Google Logo"}
+```yaml
+Status:
+  Supported: true
+Specifications:
+  Protocol: OpenID Connect
+  Verified Emails: true
+Website: https://google.com
+```
+::
 
 Sign in with a Google account or a Google Workspace domain.
 
