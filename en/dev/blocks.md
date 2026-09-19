@@ -2,7 +2,7 @@
 title: Custom Blocks
 description: Create your own content blocks
 published: true
-date: '2026-09-19T07:32:41.264Z'
+date: '2026-09-19T10:38:15.032Z'
 tags:
   - dev
 editor: markdown
