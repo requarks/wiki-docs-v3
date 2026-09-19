@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-09-16T00:59:05.679Z'
+date: '2026-09-19T10:51:26.256Z'
 tags:
   - setup
 editor: markdown
@@ -27,7 +27,7 @@ Images are tagged to **major**, **major.minor** and **major.minor.patch** versio
 It's recommended to use the **major** version, unless you have a specific requirement to pin your deployment to specific version.
 
 > [!WARNING]
-> Note that Wiki.js 3.x is in beta and images are currently tagged as `3.0.0-beta`. The tags below won't work until the beta phase has started.
+> Note that Wiki.js 3.x is in beta and images are currently tagged as `3.0.0-beta`. The non-beta tags below won't work until the beta phase has ended.
 
 ```sh
 # -----------------------------
