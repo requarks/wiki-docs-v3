@@ -2,7 +2,7 @@
 title: Microsoft Entra ID
 description: Authentication strategy
 published: true
-date: '2026-09-13T01:27:18.789Z'
+date: '2026-09-19T11:44:01.151Z'
 tags:
   - admin
   - auth
@@ -11,6 +11,17 @@ dateCreated: '2026-09-08T22:28:46.438Z'
 ---
 
 # Overview
+
+::block-infobox{name="Microsoft Entra ID" image="/_files/admin/auth/images/logo-microsoft.svg" imageCaption="Microsoft Logo"}
+```yaml
+Status:
+  Supported: true
+Specifications:
+  Protocol: OpenID Connect
+  Verified Emails: true
+Website: https://microsoft.com
+```
+::
 
 Microsoft Entra ID (formerly Azure Active Directory) is Microsoft's cloud-based identity and access management service.
 
