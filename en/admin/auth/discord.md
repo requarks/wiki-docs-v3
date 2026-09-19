@@ -2,7 +2,7 @@
 title: Discord
 description: Authentication strategy
 published: true
-date: '2026-09-13T01:26:05.824Z'
+date: '2026-09-19T11:39:24.563Z'
 tags:
   - admin
   - auth
@@ -11,6 +11,17 @@ dateCreated: '2026-09-08T22:36:55.067Z'
 ---
 
 # Overview
+
+::block-infobox{name="Discord" image="/_files/admin/auth/images/logo-discord.svg" imageCaption="Discord Logo"}
+```yaml
+Status:
+  Supported: true
+Specifications:
+  Protocol: OAuth 2.0
+  Verified Emails: true
+Website: https://discord.com
+```
+::
 
 Sign in with a Discord account, optionally only from the members of one Discord server.
 
