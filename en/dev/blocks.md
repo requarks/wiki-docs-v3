@@ -2,7 +2,7 @@
 title: Custom Blocks
 description: Create your own content blocks
 published: true
-date: '2026-09-19T07:32:12.521Z'
+date: '2026-09-19T07:32:41.264Z'
 tags:
   - dev
 editor: markdown
@@ -30,7 +30,7 @@ Content blocks are built using web standards and offer infinite flexibility.
 # Base Templates
 
 :::block-tabs
-::block-tab{label="Minimal Example"}
+::block-tab{label="Minimal Example" header="2"}
 ```js title=component.js
 import { css, html, LitElement } from 'lit'
 
@@ -100,7 +100,7 @@ window.customElements.define('block-example', BlockExampleElement)
 ```
 ::
 
-::block-tab{label="Full Annotated Example"}
+::block-tab{label="Full Annotated Example" header="2"}
 ```js title=component.js
 /**
  * A starting point for a block of your own.
