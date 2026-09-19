@@ -2,7 +2,7 @@
 title: Custom Blocks
 description: Create your own content blocks
 published: true
-date: '2026-09-19T10:38:15.032Z'
+date: '2026-09-19T11:57:23.266Z'
 tags:
   - dev
 editor: markdown
@@ -509,7 +509,7 @@ A static `definition` object describes the configuration of the block.
 | template | Sample content that gets inserted between the opening and closing tags of your block. **Omit if not needed.** | `Your content here.` |
 | asciidocTemplate | Sample content but in AsciiDoc syntax. **Omit if the same as template or not needed.** |  |
 | contentEditor | The editor to use to edit the content of the block. **Omit unless your block has nested code that needs an editor.** |  |
-| props | An array of properties the user can configure when inserting your block. **See reference below.** | `[]` |
+| props | An array of properties the user can configure when inserting your block. **[See reference below](#props).** | `[]` |
 {.table-leading-col}
 
 ### Props
