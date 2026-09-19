@@ -2,7 +2,7 @@
 title: Requirements
 description: Prerequisites to install Wiki.js
 published: true
-date: '2026-09-16T00:58:58.105Z'
+date: '2026-09-19T02:57:33.934Z'
 tags:
   - setup
 editor: markdown
@@ -30,6 +30,9 @@ Linux systems should have **at least 1GB of RAM** to run Wiki.js. Windows and ma
 Storage requirements are based on the content you will enter. Wikis that consists almost exclusively of text are not likely to exceed a few megabytes. However, as soon as you upload images, videos or other files, you should plan your storage requirements accordingly.
 
 **At least 1 GB of storage** dedicated to Wiki.js is recommended.
+
+> [!NOTE]
+> The Wiki.js docker image image is quite large *(~850MB)* as it includes all extensions. This is not included in the recommendations above.
 
 ::
 
