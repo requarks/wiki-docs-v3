@@ -2,7 +2,7 @@
 title: Page History
 description: View, compare and restore revisions of a page
 published: true
-date: '2026-08-24T00:07:40.775Z'
+date: '2026-09-19T11:47:35.286Z'
 tags:
   - user-guide
 editor: markdown
