@@ -2,7 +2,7 @@
 title: Extensions
 description: Install extensions for extra functionality
 published: true
-date: '2026-08-20T07:07:01.130Z'
+date: '2026-09-19T11:49:38.605Z'
 tags:
   - admin
 editor: markdown
@@ -16,9 +16,7 @@ Extensions are optional dependencies you can install to enable more features on 
 > [!TIP]
 > The docker image includes all the extensions by default.
 
-# Available Extensions
-
-## Git
+# Git
 
 Distributed version control system.
 
@@ -26,7 +24,7 @@ Distributed version control system.
 
 - The Git storage module to synchronize content with a remote repository.
 
-## Pandoc
+# Pandoc
 
 Converts between markup formats.
 
@@ -34,7 +32,7 @@ Converts between markup formats.
 
 - Importing content from other wikis and formats such as MediaWiki, AsciiDoc, Textile or DocBook.
 
-## Puppeteer
+# Puppeteer
 
 Headless Chromium browser.
 
@@ -43,11 +41,9 @@ Headless Chromium browser.
 
 **Required for...**
 
-- Exporting pages as PDF.
-- Rendering content elements on the server, such as Mermaid or PlantUML diagrams.
 - Re-rendering pages on the server
 
-## Sharp
+# Sharp
 
 Processes and transforms images.
 
