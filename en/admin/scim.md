@@ -2,7 +2,7 @@
 title: SCIM Provisioning
 description: Let an identity provider create and deactivate accounts
 published: true
-date: '2026-09-20T06:52:09.776Z'
+date: '2026-09-20T06:54:08.211Z'
 tags:
   - admin
 editor: markdown
@@ -30,5 +30,8 @@ Some popular providers that can as a SCIM provisioner:
 {.table-leading-col}
 
 # Configuration
+
+> [!IMPORTANT]
+> Both the **SCIM Provisioning** and the **REST API** must be enabled for the endpoint to work. The **REST API** can be enabled under the **Administration Area** :la:arrow-right: **API Access**.
 
 *docs coming soon*
