@@ -2,7 +2,7 @@
 title: Permissions
 description: Manage access to your pages
 published: true
-date: '2026-09-20T03:31:10.782Z'
+date: '2026-09-20T06:55:07.087Z'
 tags:
   - admin
 editor: markdown
@@ -209,6 +209,7 @@ Global permissions represents administrative actions a user can perform. They ar
 > - manage:users
 > - write:groups
 > - manage:groups
+> - manage:scim
 > - manage:system
 
 ## Full Access
