@@ -2,7 +2,7 @@
 title: Redirects
 description: Create redirections to other pages or URLs
 published: true
-date: '2026-08-25T05:25:48.458Z'
+date: '2026-09-20T06:59:42.108Z'
 tags:
   - user-guide
   - editing
