@@ -1,8 +1,8 @@
 ---
-title: Redirects
-description: Create redirections to other pages or URLs
+title: Redirection Editor
+description: Create redirects to other pages or URLs
 published: true
-date: '2026-09-20T06:59:42.108Z'
+date: '2026-09-20T07:00:13.560Z'
 tags:
   - user-guide
   - editing
