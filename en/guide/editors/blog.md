@@ -1,8 +1,8 @@
 ---
-title: Blog
+title: Blog Editor
 description: Create a blog inside your wiki
 published: true
-date: '2026-09-20T06:59:22.590Z'
+date: '2026-09-20T06:59:57.167Z'
 tags:
   - user-guide
   - editing
