@@ -2,7 +2,7 @@
 title: SCIM Provisioning
 description: Let an identity provider create and deactivate accounts
 published: true
-date: '2026-09-20T06:54:08.211Z'
+date: '2026-09-22T17:44:57.284Z'
 tags:
   - admin
 editor: markdown
@@ -17,7 +17,7 @@ Wiki.js is compliant with the [SCIM 2.0 specification](https://scim.cloud/).
 
 ## SCIM Provisioners
 
-Some popular providers that can as a SCIM provisioner:
+Some popular providers that can act as a SCIM provisioner:
 | Identity Provider | Notes |
 | :-- | :-- |
 | Authentik | Using the built-in SCIM provider |
