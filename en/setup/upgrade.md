@@ -2,7 +2,7 @@
 title: Upgrade
 description: How to upgrade to the latest version
 published: true
-date: '2026-09-23T19:46:39.458Z'
+date: '2026-09-24T15:51:28.475Z'
 tags:
   - setup
 editor: markdown
@@ -66,6 +66,8 @@ docker compose up --force-recreate -d
 
 # Upgrade from 2.x
 
+## Migration Process
+
 Because of the major differences between 2.x and 3.x, an in-place upgrade is not possible. Instead, a migration process is provided to easily transfer all data between your old 2.x installation and a new 3.x installation.
 
 ::block-steps
@@ -86,6 +88,7 @@ Because of the major differences between 2.x and 3.x, an in-place upgrade is not
     2. Click the **Start Import** button to begin the import.
     3. Follow the progress on the right. Look out for any error.
     4. Review site settings and system configuration to ensure everything matches your expectations.
+::
 
 > [!IMPORTANT]
 > Some settings are deliberatly **NOT** imported:
@@ -96,5 +99,54 @@ Because of the major differences between 2.x and 3.x, an in-place upgrade is not
 
 > [!TIP]
 > The import is idempotent and can safely be performed multiple times. Existing items will be skipped unless the **Overwrite on conflict** option is checked.
+
+## Markdown Changes
+
+### Admonitions
+
+While the 2.x syntax (using CSS classes) is still supported, admonitions should now be written using the [more widely accepted syntax](/guide/markdown#admonitions). This brings compatibility with multiple providers, like GitHub.
+
+```md title="2.x Syntax"
+> Some warning text here
+{.is-warning}
+```
+
+```md title="3.x Syntax"
+> [!WARNING]
+> Some warning text here
+```
+
+### Tabsets
+
+Tabs are now declared using the [tabs content block](/guide/markdown#tabs). Existing tabsets using the older CSS syntax will be displayed as standard text rather than tabs.
+
+```md title="2.x Syntax"
+## Tabs {.tabset}
+### First Tab
+
+Any content here will go into the first tab...
+
+### Second Tab
+
+Any content here will go into the second tab...
+
+### Third Tab
+
+Any content here will go into the third tab...
+```
+
+```md title="3.x Syntax"
+:::block-tabs
+::block-tab{label="First Tab"}
+Any content here will go into the first tab...
 ::
 
+::block-tab{label="Second Tab"}
+Any content here will go into the second tab...
+::
+
+::block-tab{label="Third Tab"}
+Any content here will go into the third tab...
+::
+:::
+```
