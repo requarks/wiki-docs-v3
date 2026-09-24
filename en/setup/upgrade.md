@@ -2,7 +2,7 @@
 title: Upgrade
 description: How to upgrade to the latest version
 published: true
-date: '2026-09-24T15:51:28.475Z'
+date: '2026-09-24T16:27:01.673Z'
 tags:
   - setup
 editor: markdown
@@ -115,6 +115,46 @@ While the 2.x syntax (using CSS classes) is still supported, admonitions should 
 > [!WARNING]
 > Some warning text here
 ```
+
+### Diagrams
+
+Diagrams previously defined using a code block must be enclosed into their respective content block to be rendered:
+
+| Type | Content Block |
+| :-- | :-- |
+| katex | [block-katex](/guide/blocks/katex) |
+| kroki | [block-kroki](/guide/blocks/kroki) |
+| mermaid | [block-diagram](/guide/blocks/diagram) |
+| plantuml | [block-plantuml](/guide/blocks/plantuml) |
+{.table-leading-col}
+
+### Draw.io
+
+Draw.io diagrams must be converted to the XML format used by the [draw.io content block](/guide/blocks/drawio).
+
+**Existing diagrams must first be exported to XML from a Wiki.js 2.x instance:**
+
+::block-steps
+1. Edit the page containing the diagram and click the **Edit Diagram** button on the desired diagram to open the Draw.io editor.
+2. In the menu bar, go to **File** :la:arrow-right: **Export as** :la:arrow-right: **XML**
+3. Click **Export**
+4. Change the **Where** option to **Open in New Window**, then click **OK**.
+5. Copy the XML source code.
+::
+
+**On the new Wiki.js 3.x instance:**
+::block-steps
+1. Edit the page containing the old diagram and delete the old code block.
+2. In it's place, insert a Draw.io content block and replace the `INSERT XML CODE HERE` placeholder with the XML code you copied earlier:
+    ````md
+    ::block-drawio
+    ```xml
+    INSERT XML CODE HERE
+    ```
+    ::
+    ````
+3. Save the page.
+::
 
 ### Tabsets
 
