@@ -2,7 +2,7 @@
 title: Page Properties
 description: Edit page metadata and configuration
 published: true
-date: '2026-09-13T01:30:33.750Z'
+date: '2026-09-25T21:03:19.855Z'
 tags:
   - user-guide
   - editing
@@ -85,6 +85,10 @@ From the `livres/populaires` page in **French**, you can now change the locale t
 > [!NOTE]
 > A page can only be part of a single set of pages. You cannot select a page to be the alternate version of multiple pages from the same locale.
 
+## Show Links Tab
+
+Whether to display the Links tab, which shows a list of pages linking to this page (aka backlinks).
+
 # Scripts
 
 ## Javascript - On Load
@@ -125,6 +129,10 @@ The minimum and maximum header level to display in the table of contents. For ex
 ## Show Tags
 
 Whether to show the list of tags for this page.
+
+## Show Last Edited by
+
+Whether to show the author that made the last edit to this page.
 
 # Social
 
