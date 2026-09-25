@@ -2,7 +2,7 @@
 title: Page Operations
 description: Move, duplicate and delete pages
 published: true
-date: '2026-09-25T20:39:49.257Z'
+date: '2026-09-25T20:59:34.021Z'
 tags:
   - user-guide
 editor: markdown
@@ -29,7 +29,7 @@ You can delete a page by clicking the <kbd>:la:trash:</kbd> button in the bottom
 
 ![Page Delete Confirmation Dialog](/guide/images/page-delete-confirm.png =420x){.shadow-md}
 
-The page can still be recovered from the history, unless the history has been purged by an administrator. Refer to the [File Manager](/guide/file-manager) page on how to restore a page from the recycle bin.
+The page can still be recovered from the history, unless the history has been purged by an administrator. Refer to the [File Manager](/guide/file-manager#recycle-bin) page on how to restore a page from the recycle bin.
 
 > [!IMPORTANT]
 > You must have the **Delete Pages** (`delete:pages`) permission to use this feature.
