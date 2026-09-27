@@ -2,7 +2,7 @@
 title: Editors
 description: Manage editors and their configuration
 published: true
-date: '2026-09-18T05:55:47.553Z'
+date: '2026-09-27T23:54:28.986Z'
 tags:
   - admin
 editor: markdown
@@ -50,6 +50,7 @@ The markdown editor is the fully-featured flagship editor for Wiki.js.
 | Typographer | Enable some language-neutral replacement + quotes beautification. | :x: |  |
 | Quotes Styles | When typographer is enabled. Double + single quotes replacement pairs. e.g. `«»„“` for Russian, `„“‚‘` for German, etc. | `English` | *Only available when **Typographer** is enabled.* |
 | Underline Emphasis | Enable text underlining by using `_underline_` syntax. | :white_check_mark: |  |
+| Wikilinks | Link to pages by name with the `[[Page Name]]` and `[[Page Name|text]]` syntax. Spaces become dashes and letters are lowercased. | :white_check_mark: |  |
 {.table-leading-col}
 
 
