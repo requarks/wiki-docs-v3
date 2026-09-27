@@ -2,7 +2,7 @@
 title: File Manager
 description: Manage assets and pages
 published: true
-date: '2026-09-25T20:51:48.595Z'
+date: '2026-09-27T23:51:36.579Z'
 tags:
   - user-guide
 editor: markdown
@@ -22,7 +22,7 @@ dateCreated: '2026-08-20T07:53:30.407Z'
 Deleted pages can be restored from the **Recycle Bin**.
 
 > [!IMPORTANT]
-> You must have the `manage:pages` or `delete:pages` permission at the path where the page was prior to deletion in order to restore it.
+> You must have the `delete:pages` permission at the path where the page was prior to deletion in order to restore it.
 
 ## Restore a page
 
