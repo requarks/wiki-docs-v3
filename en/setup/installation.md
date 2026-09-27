@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-09-19T10:51:26.256Z'
+date: '2026-09-27T16:26:04.742Z'
 tags:
   - setup
 editor: markdown
@@ -138,7 +138,16 @@ This is however **NOT** a secure way to run containers. **Make sure you understa
 ::
 
 ::block-tab{label="Kubernetes" header="2" icon="mdi:kubernetes"}
-*Coming soon | Not available during beta phase*
+
+The chart is published as an OCI artifact, so no `helm repo add` is needed:
+
+> [!WARNING]
+> As this chart is still in beta, you **MUST** pass either the `--devel` flag or specify the version manually using the `--version 3.0.0-beta.<build>` flag.
+
+```sh
+helm install wiki oci://ghcr.io/requarks/charts/wiki --devel
+```
+
 ::
 
 ::block-tab{label="Guided Ubuntu Install" header="2" icon="mdi:ubuntu"}
