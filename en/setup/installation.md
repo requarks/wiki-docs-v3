@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-09-27T16:26:04.742Z'
+date: '2026-09-27T16:52:41.748Z'
 tags:
   - setup
 editor: markdown
@@ -139,6 +139,10 @@ This is however **NOT** a secure way to run containers. **Make sure you understa
 
 ::block-tab{label="Kubernetes" header="2" icon="mdi:kubernetes"}
 
+Deploys Wiki.js 3.x, with a bundled PostgreSQL 18 or an existing PostgreSQL 16+ server.
+
+### Quickstart
+
 The chart is published as an OCI artifact, so no `helm repo add` is needed:
 
 > [!WARNING]
@@ -148,6 +152,65 @@ The chart is published as an OCI artifact, so no `helm repo add` is needed:
 helm install wiki oci://ghcr.io/requarks/charts/wiki --devel
 ```
 
+### Values
+
+Customize your deployment using a `values.yaml` file.
+
+> [!NOTE] Reference
+> Refer to the [values.yaml](https://github.com/requarks/wiki/blob/scarlett/dev/chart/values.yaml) file for all supported values and the chart [README](https://github.com/requarks/wiki/tree/scarlett/dev/chart#readme) for documentation.
+
+You can then deploy the chart by referencing your values.yaml file:
+```sh
+helm install wiki oci://ghcr.io/requarks/charts/wiki --devel -f values.yaml
+```
+
+### Database
+
+By default, the chart includes a PostgreSQL database as a single StatefulSet replica for convenience. For serious deployments, you should instead deploy your own PostgreSQL cluster using an operator like [CloudNativePG](https://cloudnative-pg.io/).
+
+#### Using a Connection String
+
+Passed to the wiki as `DATABASE_URL`, so an operator's generated Secret can be used as it is. For CloudNativePG:
+
+```yaml
+postgresql:
+  enabled: false
+externalDatabase:
+  connectionString:
+    existingSecret: mycluster-app # created by CloudNativePG for the cluster's app database
+    existingSecretKey: uri
+```
+
+#### Using Individual Parameters
+
+Connection parameters can also be passed individually, e.g.:
+
+```yaml
+postgresql:
+  enabled: false
+externalDatabase:
+  parameters:
+    host: pg.databases.svc
+    database: wiki
+    user: wiki
+    existingSecret: wiki-db # key: password
+  ssl:
+    enabled: true
+    existingSecret: pg-ca # key: ca.crt, and optionally tls.crt / tls.key
+```
+
+### Gateway / Ingress
+
+The chart supports both the [Gateway API](https://kubernetes.io/docs/concepts/services-networking/gateway/) (via `httpRoute.enabled`) and [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/) (via `ingress.enabled`).
+
+In both cases, turn on **Administration Area :la:arrow-right: Security :la:arrow-right: Trust Proxy**, so the wiki records the visitor's address rather than the proxy's.
+
+> [!NOTE] Reference
+> Refer to the [values.yaml](https://github.com/requarks/wiki/blob/scarlett/dev/chart/values.yaml) file for all supported values and the chart [README](https://github.com/requarks/wiki/tree/scarlett/dev/chart#readme) for documentation.
+
+### Replicas
+
+The number of replicas (via `replicaCount`) can be raised freely. Replicas coordinate through the database, collaborative editing included, so no sticky sessions are needed. Replicas don't need to be able to talk to each other, however, they **MUST** both connect to the same database / cluster.
 ::
 
 ::block-tab{label="Guided Ubuntu Install" header="2" icon="mdi:ubuntu"}
