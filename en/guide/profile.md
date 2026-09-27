@@ -2,7 +2,7 @@
 title: Profile
 description: Manage your user info and settings
 published: true
-date: '2026-09-27T01:06:51.114Z'
+date: '2026-09-27T01:08:30.971Z'
 tags:
   - user-guide
 editor: markdown
@@ -63,6 +63,7 @@ Click the <kbd>:la:cog:</kbd> button to access the following options:
 ## Passkeys
 
 Passkeys are a replacement for passwords for a faster, easier and more secure login. It relies on your device existing biometrics *(phone, computer, security key)* to validate your identity.
+*This option may not be available if disabled by your wiki administrator.*
 
 > [!TIP]
 > Passkeys are the most secure authentication method and can be used as an alternative to other methods.
