@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-09-27T16:52:41.748Z'
+date: '2026-09-27T16:56:48.009Z'
 tags:
   - setup
 editor: markdown
@@ -149,8 +149,14 @@ The chart is published as an OCI artifact, so no `helm repo add` is needed:
 > As this chart is still in beta, you **MUST** pass either the `--devel` flag or specify the version manually using the `--version 3.0.0-beta.<build>` flag.
 
 ```sh
+# Deploy Chart
 helm install wiki oci://ghcr.io/requarks/charts/wiki --devel
+
+# Monitor Deployment
+kubectl rollout status deployment/wiki
 ```
+
+Unless `admin.email` and `admin.password` are set, the first login is `admin@example.com` / `12345678`, and it has to be changed.
 
 ### Values
 
