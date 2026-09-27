@@ -2,7 +2,7 @@
 title: Profile
 description: Manage your user info and settings
 published: true
-date: '2026-08-24T00:04:31.940Z'
+date: '2026-09-27T01:06:51.114Z'
 tags:
   - user-guide
 editor: markdown
@@ -20,6 +20,7 @@ dateCreated: '2026-08-14T07:19:08.906Z'
 | :-- | :-- | :-- |
 | Display Name | Your full name; shown when authoring content *(e.g. pages, comments, etc.)*. |  |
 | Email Address | The email address used for login. | Read-only. *Cannot be edited.* |
+| Handle | The unique @name people mention you by in comments. 3 to 32 letters, digits, hyphens or underscores. Leave it empty to not be mentionable. |  |
 | Location | Your city and country; shown on your profile page. |  |
 | Job Title | Your position in your organization; shown on your profile page. |  |
 | Pronouns | Let people know which pronouns should they use when referring to you. |  |
@@ -27,7 +28,7 @@ dateCreated: '2026-08-14T07:19:08.906Z'
 
 ## Preferences
 
-| Field | Description | Options |
+| Field | Description | Options / Default |
 | :-- | :-- | :-- |
 | Timezone | Set your timezone to display local time correctly. | *The default value is set by your administrator.* |
 | Date Format | Set your preferred format to display dates. | *The default value is set by your administrator.* |
@@ -37,9 +38,12 @@ dateCreated: '2026-08-14T07:19:08.906Z'
 
 ## Accessibility
 
-| Field | Description | Options |
+| Field | Description | Options / Default |
 | :-- | :-- | :-- |
 | Color Vision Deficiency | Alter the color scheme of certain UI elements to account for certain color vision dificiencies. | **None** *(default)*, Protanopia, Deuteranopia or Tritanopia |
+| Reduce Motion | Turn off most animations and smooth scrolling. Always on if your operating system asks for reduced motion. | **Follow System** *(default)* or On |
+| Underline Links | Always underline links in page content, so they can be told apart without relying on color. | **Off** *(default)* or On |
+| Content Text Size | Enlarge the text of page content. The rest of the interface keeps its size. | **Default** *(default)*, Large or Larger |
 {.table-leading-col}
 
 # Avatar
