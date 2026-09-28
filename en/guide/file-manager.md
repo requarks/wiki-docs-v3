@@ -2,7 +2,7 @@
 title: File Manager
 description: Manage assets and pages
 published: true
-date: '2026-09-27T23:51:36.579Z'
+date: '2026-09-28T00:45:39.802Z'
 tags:
   - user-guide
 editor: markdown
@@ -16,6 +16,8 @@ dateCreated: '2026-08-20T07:53:30.407Z'
 # Upload Assets
 
 # View Options
+
+# Visualize Pages
 
 # Recycle Bin
 
