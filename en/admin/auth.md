@@ -2,7 +2,7 @@
 title: Authentication
 description: Configure the authentication settings of your wiki
 published: true
-date: '2026-09-30T19:40:12.467Z'
+date: '2026-09-30T19:49:55.580Z'
 tags:
   - admin
   - auth
@@ -33,6 +33,7 @@ However, it's possible add 3rd-party authentication providers in order to login 
 If you're using a reverse proxy (like nginx, Cloudflare Tunnels, etc.), you need to perform this extra configuration so that the callback URL is using the correct values.
 
 - Ensure **Trust X-Forwarded-\* Proxy Headers** is enabled under **Administration Area** :la:arrow-right: **Security**. Failure to do so will result in the redirect URL being incorrectly set to the "http" protocol and potentially an internal hostname.
+- If you have multiple sites, you need to allow the hostnames for all your sites in the authentication provider.
 - In your reverse proxy configuration, ensure the hostname and protocol X-Fowarded-* headers are properly set.
 
 ### NGINX Example
