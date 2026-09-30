@@ -2,7 +2,7 @@
 title: Requirements
 description: Prerequisites to install Wiki.js
 published: true
-date: '2026-09-19T02:57:33.934Z'
+date: '2026-09-30T20:12:13.340Z'
 tags:
   - setup
 editor: markdown
@@ -103,3 +103,55 @@ The following browsers are supported:
 
 > [!NOTE]
 > Only the latest stable version of these browsers are supported.
+
+# Reverse Proxy
+
+If your wiki is going to be behind a reverse proxy (e.g. nginx, Cloudflare Tunnel, etc.), you **MUST** ensure the appropriate X-Forwarded-* and Websockets headers are set. This is necessary for authentication, rate limiting, audit log and live collaboration to function correctly.
+
+### Cloudflare Tunnel
+
+Cloudflare already forwards the necessary headers.
+
+### NGINX
+
+Here's an example configuration with the necessary headers set:
+
+```nginx linesHighlight="23-25,28-29,32-34"
+server {
+  listen 80;
+  server_name wiki.example.com;
+  return 301 https://$host$request_uri;
+}
+
+server {
+  listen 443 ssl;
+  http2 on;
+  server_name wiki.example.com;
+
+  ssl_certificate     /etc/ssl/wiki.example.com/fullchain.pem;
+  ssl_certificate_key /etc/ssl/wiki.example.com/privkey.pem;
+
+  # At least the wiki's uploadMaxFileSize (10 MB by default); nginx's own default is 1 MB
+  client_max_body_size 10m;
+
+  location / {
+    proxy_pass http://127.0.0.1:3000;
+    proxy_http_version 1.1;
+
+    # Auth callback URL is built from these
+    proxy_set_header Host              $host;
+    proxy_set_header X-Forwarded-Host  $host;
+    proxy_set_header X-Forwarded-Proto $scheme;
+
+    # Client address, for rate limiting, the audit log and metrics access
+    proxy_set_header X-Real-IP         $remote_addr;
+    proxy_set_header X-Forwarded-For   $proxy_add_x_forwarded_for;
+
+    # Websockets: real-time collaboration (/_collab)
+    proxy_set_header Upgrade    $http_upgrade;
+    proxy_set_header Connection $connection_upgrade;
+    proxy_read_timeout 3600s;
+  }
+}
+```
+
