@@ -2,7 +2,7 @@
 title: Requirements
 description: Prerequisites to install Wiki.js
 published: true
-date: '2026-09-30T20:12:13.340Z'
+date: '2026-09-30T20:25:40.491Z'
 tags:
   - setup
 editor: markdown
@@ -106,7 +106,16 @@ The following browsers are supported:
 
 # Reverse Proxy
 
-If your wiki is going to be behind a reverse proxy (e.g. nginx, Cloudflare Tunnel, etc.), you **MUST** ensure the appropriate X-Forwarded-* and Websockets headers are set. This is necessary for authentication, rate limiting, audit log and live collaboration to function correctly.
+If your wiki is going to be behind a reverse proxy (e.g. nginx, Cloudflare Tunnel, etc.), you **MUST** ensure that:
+
+- The following X-Forwarded-* are set:
+  - `X-Forwarded-Proto`
+  - `X-Forwarded-Host`
+  - `X-Forwarded-For`
+- WebSockets upgrades are allowed through.
+- Once Wiki.js is installed, go to **Administration Area** :la:arrow-right: **Security** and enable the **Trust X-Forwarded-\* Proxy Headers** option.
+
+This is necessary for authentication, rate limiting, audit log and live collaboration to function correctly. See below for example reverse proxy configurations:
 
 ### Cloudflare Tunnel
 
@@ -116,7 +125,7 @@ Cloudflare already forwards the necessary headers.
 
 Here's an example configuration with the necessary headers set:
 
-```nginx linesHighlight="23-25,28-29,32-34"
+```nginx linesHighlight="23-25,28,31-33"
 server {
   listen 80;
   server_name wiki.example.com;
@@ -144,8 +153,7 @@ server {
     proxy_set_header X-Forwarded-Proto $scheme;
 
     # Client address, for rate limiting, the audit log and metrics access
-    proxy_set_header X-Real-IP         $remote_addr;
-    proxy_set_header X-Forwarded-For   $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-For   $remote_addr;
 
     # Websockets: real-time collaboration (/_collab)
     proxy_set_header Upgrade    $http_upgrade;
