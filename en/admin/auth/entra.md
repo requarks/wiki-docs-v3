@@ -2,7 +2,7 @@
 title: Microsoft Entra ID
 description: Authentication strategy
 published: true
-date: '2026-09-19T11:44:01.151Z'
+date: '2026-09-30T19:47:53.338Z'
 tags:
   - admin
   - auth
@@ -73,7 +73,8 @@ Leave the strategy's **Groups Claim** as `groups` unless you emit it under anoth
 # Configuration
 
 > [!TIP]
-> To obtain the **Authorization Callback URL**, you must first click **Apply** on the newly added strategy *(It won't be active until you check the **Enabled** checkbox)*. The endpoint URL will then be displayed at the bottom of the page under the **Configuration Reference** section.
+> - To obtain the **Authorization Callback URL**, you must first click **Apply** on the newly added strategy *(It won't be active until you check the **Enabled** checkbox)*. The endpoint URL will then be displayed at the bottom of the page under the **Configuration Reference** section.
+> - **If you're using a reverse proxy**, make sure you followed the authentication [Reverse Proxies](/admin/auth#reverse-proxies) section first. Otherwise the callback URL may be incorrect and result in authentication failures.
 
 | Property | Description | Default Value |
 | :-- | :-- | :-- |
