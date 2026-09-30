@@ -2,7 +2,7 @@
 title: Authentication
 description: Configure the authentication settings of your wiki
 published: true
-date: '2026-09-30T19:49:55.580Z'
+date: '2026-09-30T20:33:33.777Z'
 tags:
   - admin
   - auth
@@ -36,44 +36,4 @@ If you're using a reverse proxy (like nginx, Cloudflare Tunnels, etc.), you need
 - If you have multiple sites, you need to allow the hostnames for all your sites in the authentication provider.
 - In your reverse proxy configuration, ensure the hostname and protocol X-Fowarded-* headers are properly set.
 
-### NGINX Example
-
-```nginx linesHighlight="22-25"
-server {
-  listen 80;
-  server_name wiki.example.com;
-  return 301 https://$host$request_uri;
-}
-
-server {
-  listen 443 ssl;
-  http2 on;
-  server_name wiki.example.com;
-
-  ssl_certificate     /etc/ssl/wiki.example.com/fullchain.pem;
-  ssl_certificate_key /etc/ssl/wiki.example.com/privkey.pem;
-
-  # At least the wiki's uploadMaxFileSize (10 MB by default); nginx's own default is 1 MB
-  client_max_body_size 10m;
-
-  location / {
-    proxy_pass http://127.0.0.1:3000;
-    proxy_http_version 1.1;
-
-    # Auth callback URL is built from these
-    proxy_set_header Host              $host;
-    proxy_set_header X-Forwarded-Host  $host;
-    proxy_set_header X-Forwarded-Proto $scheme;
-
-    # Client address, for rate limiting, the audit log and metrics access
-    proxy_set_header X-Real-IP         $remote_addr;
-    proxy_set_header X-Forwarded-For   $proxy_add_x_forwarded_for;
-
-    # Websockets: real-time collaboration (/_collab)
-    proxy_set_header Upgrade    $http_upgrade;
-    proxy_set_header Connection $connection_upgrade;
-    proxy_read_timeout 3600s;
-  }
-}
-```
-
+Refer to the requirements [Reverse Proxy](/setup/requirements#reverse-proxy) section for more details and examples.
