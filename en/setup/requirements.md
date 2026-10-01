@@ -2,7 +2,7 @@
 title: Requirements
 description: Prerequisites to install Wiki.js
 published: true
-date: '2026-09-30T20:25:40.491Z'
+date: '2026-10-01T01:32:46.322Z'
 tags:
   - setup
 editor: markdown
@@ -108,7 +108,7 @@ The following browsers are supported:
 
 If your wiki is going to be behind a reverse proxy (e.g. nginx, Cloudflare Tunnel, etc.), you **MUST** ensure that:
 
-- The following X-Forwarded-* are set:
+- The following X-Forwarded-* headers are set:
   - `X-Forwarded-Proto`
   - `X-Forwarded-Host`
   - `X-Forwarded-For`
