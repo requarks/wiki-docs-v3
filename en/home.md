@@ -2,7 +2,7 @@
 title: Wiki.js
 description: Official Documentation for 3.x
 published: true
-date: '2026-10-04T22:04:16.675Z'
+date: '2026-10-04T23:02:49.708Z'
 tags: []
 editor: markdown
 dateCreated: '2026-08-10T07:05:24.182Z'
@@ -14,8 +14,12 @@ Wiki.js is a powerful knowledge base platform to write and share documentation.
 
 Wiki.js is quick and easy to install. You'll be up and running in no time.
 
-::block-index{path="setup" columns="3" showIcons="true"}
-::
+- [:mdi:file-document-check-outline: Requirements *Prerequisites to install Wiki.js*](/setup/requirements)
+- [:mdi:package-variant-closed: Installation *How to install Wiki.js*](/setup/install)
+- [:mdi:cog-outline: Configuration Reference *Detailed configuration options for Wiki.js*](/setup/config)
+- [:mdi:archive-arrow-up-outline: Upgrade *How to upgrade to the latest version*](/setup/upgrade)
+- [:mdi:fire: Release Notes *Changelog of each release*](https://github.com/requarks/wiki/releases)
+{.links-list}
 
 # User Guide
 
