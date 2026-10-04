@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-10-04T22:40:12.864Z'
+date: '2026-10-04T22:42:57.852Z'
 tags:
   - setup
 editor: markdown
@@ -510,7 +510,8 @@ There are several solutions to run Wiki.js as a background service. We'll focus 
     ```
 ::
 
-*Note:* You can see the logs of the service using `journalctl -u wiki`
+> [!TIP]
+> You can see the logs of the service using `journalctl -u wiki`
 
 ::
 
