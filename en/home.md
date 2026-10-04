@@ -2,7 +2,7 @@
 title: Wiki.js
 description: Official Documentation for 3.x
 published: true
-date: '2026-10-04T22:02:48.802Z'
+date: '2026-10-04T22:04:16.675Z'
 tags: []
 editor: markdown
 dateCreated: '2026-08-10T07:05:24.182Z'
@@ -21,19 +21,19 @@ Wiki.js is quick and easy to install. You'll be up and running in no time.
 
 Check out the [basics](/guide/basics) page to get started.
 
-::block-index{path="guide" limit="50"}
+::block-index{path="guide" limit="50" columns="3"}
 ::
 
 # Administration
 
 The administration area [dashboard](/admin/dashboard) is your entry point to managing your wiki.
 
-::block-index{path="admin" limit="50"}
+::block-index{path="admin" limit="50" columns="3"}
 ::
 
 # Developers
 
 Read the [getting started](/dev) page to setup your development environment first.
 
-::block-index{path="dev"}
+::block-index{path="dev" columns="3"}
 ::
