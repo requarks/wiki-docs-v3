@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-10-04T22:33:55.247Z'
+date: '2026-10-04T22:40:12.864Z'
 tags:
   - setup
 editor: markdown
@@ -437,6 +437,8 @@ Common causes:
 
 Before going any further, make sure your system meets all the [requirements](/setup/requirements). The following instructions assume Node.js and PostgreSQL are already installed.
 
+#### Setup
+
 ::block-steps
 1. Download the latest version of Wiki.js:
     ```sh
@@ -465,6 +467,50 @@ Before going any further, make sure your system meets all the [requirements](/se
     node --no-experimental-webstorage backend
     ```
 ::
+
+#### Run as service
+
+There are several solutions to run Wiki.js as a background service. We'll focus on **systemd** in this guide as it's available in nearly all linux distributions.
+
+::block-steps
+1. Create a new file named `wiki.service` inside directory `/etc/systemd/system`.
+    ```sh
+    nano /etc/systemd/system/wiki.service
+    ```
+2. Paste the following contents (assuming your wiki is installed at `/var/wiki`):
+    ```ini
+    [Unit]
+    Description=Wiki.js
+    After=network.target
+
+    [Service]
+    Type=simple
+    ExecStart=/usr/bin/node --no-experimental-webstorage backend
+    Restart=always
+    # Consider creating a dedicated user for Wiki.js here instead of using nobody:
+    User=nobody
+    Environment=NODE_ENV=production
+    WorkingDirectory=/var/wiki
+
+    [Install]
+    WantedBy=multi-user.target
+    ```
+3. Save the service file ( <kbd>CTRL</kbd>+<kbd>X</kbd>, followed by <kbd>Y</kbd> ).
+4. Reload systemd:
+    ```sh
+    systemctl daemon-reload
+    ```
+5. Run the service:
+    ```sh
+    systemctl start wiki
+    ```
+6. Enable the service on system boot.
+    ```sh
+    systemctl enable wiki
+    ```
+::
+
+*Note:* You can see the logs of the service using `journalctl -u wiki`
 
 ::
 
