@@ -2,7 +2,7 @@
 title: Configuration Reference
 description: Detailed configuration options for Wiki.js
 published: true
-date: '2026-10-04T23:37:02.261Z'
+date: '2026-10-04T23:37:34.237Z'
 tags:
   - setup
 editor: markdown
@@ -23,7 +23,7 @@ Configuration parameters that are specific to a local instance are defined in a 
 | bindIP | The network interface IP to listen on. Use 0.0.0.0 to listen on all. | `0.0.0.0` |
 | logLevel | The severity level for logging (error, warn, info or debug) | `info` |
 | logFormat | Output format for logging (default or json) | `default` |
-| dataPath | Writable data path used for cache, temporary user uploads, etc.<br>**You should not backup this directory.** <br>Everything is stored in the database unless you explicitly use a local path for content storage via the **Administration Area** :la:arrow-right: **Storage**. | `./data` |
+| dataPath | Writable data path used for cache, temporary user uploads, etc.<br>**You should not backup this directory.** <br>Everything is stored in the database unless you explicitly use a local path for content storage via the **Administration Area** :la:arrow-right: **Storage** page. | `./data` |
 | icons.apiUrl | Iconify API to use for icons lookup. | `https://api.iconify.design` |
 | bodyParserLimit | Maximum size of API requests body that can be parsed, in bytes. Does not affect file uploads. | `5242880` *(5mb)* |
 | scheduler.workers | Leave 'auto' for one fewer than the CPUs available to the process (if higher than 1). | `auto` |
