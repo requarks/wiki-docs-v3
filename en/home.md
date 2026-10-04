@@ -2,7 +2,7 @@
 title: Wiki.js
 description: Official Documentation for 3.x
 published: true
-date: '2026-09-18T07:41:27.148Z'
+date: '2026-10-04T22:02:48.802Z'
 tags: []
 editor: markdown
 dateCreated: '2026-08-10T07:05:24.182Z'
@@ -14,7 +14,7 @@ Wiki.js is a powerful knowledge base platform to write and share documentation.
 
 Wiki.js is quick and easy to install. You'll be up and running in no time.
 
-::block-index{path="setup" showIcons="true"}
+::block-index{path="setup" columns="3" showIcons="true"}
 ::
 
 # User Guide
