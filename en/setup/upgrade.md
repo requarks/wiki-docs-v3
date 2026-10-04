@@ -2,7 +2,7 @@
 title: Upgrade
 description: How to upgrade to the latest version
 published: true
-date: '2026-09-24T16:27:01.673Z'
+date: '2026-10-04T06:21:33.584Z'
 tags:
   - setup
 editor: markdown
@@ -48,7 +48,21 @@ docker compose up --force-recreate -d
 ::
 
 ::block-tab{label="Kubernetes" header="2" icon="mdi:kubernetes"}
-*Coming soon*
+Use the `helm upgrade` command to upgrade to the latest version:
+
+> [!WARNING]
+> As this chart is still in beta, you **MUST** pass either the `--devel` flag or specify the version manually using the `--version 3.0.0-beta.<build>` flag.
+
+```sh
+# Without a values.yaml file:
+helm upgrade wiki oci://ghcr.io/requarks/charts/wiki --devel --reset-then-reuse-values
+
+# With a values.yaml file:
+helm upgrade wiki oci://ghcr.io/requarks/charts/wiki --devel -f values.yaml
+```
+
+> [!NOTE] Reference
+> Refer to the [values.yaml](https://github.com/requarks/wiki/blob/scarlett/dev/chart/values.yaml) file for all supported values and the chart [README](https://github.com/requarks/wiki/tree/scarlett/dev/chart#readme) for documentation.
 ::
 
 ::block-tab{label="Linux" header="2" icon="mdi:linux"}
