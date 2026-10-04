@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-10-02T02:21:06.180Z'
+date: '2026-10-04T22:33:55.247Z'
 tags:
   - setup
 editor: markdown
@@ -435,15 +435,109 @@ Common causes:
 > [!TIP]
 > It's **highly recommended** to use containers, even if you're not familiar with Docker. See the [Guided Ubuntu Install](#guided-ubuntu-install) section for an easy, no docker knowledge required, guide to install Wiki.js on a Ubuntu machine.
 
-*Coming soon | Not available during beta phase*
+Before going any further, make sure your system meets all the [requirements](/setup/requirements). The following instructions assume Node.js and PostgreSQL are already installed.
+
+::block-steps
+1. Download the latest version of Wiki.js:
+    ```sh
+    wget https://github.com/requarks/wiki/releases/latest/download/wiki-js.tar.gz
+    ```
+
+2. Extract the package to the final destination of your choice:
+    ```sh
+    mkdir wiki
+    tar xzf wiki-js.tar.gz -C ./wiki
+    cd ./wiki
+    ```
+
+3. Rename the sample config file to `config.yml`:
+    ```sh
+    mv config.sample.yml config.yml
+    ```
+
+4. Edit the config file and fill in your database and port settings (refer to the [configuration reference](/setup/config)):
+    ```sh
+    nano config.yml
+    ```
+
+4. Run Wiki.js
+    ```sh
+    node --no-experimental-webstorage backend
+    ```
+::
+
 ::
 
 ::block-tab{label="macOS" header="2" icon="mdi:apple"}
-*Coming soon | Not available during beta phase*
+
+Before going any further, make sure your system meets all the [requirements](/setup/requirements). The following instructions assume Node.js and PostgreSQL are already installed.
+
+::block-steps
+1. Open **Terminal**.
+2. Download the latest version of Wiki.js:
+    ```sh
+    wget https://github.com/requarks/wiki/releases/latest/download/wiki-js.tar.gz
+    ```
+
+3. Extract the package to the final destination of your choice:
+    ```sh
+    mkdir wiki
+    tar xzf wiki-js.tar.gz -C ./wiki
+    cd ./wiki
+    ```
+
+4. Rename the sample config file to `config.yml`:
+    ```sh
+    mv config.sample.yml config.yml
+    ```
+
+5. Edit the config file and fill in your database and port settings (refer to the [configuration reference](/setup/config)):
+    ```sh
+    nano config.yml
+    ```
+
+6. Run Wiki.js
+    ```sh
+    node --no-experimental-webstorage backend
+    ```
+::
+
 ::
 
 ::block-tab{label="Windows" header="2" icon="mdi:microsoft-windows"}
-*Coming soon | Not available during beta phase*
+
+Before going any further, make sure your system meets all the [requirements](/setup/requirements). The following instructions assume Node.js and PostgreSQL are already installed.
+
+::block-steps
+1. Open a **Powershell** prompt in administrator mode.
+2. Download the latest version of Wiki.js:
+    ```powershell
+    Invoke-WebRequest -Uri "https://github.com/requarks/wiki/releases/latest/download/wiki-js-windows.tar.gz" -OutFile "wiki-js.tar.gz"
+    ```
+
+3. Extract the package to the final destination of your choice:
+    ```powershell
+    New-Item -Path "C:\" -Name "wiki" -ItemType "directory"
+    tar xzf wiki-js.tar.gz -C "C:\wiki"
+    cd C:\wiki
+    ```
+
+4. Rename the sample config file to `config.yml`:
+    ```powershell
+    Rename-Item -Path config.sample.yml -NewName config.yml
+    ```
+
+5. Edit the config file and fill in your database and port settings (refer to the [configuration reference](/setup/config)):
+    ```powershell
+    notepad .\config.yml
+    ```
+
+6. Run Wiki.js
+    ```powershell
+    node --no-experimental-webstorage backend
+    ```
+::
+
 ::
 :::
 
