@@ -2,7 +2,7 @@
 title: Configuration Reference
 description: Detailed configuration options for Wiki.js
 published: true
-date: '2026-10-05T00:09:50.609Z'
+date: '2026-10-05T00:11:33.539Z'
 tags:
   - setup
 editor: markdown
@@ -29,7 +29,7 @@ Configuration parameters that are specific to a local instance are defined in a 
 | dataPath | Writable data path used for cache, temporary user uploads, etc.<br>**You should not backup this directory.** <br>Everything is stored in the database unless you explicitly use a local path for content storage via the **Administration Area** :la:arrow-right: **Storage** page. | `./data` |
 | icons.apiUrl | Iconify API to use for icons lookup. | `https://api.iconify.design` |
 | bodyParserLimit | Maximum size of API requests body that can be parsed, in bytes. Does not affect file uploads. | `5242880` *(5mb)* |
-| scheduler.workers | Leave 'auto' for one fewer than the CPUs available to the process (if higher than 1). | `auto` |
+| scheduler.workers | The maximum number of workers that can be used for background tasks. Use `auto` for one fewer than the CPUs available to the process (if higher than 1). | `auto` |
 | pool | Any PostgreSQL connection pool options from https://node-postgres.com/apis/pool | `{}` |
 {.table-leading-col}
 
