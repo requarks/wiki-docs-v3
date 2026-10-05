@@ -2,7 +2,7 @@
 title: Wiki.js
 description: Official Documentation for 3.x
 published: true
-date: '2026-10-04T23:03:01.451Z'
+date: '2026-10-05T03:28:30.953Z'
 tags: []
 editor: markdown
 dateCreated: '2026-08-10T07:05:24.182Z'
@@ -14,12 +14,31 @@ Wiki.js is a powerful knowledge base platform to write and share documentation.
 
 Wiki.js is quick and easy to install. You'll be up and running in no time.
 
-- [:mdi:file-document-check-outline: Requirements *Prerequisites to install Wiki.js*](/setup/requirements)
-- [:mdi:package-variant-closed: Installation *How to install Wiki.js*](/setup/installation)
-- [:mdi:cog-outline: Configuration Reference *Detailed configuration options for Wiki.js*](/setup/config)
-- [:mdi:archive-arrow-up-outline: Upgrade *How to upgrade to the latest version*](/setup/upgrade)
-- [:mdi:fire: Release Notes *Changelog of each release*](https://github.com/requarks/wiki/releases)
-{.links-list}
+::block-links-grid
+```yaml
+- title: Requirements
+  url: /setup/requirements
+  description: Prerequisites to install Wiki.js
+  icon: 'mdi:file-document-check-outline'
+  color: blue
+- title: Installation
+  url: /setup/installation
+  description: How to install Wiki.js
+  icon: 'mdi:package-variant-closed'
+  color: teal
+- title: Upgrade
+  url: /setup/upgrade
+  description: How to upgrade to the latest version
+  icon: 'mdi:package-variant-closed'
+  color: violet
+- title: Release Notes
+  url: https://github.com/requarks/wiki/releases
+  description: Changelog of each release
+  icon: 'mdi:fire'
+  color: rose
+```
+::
+
 
 # User Guide
 
