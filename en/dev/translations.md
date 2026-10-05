@@ -2,7 +2,7 @@
 title: Translations
 description: Help translating Wiki.js in your language!
 published: true
-date: '2026-09-15T08:13:16.675Z'
+date: '2026-10-05T03:04:32.804Z'
 tags:
   - dev
 editor: markdown
@@ -15,6 +15,10 @@ We are always looking for translation contributors to make Wiki.js accessible in
 You can join our [CrowdIn project](https://translate.js.wiki) below to gain access to the translation tools. No coding required!
 
 Go to [translate.js.wiki](https://translate.js.wiki) to get started.
+
+> [!IMPORTANT]
+> Only contribute translations in your native language or a language you speak fluently.
+> Please do **NOT** submit machine-translated text.
 
 ## Adding a language
 
