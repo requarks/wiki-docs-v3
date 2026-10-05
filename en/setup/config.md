@@ -2,7 +2,7 @@
 title: Configuration Reference
 description: Detailed configuration options for Wiki.js
 published: true
-date: '2026-10-05T01:57:40.489Z'
+date: '2026-10-05T02:01:08.959Z'
 tags:
   - setup
 editor: markdown
