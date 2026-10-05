@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-10-04T22:42:57.852Z'
+date: '2026-10-05T06:49:10.144Z'
 tags:
   - setup
 editor: markdown
@@ -464,8 +464,13 @@ Before going any further, make sure your system meets all the [requirements](/se
 
 4. Run Wiki.js
     ```sh
+    # First run only (replace the email address with your own):
+    ADMIN_EMAIL=admin@example.com node --no-experimental-webstorage backend
+
+    # Subsequent runs:
     node --no-experimental-webstorage backend
     ```
+5. Navigate to `http://localhost:3000` *(or the IP / port you configured)*, and login using the email address you entered in the last step and the password `12345678`. You'll be prompted to choose a new password.
 ::
 
 #### Run as service
@@ -545,8 +550,13 @@ Before going any further, make sure your system meets all the [requirements](/se
 
 6. Run Wiki.js
     ```sh
+    # First run only (replace the email address with your own):
+    ADMIN_EMAIL=admin@example.com node --no-experimental-webstorage backend
+
+    # Subsequent runs:
     node --no-experimental-webstorage backend
     ```
+7. Navigate to `http://localhost:3000` *(or the IP / port you configured)*, and login using the email address you entered in the last step and the password `12345678`. You'll be prompted to choose a new password.
 ::
 
 ::
@@ -580,9 +590,14 @@ Before going any further, make sure your system meets all the [requirements](/se
     ```
 
 6. Run Wiki.js
-    ```powershell
+    ```sh
+    # First run only (replace the email address with your own):
+    $env:ADMIN_EMAIL = "admin@example.com"; node --no-experimental-webstorage backend
+
+    # Subsequent runs:
     node --no-experimental-webstorage backend
     ```
+7. Navigate to `http://localhost:3000` *(or the IP / port you configured)*, and login using the email address you entered in the last step and the password `12345678`. You'll be prompted to choose a new password.
 ::
 
 ::
