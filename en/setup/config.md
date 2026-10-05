@@ -2,7 +2,7 @@
 title: Configuration Reference
 description: Detailed configuration options for Wiki.js
 published: true
-date: '2026-10-04T23:57:06.804Z'
+date: '2026-10-05T00:04:32.799Z'
 tags:
   - setup
 editor: markdown
@@ -29,5 +29,6 @@ Configuration parameters that are specific to a local instance are defined in a 
 | icons.apiUrl | Iconify API to use for icons lookup. | `https://api.iconify.design` |
 | bodyParserLimit | Maximum size of API requests body that can be parsed, in bytes. Does not affect file uploads. | `5242880` *(5mb)* |
 | scheduler.workers | Leave 'auto' for one fewer than the CPUs available to the process (if higher than 1). | `auto` |
+| pool | Any PostgreSQL connection pool options from https://node-postgres.com/apis/pool | `{}` |
 {.table-leading-col}
 
