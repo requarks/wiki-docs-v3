@@ -2,7 +2,7 @@
 title: Configuration Reference
 description: Detailed configuration options for Wiki.js
 published: true
-date: '2026-10-05T00:04:32.799Z'
+date: '2026-10-05T00:06:51.539Z'
 tags:
   - setup
 editor: markdown
@@ -21,6 +21,7 @@ Configuration parameters that are specific to a local instance are defined in a 
 | db.db | PostgreSQL database name to connect to. | `wiki` |
 | db.schema | PostgreSQL schema to use. | `wiki` |
 | db.ssl | Whether to use SSL to connect to the PostgreSQL database. | `false` |
+| db.sslOptions | Any of the TLS options from https://nodejs.org/api/tls.html#tls_tls_createsecurecontext_options | `{ auto: true }` |
 | bindIP | The network interface IP to listen on. Use 0.0.0.0 to listen on all. | `0.0.0.0` |
 | logLevel | The severity level for logging (error, warn, info or debug) | `info` |
 | logFormat | Output format for logging (default or json) | `default` |
