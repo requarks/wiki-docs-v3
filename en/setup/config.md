@@ -2,7 +2,7 @@
 title: Configuration Reference
 description: Detailed configuration options for Wiki.js
 published: true
-date: '2026-10-05T00:06:51.539Z'
+date: '2026-10-05T00:09:50.609Z'
 tags:
   - setup
 editor: markdown
@@ -22,10 +22,10 @@ Configuration parameters that are specific to a local instance are defined in a 
 | db.schema | PostgreSQL schema to use. | `wiki` |
 | db.ssl | Whether to use SSL to connect to the PostgreSQL database. | `false` |
 | db.sslOptions | Any of the TLS options from https://nodejs.org/api/tls.html#tls_tls_createsecurecontext_options | `{ auto: true }` |
-| bindIP | The network interface IP to listen on. Use 0.0.0.0 to listen on all. | `0.0.0.0` |
-| logLevel | The severity level for logging (error, warn, info or debug) | `info` |
-| logFormat | Output format for logging (default or json) | `default` |
-| offline | Skips all automated internet calls (updates, locales and icons fetch) when true. | `false` |
+| bindIP | The network interface IP to listen on. Use `0.0.0.0` to listen on all. | `0.0.0.0` |
+| logLevel | The severity level for logging (`error`, `warn`, `info` or `debug`) | `info` |
+| logFormat | Output format for logging (`default` or `json`) | `default` |
+| offline | Skips all automated internet calls (updates, locales and icons fetch) when true. For use when your instance cannot connect to the internet. | `false` |
 | dataPath | Writable data path used for cache, temporary user uploads, etc.<br>**You should not backup this directory.** <br>Everything is stored in the database unless you explicitly use a local path for content storage via the **Administration Area** :la:arrow-right: **Storage** page. | `./data` |
 | icons.apiUrl | Iconify API to use for icons lookup. | `https://api.iconify.design` |
 | bodyParserLimit | Maximum size of API requests body that can be parsed, in bytes. Does not affect file uploads. | `5242880` *(5mb)* |
