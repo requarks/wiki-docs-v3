@@ -2,7 +2,7 @@
 title: Configuration Reference
 description: Detailed configuration options for Wiki.js
 published: true
-date: '2026-10-05T00:11:33.539Z'
+date: '2026-10-05T01:57:40.489Z'
 tags:
   - setup
 editor: markdown
@@ -10,6 +10,8 @@ dateCreated: '2026-10-04T23:14:51.519Z'
 ---
 
 Configuration parameters that are specific to a local instance are defined in a `config.yml` file. All other settings are defined via the [Administration Area](/admin/dashboard).
+
+# Reference
 
 | Parameter | Description | Default Value |
 | :-- | :-- | :-- |
@@ -33,3 +35,35 @@ Configuration parameters that are specific to a local instance are defined in a 
 | pool | Any PostgreSQL connection pool options from https://node-postgres.com/apis/pool | `{}` |
 {.table-leading-col}
 
+# Env Variables Interpolation
+
+Any value can be replaced with `$(ENV_NAME)` to be interpolated at runtime with an environment variable. A default value can also be provided using the `$(ENV_NAME:default_value)` syntax.
+
+### Example
+
+Using the following `config.yml` example:
+```yaml
+db:
+  host: '$(DB_HOST)'
+  port: $(DB_PORT)
+  user: '$(DB_USER:wiki)'
+  pass: '$(DB_PASS)'
+```
+and the following environment variables:
+- DB_HOST=db.example.com
+- DB_PORT=5432
+- DB_PASS=secret
+{.grid-list}
+
+would result in the following config being used at runtime:
+```yaml
+db:
+  host: 'db.example.com'
+  port: 5432
+  user: 'wiki'
+  pass: 'secret'
+```
+
+# Sample Config File
+
+The latest version of the complete sample config file can be found on [GitHub](https://github.com/requarks/wiki/blob/scarlett/config.sample.yml).
