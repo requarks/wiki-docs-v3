@@ -2,7 +2,7 @@
 title: Upgrade
 description: How to upgrade to the latest version
 published: true
-date: '2026-10-04T06:21:33.584Z'
+date: '2026-10-06T23:37:07.921Z'
 tags:
   - setup
 editor: markdown
@@ -66,15 +66,131 @@ helm upgrade wiki oci://ghcr.io/requarks/charts/wiki --devel -f values.yaml
 ::
 
 ::block-tab{label="Linux" header="2" icon="mdi:linux"}
-*Coming soon*
+
+> [!NOTE]
+> The steps below assume an installation in a subdirectory named `wiki`.
+
+::block-steps
+1. Stop the running Wiki.js instance.
+2. Make a backup of your config.yml file:
+    ```sh
+    cp wiki/config.yml ~/config.yml.bak
+    ```
+
+3. Delete the application folder:
+    > [!WARNING]
+    > If you're storing assets on disk in a subdirectory of the installation (using the [Local File System](/admin/storage/disk) storage option), make sure to either **create a backup** of it first, or **exclude it** from the delete operation.
+    ```sh
+    rm -rf wiki/*
+    ```
+
+4. Download the latest version of Wiki.js:
+    ```sh
+    wget https://github.com/requarks/wiki/releases/latest/download/wiki-js.tar.gz
+    ```
+
+5. Extract the package to the original location:
+    ```sh
+    tar xzf wiki-js.tar.gz -C ./wiki
+    cd ./wiki
+    ```
+
+6. Restore your `config.yml` back to its original location:
+    ```sh
+    cp ~/config.yml.bak ./config.yml
+    ```
+
+7. Run Wiki.js
+    ```sh
+    node --no-experimental-webstorage backend
+    ```
+::
+
 ::
 
 ::block-tab{label="macOS" header="2" icon="mdi:apple"}
-*Coming soon*
+
+> [!NOTE]
+> The steps below assume an installation in a subdirectory named `wiki`.
+
+::block-steps
+1. Stop the running Wiki.js instance.
+2. Make a backup of your config.yml file:
+    ```sh
+    cp wiki/config.yml ~/config.yml.bak
+    ```
+
+3. Delete the application folder:
+    > [!WARNING]
+    > If you're storing assets on disk in a subdirectory of the installation (using the [Local File System](/admin/storage/disk) storage option), make sure to either **create a backup** of it first, or **exclude it** from the delete operation.
+    ```sh
+    rm -rf wiki/*
+    ```
+
+4. Download the latest version of Wiki.js:
+    ```sh
+    wget https://github.com/requarks/wiki/releases/latest/download/wiki-js.tar.gz
+    ```
+
+5. Extract the package to the original location:
+    ```sh
+    tar xzf wiki-js.tar.gz -C ./wiki
+    cd ./wiki
+    ```
+
+6. Restore your `config.yml` back to its original location:
+    ```sh
+    cp ~/config.yml.bak ./config.yml
+    ```
+
+7. Run Wiki.js
+    ```sh
+    node --no-experimental-webstorage backend
+    ```
+::
+
 ::
 
 ::block-tab{label="Windows" header="2" icon="mdi:microsoft-windows"}
-*Coming soon*
+
+> [!NOTE]
+> The steps below assume an installation at folder location `C:\wiki`.
+
+::block-steps
+1. Open a **Powershell** prompt in administrator mode.
+2. Make a backup of `config.yml` file.
+    ```powershell
+    Copy-Item "C:\wiki\config.yml" -Destination "C:\config.yml.bak"
+    ```
+
+3. Delete the application folder contents.
+    > [!WARNING]
+    > If you're storing assets on disk in a subdirectory of the installation (using the [Local File System](/admin/storage/disk) storage option), make sure to either **create a backup** of it first, or **exclude it** from the delete operation.
+    ```powershell
+    Clear-Content "C:\wiki\*"
+    ```
+
+4. Download the latest version of Wiki.js:
+    ```powershell
+    Invoke-WebRequest -Uri "https://github.com/Requarks/wiki/releases/latest/download/wiki-js.tar.gz" -OutFile "wiki-js.tar.gz"
+    ```
+
+5. Extract the package to the original location:
+    ```powershell
+    tar xzf wiki-js.tar.gz -C "C:\wiki"
+    cd C:\wiki
+    ```
+
+6. Copy your `config.yml` backup file back to it's original location.
+    ```powershell
+    Copy-Item "C:\config.yml.bak" -Destination "C:\wiki\config.yml"
+    ```
+7. Run Wiki.js
+    ```powershell
+    node --no-experimental-webstorage backend
+    ```
+::
+
 ::
 :::
 
