@@ -2,7 +2,7 @@
 title: Upgrade
 description: How to upgrade to the latest version
 published: true
-date: '2026-10-06T23:37:28.720Z'
+date: '2026-10-06T23:51:02.484Z'
 tags:
   - setup
 editor: markdown
@@ -95,12 +95,19 @@ helm upgrade wiki oci://ghcr.io/requarks/charts/wiki --devel -f values.yaml
     cd ./wiki
     ```
 
-6. Restore your `config.yml` back to its original location:
+6. **Only if you're running `arm64` platform**, rebuild the backend dependencies *(the package already includes `amd64` dependencies)*:
+    ```powershell
+    cd backend
+    npm ci --omit=dev
+    cd ..
+    ```
+
+7. Restore your `config.yml` back to its original location:
     ```sh
     cp ~/config.yml.bak ./config.yml
     ```
 
-7. Run Wiki.js
+8. Run Wiki.js
     ```sh
     node --no-experimental-webstorage backend
     ```
@@ -138,12 +145,19 @@ helm upgrade wiki oci://ghcr.io/requarks/charts/wiki --devel -f values.yaml
     cd ./wiki
     ```
 
-6. Restore your `config.yml` back to its original location:
+6. Rebuild backend dependencies for macOS:
+    ```powershell
+    cd backend
+    npm ci --omit=dev
+    cd ..
+    ```
+
+7. Restore your `config.yml` back to its original location:
     ```sh
     cp ~/config.yml.bak ./config.yml
     ```
 
-7. Run Wiki.js
+8. Run Wiki.js
     ```sh
     node --no-experimental-webstorage backend
     ```
@@ -181,11 +195,19 @@ helm upgrade wiki oci://ghcr.io/requarks/charts/wiki --devel -f values.yaml
     cd C:\wiki
     ```
 
-6. Copy your `config.yml` backup file back to it's original location.
+6. Rebuild backend dependencies for Windows:
+    ```powershell
+    cd backend
+    npm ci --omit=dev
+    cd ..
+    ```
+
+7. Copy your `config.yml` backup file back to it's original location.
     ```powershell
     Copy-Item "C:\config.yml.bak" -Destination "C:\wiki\config.yml"
     ```
-7. Run Wiki.js
+
+8. Run Wiki.js
     ```powershell
     node --no-experimental-webstorage backend
     ```
