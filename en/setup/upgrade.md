@@ -2,7 +2,7 @@
 title: Upgrade
 description: How to upgrade to the latest version
 published: true
-date: '2026-10-06T23:51:02.484Z'
+date: '2026-10-06T23:51:27.450Z'
 tags:
   - setup
 editor: markdown
@@ -95,7 +95,7 @@ helm upgrade wiki oci://ghcr.io/requarks/charts/wiki --devel -f values.yaml
     cd ./wiki
     ```
 
-6. **Only if you're running `arm64` platform**, rebuild the backend dependencies *(the package already includes `amd64` dependencies)*:
+6. **Only if you're running on the `arm64` platform**, rebuild the backend dependencies *(the package already includes `amd64` dependencies)*:
     ```powershell
     cd backend
     npm ci --omit=dev
