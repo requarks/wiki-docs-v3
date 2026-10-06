@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-10-05T06:49:10.144Z'
+date: '2026-10-06T20:49:59.562Z'
 tags:
   - setup
 editor: markdown
@@ -12,9 +12,9 @@ dateCreated: '2026-08-10T07:53:50.826Z'
 > [!IMPORTANT]
 > Before going any further, make sure you meet all the [requirements](/setup/requirements).
 
-- [Install using Containers](#install-using-containers) *(Docker/Kubernetes)*{.text-sm} - **recommended**
-- [Install on Host](#install-on-host) *(Linux/macOS/Windows)*{.text-sm}
-- [Install using Cloud Images](#install-using-cloud-images) *(DigitalOcean)*{.text-sm}
+- [Install using Containers](#install-using-containers) *( [Docker](#docker) / [Kubernetes](#kubernetes) )*{.text-sm} - **recommended**
+- [Install on Host](#install-on-host) *( [Linux](#linux) / [macOS](#macos) / [Windows](#windows) )*{.text-sm}
+- [Install using Cloud Images](#install-using-cloud-images) *( [DigitalOcean](#digitalocean), [PikaPods](#pikapods), etc. )*{.text-sm}
 
 # Install using Containers
 
