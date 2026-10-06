@@ -2,7 +2,7 @@
 title: Upgrade
 description: How to upgrade to the latest version
 published: true
-date: '2026-10-06T23:51:27.450Z'
+date: '2026-10-06T23:58:07.841Z'
 tags:
   - setup
 editor: markdown
@@ -111,6 +111,8 @@ helm upgrade wiki oci://ghcr.io/requarks/charts/wiki --devel -f values.yaml
     ```sh
     node --no-experimental-webstorage backend
     ```
+
+9. Under the **Administration Area** :la:arrow-right: **Extensions** page, install any missing extensions that were previously installed.
 ::
 
 ::
@@ -161,6 +163,8 @@ helm upgrade wiki oci://ghcr.io/requarks/charts/wiki --devel -f values.yaml
     ```sh
     node --no-experimental-webstorage backend
     ```
+
+9. Under the **Administration Area** :la:arrow-right: **Extensions** page, install any missing extensions that were previously installed.
 ::
 
 ::
@@ -211,6 +215,8 @@ helm upgrade wiki oci://ghcr.io/requarks/charts/wiki --devel -f values.yaml
     ```powershell
     node --no-experimental-webstorage backend
     ```
+
+9. Under the **Administration Area** :la:arrow-right: **Extensions** page, install any missing extensions that were previously installed.
 ::
 
 ::
