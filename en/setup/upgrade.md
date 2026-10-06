@@ -2,7 +2,7 @@
 title: Upgrade
 description: How to upgrade to the latest version
 published: true
-date: '2026-10-06T23:37:07.921Z'
+date: '2026-10-06T23:37:28.720Z'
 tags:
   - setup
 editor: markdown
@@ -172,7 +172,7 @@ helm upgrade wiki oci://ghcr.io/requarks/charts/wiki --devel -f values.yaml
 
 4. Download the latest version of Wiki.js:
     ```powershell
-    Invoke-WebRequest -Uri "https://github.com/Requarks/wiki/releases/latest/download/wiki-js.tar.gz" -OutFile "wiki-js.tar.gz"
+    Invoke-WebRequest -Uri "https://github.com/requarks/wiki/releases/latest/download/wiki-js.tar.gz" -OutFile "wiki-js.tar.gz"
     ```
 
 5. Extract the package to the original location:
