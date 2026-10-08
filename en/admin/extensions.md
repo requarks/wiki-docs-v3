@@ -2,7 +2,7 @@
 title: Extensions
 description: Install extensions for extra functionality
 published: true
-date: '2026-09-19T11:49:38.605Z'
+date: '2026-10-08T05:41:48.186Z'
 tags:
   - admin
 editor: markdown
@@ -16,40 +16,11 @@ Extensions are optional dependencies you can install to enable more features on 
 > [!TIP]
 > The docker image includes all the extensions by default.
 
-# Git
-
-Distributed version control system.
-
-**Required for...**
-
-- The Git storage module to synchronize content with a remote repository.
-
-# Pandoc
-
-Converts between markup formats.
-
-**Required for...**
-
-- Importing content from other wikis and formats such as MediaWiki, AsciiDoc, Textile or DocBook.
-
-# Puppeteer
-
-Headless Chromium browser.
-
-> [!WARNING]
-> Installing it downloads a Chromium build of a few hundred megabytes, unless the server already provides one through `PUPPETEER_EXECUTABLE_PATH`.
-
-**Required for...**
-
-- Re-rendering pages on the server
-
-# Sharp
-
-Processes and transforms images.
-
-**Required for...**
-
-- Cropping/resizing user avatars.
-- Generating thumbnails of uploaded images.
-- Optimizing site assets such as logos and background images.
+| Extension | Description | Used For | Importance |
+| :-- | :-- | :-- | :-- |
+| Git | Distributed version control system. | The Git storage module to synchronize content with a remote repository. | :orange_circle: **Optional**<br>*Only if you're using the Git storage module*{.text-sm} |
+| Pandoc | Converts text between markup formats. | Importing content from other wikis and formats such as MediaWiki, Textile or DocBook. | :orange_circle: **Optional**<br>*Only if you're importing non-markdown / asciidoc content*{.text-sm} |
+| Puppeteer | Headless chromium browser. | Rendering pages on the server (e.g. importing content via storage modules / other wikis, re-rendering pages in the background). *Note that installing it downloads a Chromium build of a few hundred megabytes.* | :green_circle: **Highly recommended** |
+| Sharp | Processes and transforms images. | Rendering image thumbnails, resizing images, optimizing site assets (logos/backgrounds), etc. | :green_circle: **Highly recommended** |
+{.table-leading-col}
 
