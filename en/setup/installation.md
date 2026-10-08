@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-10-06T20:49:59.562Z'
+date: '2026-10-08T05:27:24.742Z'
 tags:
   - setup
 editor: markdown
@@ -471,6 +471,8 @@ Before going any further, make sure your system meets all the [requirements](/se
     node --no-experimental-webstorage backend
     ```
 5. Navigate to `http://localhost:3000` *(or the IP / port you configured)*, and login using the email address you entered in the last step and the password `12345678`. You'll be prompted to choose a new password.
+
+6. Go the **Administration Area** :la:arrow-right: **Extensions** page and make sure the necessary [extensions](/admin/extensions) are installed, especially **Sharp** and **Puppeteer** which enables basic capabilities.
 ::
 
 #### Run as service
@@ -557,6 +559,8 @@ Before going any further, make sure your system meets all the [requirements](/se
     node --no-experimental-webstorage backend
     ```
 7. Navigate to `http://localhost:3000` *(or the IP / port you configured)*, and login using the email address you entered in the last step and the password `12345678`. You'll be prompted to choose a new password.
+
+8. Go the **Administration Area** :la:arrow-right: **Extensions** page and make sure the necessary [extensions](/admin/extensions) are installed, especially **Sharp** and **Puppeteer** which enables basic capabilities.
 ::
 
 ::
@@ -598,6 +602,8 @@ Before going any further, make sure your system meets all the [requirements](/se
     node --no-experimental-webstorage backend
     ```
 7. Navigate to `http://localhost:3000` *(or the IP / port you configured)*, and login using the email address you entered in the last step and the password `12345678`. You'll be prompted to choose a new password.
+
+8. Go the **Administration Area** :la:arrow-right: **Extensions** page and make sure the necessary [extensions](/admin/extensions) are installed, especially **Sharp** and **Puppeteer** which enables basic capabilities.
 ::
 
 ::
