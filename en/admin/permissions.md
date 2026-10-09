@@ -2,7 +2,7 @@
 title: Permissions
 description: Manage access to your pages
 published: true
-date: '2026-09-26T18:56:09.127Z'
+date: '2026-10-09T05:45:53.739Z'
 tags:
   - admin
 editor: markdown
@@ -43,6 +43,11 @@ The enformement mode determines whether the rule grants or deny permissions.
 
 One or more permissions can be selected for a page rule:
 
+### Uses the matching pattern
+
+> [!NOTE]
+> The following permissions are tied to the [**site**](#site-filter), [**locale**](#locale-filter) and [**matching pattern**](#matching-pattern). 
+
 | Name | Key | Description | Note |
 | :-- | :-- | :-- | :-- |
 | Read Pages | `read:pages` | Can view and search pages. | |
@@ -62,6 +67,17 @@ One or more permissions can be selected for a page rule:
 | Read Comments | `read:comments` | Can view page comments. | |
 | Write Comments | `write:comments` | Can post new comments on pages, edit and delete their own comments. | |
 | Manage Comments | `manage:comments` | Can edit and delete any existing page comments. | |
+{.table-leading-col}
+
+### Doesn't use the matching pattern
+
+> [!NOTE]
+> The following permissions are tied to the [**site**](#site-filter) and [**locale**](#locale-filter) only. Pattern matching is ignored as it doesn't apply to their use case.
+
+| Name | Key | Description | Note |
+| :-- | :-- | :-- | :-- |
+| Read Glossary | `read:glossary` | Can view the glossary and read terms definitions. | |
+| Manage Glossary | `manage:glossary` | Can create, edit and delete glossary entries. | |
 {.table-leading-col}
 
 ## Site Filter
