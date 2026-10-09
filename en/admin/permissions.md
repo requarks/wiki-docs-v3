@@ -2,7 +2,7 @@
 title: Permissions
 description: Manage access to your pages
 published: true
-date: '2026-10-09T05:45:53.739Z'
+date: '2026-10-09T05:48:19.606Z'
 tags:
   - admin
 editor: markdown
@@ -57,7 +57,7 @@ One or more permissions can be selected for a page rule:
 | Delete Pages | `delete:pages` | Can delete existing pages and restore them from the recycle bin. | |
 | Assign Tags | `write:tags` | Can assign / unassign tags on pages. | |
 | Use CSS | `write:styles` | Can insert CSS styles in pages. | |
-| Use JavaScript | `write:scripts` | Can insert JavaScript in pages. | :warning: **Use with caution as users could inject malicious scripts.** |
+| Use JavaScript | `write:scripts` | Can insert JavaScript in pages. | :warning: **Use with caution as users could inject malicious scripts into pages.**<br>Do **NOT** enable if you don't fully trust your users. |
 | View Page Source | `read:source` | Can view the pages source. | |
 | View Page History | `read:history` | Can view previous versions of pages. | |
 | Manage Navigation | `manage:navigation` | Can change how pages here resolve their sidebar, and edit the menu itself where this rule also covers the page the menu belongs to. | |
