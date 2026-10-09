@@ -2,7 +2,7 @@
 title: Page Properties
 description: Edit page metadata and configuration
 published: true
-date: '2026-09-25T21:03:19.855Z'
+date: '2026-10-09T06:47:45.304Z'
 tags:
   - user-guide
   - editing
@@ -88,6 +88,10 @@ From the `livres/populaires` page in **French**, you can now change the locale t
 ## Show Links Tab
 
 Whether to display the Links tab, which shows a list of pages linking to this page (aka backlinks).
+
+## Link Glossary Terms
+
+Whether to link glossary terms *(first occurence of each)* on the page. Only terms that have auto-linking enabled will be linked.
 
 # Scripts
 
