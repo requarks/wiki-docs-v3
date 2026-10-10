@@ -2,7 +2,7 @@
 title: Markdown
 description: Syntax to write Markdown content
 published: true
-date: '2026-09-23T21:10:47.577Z'
+date: '2026-10-10T02:52:14.504Z'
 tags:
   - user-guide
   - editing
@@ -765,6 +765,12 @@ This sentence[^1] needs a few footnotes.[^2]
 ::
 :::
 
+# Glossary
+
+Glossary terms are automatically linked in all pages when the **Auto-Link** option is enabled in the [Glossary](/guide/glossary).
+
+To manually link to a glossary term, use the `[[Glossary:TERM]]` syntax (where `TERM` is the term to link to).
+
 # Icons
 
 To display the icon picker dialog, click the <kbd>:mdi:seed-plus-outline:</kbd> button in the left toolbar.
@@ -905,6 +911,13 @@ Headers inside tabs are still displayed in the table of contents.
 > ```
 > will act the same as a H2 header. Clicking it in the table of contents will automatically scroll to it and reveal it if not currently focused.
 
+# Wikilinks
+
+Pages can be linked using the `[[page-path]]` syntax, popularized by MediaWiki. Link to pages by name with the `[[Page Name]]` and `[[Page Name|text]]` syntax. Spaces become dashes and letters are lowercased.
+
+> [!NOTE]
+> The **Wikilinks** feature must be enabled in the [Markdown editor configuration](/admin/editors#markdown-editor) for this syntax to be supported.
+
 # Decorate Syntax
 
 You can apply CSS classes to elements by using the `{.class-name}` syntax.
@@ -950,3 +963,5 @@ You can specify the correct target by using the decorate syntax `<!-- {tag-name:
 ```
 
 The `.is-info` class will now correctly be applied to the blockquote element.
+
+
