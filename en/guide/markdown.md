@@ -2,7 +2,7 @@
 title: Markdown
 description: Syntax to write Markdown content
 published: true
-date: '2026-10-10T02:52:14.504Z'
+date: '2026-10-10T02:53:44.095Z'
 tags:
   - user-guide
   - editing
@@ -913,7 +913,9 @@ Headers inside tabs are still displayed in the table of contents.
 
 # Wikilinks
 
-Pages can be linked using the `[[page-path]]` syntax, popularized by MediaWiki. Link to pages by name with the `[[Page Name]]` and `[[Page Name|text]]` syntax. Spaces become dashes and letters are lowercased.
+Pages can be linked using the `[[page-path]]` syntax, popularized by MediaWiki.
+
+Link to pages by path with the `[[Page Name]]` and `[[Page Name|text]]` syntax. Spaces become dashes and letters are lowercased. For example, writing `[[Foo Bar]]` will link to a page at path `/foo-bar`.
 
 > [!NOTE]
 > The **Wikilinks** feature must be enabled in the [Markdown editor configuration](/admin/editors#markdown-editor) for this syntax to be supported.
