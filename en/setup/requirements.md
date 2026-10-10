@@ -2,7 +2,7 @@
 title: Requirements
 description: Prerequisites to install Wiki.js
 published: true
-date: '2026-10-01T01:32:46.322Z'
+date: '2026-10-10T02:54:49.041Z'
 tags:
   - setup
 editor: markdown
@@ -91,7 +91,7 @@ Supported versions:
 - **Node.js 26**
 
 > [!WARNING]
-> Earlier versions of Node.js are **NOT** compatible and will **NOT** work. It requires various features introduced in Node.js 26.
+> Earlier versions of Node.js are **NOT** compatible and will **NOT** work. Wiki.js requires various features introduced in Node.js 26.
 
 # Supported Browsers
 
