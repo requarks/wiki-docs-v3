@@ -2,7 +2,7 @@
 title: File Manager
 description: Manage assets and pages
 published: true
-date: '2026-09-28T00:45:39.802Z'
+date: '2026-10-11T23:56:27.200Z'
 tags:
   - user-guide
 editor: markdown
@@ -10,6 +10,10 @@ dateCreated: '2026-08-20T07:53:30.407Z'
 ---
 
 # Overview
+
+The File Manager lists all pages and assets stored in your wiki site.
+
+![File Manager](/guide/images/file-manager.png =1000x){.decor-shadow .decor-rounded}
 
 # Folders
 
