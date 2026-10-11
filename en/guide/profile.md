@@ -2,7 +2,7 @@
 title: Profile
 description: Manage your user info and settings
 published: true
-date: '2026-09-27T01:08:30.971Z'
+date: '2026-10-11T06:35:35.804Z'
 tags:
   - user-guide
 editor: markdown
@@ -71,3 +71,7 @@ Passkeys are a replacement for passwords for a faster, easier and more secure lo
 # Groups
 
 See the groups you are assigned to. Note that only an administrator can change your group assigment(s).
+
+# Notifications
+
+Select which notifications to receive and whether to receive them via in-app and/or email.
