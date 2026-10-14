@@ -2,7 +2,7 @@
 title: Markdown
 description: Syntax to write Markdown content
 published: true
-date: '2026-10-10T02:53:44.095Z'
+date: '2026-10-14T02:42:55.846Z'
 tags:
   - user-guide
   - editing
@@ -777,7 +777,21 @@ To display the icon picker dialog, click the <kbd>:mdi:seed-plus-outline:</kbd> 
 
 Upon selecting an icon, it's shortcode will be inserted at the current cursor position.
 
-For example, `:mdi:candy:` will render as :mdi:candy:. 
+For example, `:mdi:candy:` will render as :mdi:candy:.
+
+# Inline Math Expressions
+
+> [!IMPORTANT]
+> - You must have the KaTeX or Mathjax content block [enabled](/admin/blocks) to use inline latex expressions.
+> - In the [Markdown editor configuration](/admin/editors#markdown-editor), the **Inline Math** setting must be set to either **KaTeX** *(default)* or **Mathjax**.
+
+Enclose your math expression in ``` $`your math expression here`$ ```. Notice the backticks at the start and end of the expression. Both the dollar signs and backticks are required.
+
+```md title="Example"
+Some inline $`x^2`$ math expression.
+```
+
+For block expressions, use the [KaTeX](/guide/blocks/katex) or [Mathjax](/guide/blocks/mathjax) content blocks instead.
 
 # Tables
 
