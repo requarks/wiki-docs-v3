@@ -2,7 +2,7 @@
 title: Editors
 description: Manage editors and their configuration
 published: true
-date: '2026-10-14T02:51:48.064Z'
+date: '2026-10-14T02:53:14.411Z'
 tags:
   - admin
 editor: markdown
@@ -24,7 +24,10 @@ The alternative plain-text editor using AsciiDoc syntax.
 
 ### Configuration
 
-*There's no configuration for this editor.*
+| Parameter | Description | Default Value | Notes |
+| :-- | :-- | :-- | :-- |
+| Math | Typeset LaTeX written with `latexmath:[…]` or `stem:[…]` within a line of text, and in `[latexmath]` or `[stem]` blocks, with the KaTeX or MathJax content block. stem always means LaTeX, and AsciiMath is shown as its source. When off, every formula is shown as its source. | `KaTeX` | That block ([KaTeX](/guide/blocks/katex) or [Mathjax](/guide/blocks/mathjax)) must also be enabled under Content Blocks. |
+{.table-leading-col}
 
 # Blog
 
