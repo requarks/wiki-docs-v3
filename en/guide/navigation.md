@@ -2,7 +2,7 @@
 title: Navigation
 description: Manage the sidebar navigation
 published: true
-date: '2026-09-19T07:37:03.303Z'
+date: '2026-10-14T08:02:14.006Z'
 tags:
   - user-guide
 editor: markdown
@@ -86,6 +86,19 @@ Any change is only persisted upon clicking the <kbd>**:la:check: Save**</kbd> bu
 To create submenus, first create a normal link menu item to act as a the submenu trigger. Then create a second link menu item under it and click the <kbd>:mdi:format-indent-increase: Nest Item</kbd> to indent it. It is now nested under the first link and will only appear upon clicking the first link. You can nest any number of menu items.
 
 A nested link without a normal link or another nested link above it will be shown in red as invalid.
+
+## Menu
+
+The **Menu** type shows a link (or combo Link + Chevron) to another navigation menu, allowing users to quickly navigate to children menus without leaving the page. It acts similar to the **Browse...** menu but more customizable.
+
+| Property | Description |
+| :-- | :-- |
+| Label | Text to display on the menu item. |
+| Icon | Icon or image to display to the left of the menu item. Click the :la:icons: button to open the icon picker. |
+| Menu Target | Navigation menu to open, by the path of the page / folder it belongs to. |
+| Show Both Link + Chevron | Whether the item also links to the page at the target menu's location, with a separate chevron to open the menu. |
+| Visibility | Whether to show the menu item to everyone or just selected groups. |
+{.table-leading-col}
 
 ## Separator
 
