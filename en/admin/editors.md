@@ -2,7 +2,7 @@
 title: Editors
 description: Manage editors and their configuration
 published: true
-date: '2026-10-14T02:51:36.566Z'
+date: '2026-10-14T02:51:48.064Z'
 tags:
   - admin
 editor: markdown
@@ -46,11 +46,11 @@ The markdown editor is the fully-featured flagship editor for Wiki.js.
 | Auto-linking | Automatically convert URLs into clickable links. | :white_check_mark: |  |
 | Auto Line Breaks | Automatically add linebreaks within paragraphs. | :white_check_mark: |  |
 | Code Block Tab Width | Amount of spaces for each tab in code blocks. | `2` |  |
+| Inline Math | Typeset TeX written as ``` $`E = mc^2`$ ``` within a line of text, with the KaTeX or MathJax content block. That block must also be enabled under Content Blocks. A dollar sign without the backticks is never treated as math. | `KaTeX` | That block ([KaTeX](/guide/blocks/katex) or [Mathjax](/guide/blocks/mathjax)) must also be enabled under Content Blocks. |
 | MultiMarkdown Table | Enable support for MultiMarkdown Table features. | :white_check_mark: |  |
 | Typographer | Enable some language-neutral replacement + quotes beautification. | :x: |  |
 | Quotes Styles | When typographer is enabled. Double + single quotes replacement pairs. e.g. `«»„“` for Russian, `„“‚‘` for German, etc. | `English` | *Only available when **Typographer** is enabled.* |
 | Underline Emphasis | Enable text underlining by using `_underline_` syntax. | :white_check_mark: |  |
-| Inline Math | Typeset TeX written as ``` $`E = mc^2`$ ``` within a line of text, with the KaTeX or MathJax content block. That block must also be enabled under Content Blocks. A dollar sign without the backticks is never treated as math. | `KaTeX` | That block ([KaTeX](/guide/blocks/katex) or [Mathjax](/guide/blocks/mathjax)) must also be enabled under Content Blocks. |
 | Wikilinks | Link to pages by name with the `[[Page Name]]` and `[[Page Name|text]]` syntax. Spaces become dashes and letters are lowercased. | :white_check_mark: |  |
 {.table-leading-col}
 
