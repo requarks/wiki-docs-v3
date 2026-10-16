@@ -2,7 +2,7 @@
 title: API
 description: Build automations by using the Wiki.js REST API
 published: true
-date: '2026-09-08T11:04:12.088Z'
+date: '2026-10-16T04:46:14.085Z'
 tags:
   - admin
   - dev
@@ -43,8 +43,8 @@ In the **Administration Area** :mdi:arrow-right: **API Access** page, click the 
 
 # Usage
 
-To authenticate your requests, add a `X-API-Key` header with the key value. e.g.:
+To authenticate your requests, add an `Authorization` header with the key value as the `Bearer` token. e.g.:
 
 ```yaml
-X-API-Key: eyJhbGciOi...
+Authorization: Bearer eyJhbGciOi...
 ```
