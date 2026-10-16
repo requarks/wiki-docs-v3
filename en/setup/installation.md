@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-10-13T08:16:13.720Z'
+date: '2026-10-16T04:47:23.773Z'
 tags:
   - setup
 editor: markdown
@@ -139,7 +139,7 @@ This is however **NOT** a secure way to run containers. **Make sure you understa
 
 ::block-tab{label="Kubernetes" header="2" icon="mdi:kubernetes"}
 
-Deploys Wiki.js 3.x, with a bundled PostgreSQL 18 or an existing PostgreSQL 16+ server.
+Deploys Wiki.js 3.x, with a bundled PostgreSQL 18 or an existing PostgreSQL 17+ server.
 
 ### Quickstart
 
