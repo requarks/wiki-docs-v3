@@ -2,7 +2,7 @@
 title: Requirements
 description: Prerequisites to install Wiki.js
 published: true
-date: '2026-10-10T02:54:49.041Z'
+date: '2026-10-16T04:42:23.703Z'
 tags:
   - setup
 editor: markdown
@@ -77,7 +77,6 @@ Supported versions:
 
 - **PostgreSQL 18**
 - **PostgreSQL 17**
-- **PostgreSQL 16**
 
 > [!NOTE]
 > The `ltree` and `pg_trgm` extensions must be available in your PostgreSQL installation. These extensions are usually included by default in most installations. The official PostgreSQL docker image already includes them.
