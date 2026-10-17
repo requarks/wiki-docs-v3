@@ -2,7 +2,7 @@
 title: Basics
 description: Learn the basics of Wiki.js
 published: true
-date: '2026-09-16T00:59:19.912Z'
+date: '2026-10-17T03:16:15.700Z'
 tags:
   - user-guide
 editor: markdown
@@ -23,7 +23,7 @@ The site header is present on all pages.
 - The middle section is the [search](/guide/search) bar. Enter a term and press <kbd>Enter</kbd> to [search](/guide/search) for that term across the wiki. You can also press <kbd>Ctrl/Cmd</kbd> + <kbd>K</kbd> to quickly focus the search bar and start typing.
 - The right section contains links to features of the wiki:
   - Click *:la:plus-circle:*{.text-blue} to create a new page. You'll be prompted to select the [editor](/guide/editors) to use.
-  - Click *:la:folder-open:*{.text-positive} to open the [File Manager](/guide/file-manager), which is where you can manage pages and assets.
+  - Click *:mdi:museum-outline:*{.text-positive} to access the [File Manager](/guide/file-manager) *(to manage pages and assets)*, the [Glossary](/guide/glossary) and [Tags](/guide/tags) view.
   - Click *:mdi:inbox-full:*{.text-amber} to go to the [Inbox & Notifications](/guide/inbox) area.
   - Click *:la:tools:*{.text-pink} to access the [Administration Area](/admin/dashboard). This button is only visible if you have access to the admin dashboard.
   - Click :la:user-circle: or round avatar picture to access your [profile](/guide/profile) page or to logout.
