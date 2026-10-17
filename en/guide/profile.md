@@ -2,7 +2,7 @@
 title: Profile
 description: Manage your user info and settings
 published: true
-date: '2026-10-17T03:22:34.249Z'
+date: '2026-10-17T03:29:28.237Z'
 tags:
   - user-guide
 editor: markdown
@@ -78,4 +78,11 @@ Select which notifications to receive and whether to receive them via in-app and
 
 # Personal Access Tokens
 
-Create personal access tokens (PAT) for use in automations, CI scripts and other integrations to act on your behalf. A token can only do what you can do, and only in the areas you grant it. Treat it like a password.
+Personal access tokens (PAT) let scripts, automations and other integrations to act on your behalf. A token can only do what you can do, and only in the areas you grant it. Treat it like a password.
+
+Click the **New Token** button in the top-right to create a token. Enter a name, an expiration and select the scopes to grant.
+
+> [!WARNING]
+> Make sure to save the token in a safe place. It will not be shown again!
+
+To revoke a token, click the <kbd>:la:trash-alt:</kbd> button.
