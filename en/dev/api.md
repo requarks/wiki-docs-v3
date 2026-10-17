@@ -2,7 +2,7 @@
 title: API
 description: Build automations by using the Wiki.js REST API
 published: true
-date: '2026-10-16T04:46:14.085Z'
+date: '2026-10-17T03:24:34.196Z'
 tags:
   - admin
   - dev
@@ -21,7 +21,8 @@ Open `https://wiki.example.com/_api` in your browser to see the list of all avai
 In the **Administration Area** :mdi:arrow-right: **API Access** page, click the **Enable API** button in the top-right corner to allow API tokens to be used.
 
 > [!NOTE]
-> Disabling the API doesn't turn off the API endpoints. It only prevents API keys from being used.
+> - Disabling the API doesn't turn off the API endpoints. It only prevents API keys from being used.
+> - API keys are not tied to any user. They act with the permissions of the groups chosen, so they cannot perform content actions that must be attributed to a user, such as saving a page or posting a comment. Use a [personal access token](/guide/profile#personal-access-tokens) for those instead.
 
 ## Create API Key
 
