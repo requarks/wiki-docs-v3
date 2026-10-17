@@ -2,7 +2,7 @@
 title: Profile
 description: Manage your user info and settings
 published: true
-date: '2026-10-11T06:35:35.804Z'
+date: '2026-10-17T03:22:34.249Z'
 tags:
   - user-guide
 editor: markdown
@@ -75,3 +75,7 @@ See the groups you are assigned to. Note that only an administrator can change y
 # Notifications
 
 Select which notifications to receive and whether to receive them via in-app and/or email.
+
+# Personal Access Tokens
+
+Create personal access tokens (PAT) for use in automations, CI scripts and other integrations to act on your behalf. A token can only do what you can do, and only in the areas you grant it. Treat it like a password.
