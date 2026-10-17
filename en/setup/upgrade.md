@@ -2,7 +2,7 @@
 title: Upgrade
 description: How to upgrade to the latest version
 published: true
-date: '2026-10-06T23:58:07.841Z'
+date: '2026-10-17T01:09:16.841Z'
 tags:
   - setup
 editor: markdown
@@ -13,7 +13,7 @@ dateCreated: '2026-08-11T05:04:17.122Z'
 > While upgrades are generally safe and it's very unlikely that it would result in data loss, **it's your responsibility to have a proper backup of your database before performing an upgrade**. Note that it's not possible to go back to a previous version of Wiki.js once the database schema has been upgraded.
 
 > [!NOTE] Upgrade from Wiki.js 2.x
-> To upgrade from 2.x, refer to the [Upgrade from 2.x](#upgrade-from-2x) section below.
+> To upgrade from 2.x, refer to the [Upgrade from 2.x](#upgrade-from-2x) section.
 
 # In-place upgrade
 
