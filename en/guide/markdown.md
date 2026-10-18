@@ -2,7 +2,7 @@
 title: Markdown
 description: Syntax to write Markdown content
 published: true
-date: '2026-10-14T02:51:16.491Z'
+date: '2026-10-18T07:22:49.667Z'
 tags:
   - user-guide
   - editing
