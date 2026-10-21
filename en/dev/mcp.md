@@ -2,7 +2,7 @@
 title: MCP
 description: Manage the Model Context Protocol server
 published: true
-date: '2026-08-30T03:29:30.668Z'
+date: '2026-10-21T04:05:26.281Z'
 tags: []
 editor: markdown
 dateCreated: '2026-08-29T02:01:45.818Z'
@@ -10,6 +10,59 @@ dateCreated: '2026-08-29T02:01:45.818Z'
 
 # Overview
 
-Optionally enable the MCP (Model Context Protocol) endpoint for use with AI agents / integrations.
+Wiki.js has an **optional** *(off by default)* built-in **Model Context Protocol (MCP) server**. With it, AI assistants such as Claude Code, Claude Desktop, VS Code, Cursor, and the claude.ai and ChatGPT connectors can **search and read** (and optionally **write and contribute to**) your wiki.
 
-*Not yet implemented - Coming in a future release*
+These assistants using the MCP endpoint always act **on behalf of a user** by using [Personal Access Tokens (PATs)](/guide/profile#personal-access-tokens). They can only perform actions the user is allowed to perform. The user can further limit access by selecting specific access scopes.
+
+## Capabilities
+
+### Answering from the wiki
+
+The main use is letting an assistant answer questions from your documentation instead of from its own memory or from the web. For example:
+
+- "What does our runbook say about rotating the database credentials?"
+- "Which of our services still use the old auth library?"
+- "Summarize the onboarding guide for a contractor."
+
+To answer, an assistant can:
+
+- **Search** with the wiki's own full-text search. It can filter by path, tags and locale, and each result comes with a snippet showing why it matched. If you don't name a locale, the search covers every locale of the site.
+- **Browse the tree** to see what a section contains without reading every page in it.
+- **Read a page** by its URL, by its path, or by its ID. A long page is read in parts: the outline first, then only the section that matters.
+- **Follow links** in both directions: what a page links to and what links to it.
+- **Read the history**: list a page's versions, read an old version, and compare two versions, including the reason given for each change.
+- **Look up glossary terms**, where the wiki defines its own vocabulary.
+- **Read comments** on a page *(built-in comments only)*.
+- **List and view files and images**. An image comes back in a form the model can look at. This is optional and off by default.
+
+Every answer can be cited. Each page in a result carries its URL, title, locale, last-updated date and version, so the assistant can link you to its source. Because the last updated date is always included, the assistant can tell you when the information it relies on is old.
+
+### Contributing to the wiki
+
+An assistant can write new / updated knowledge back:
+
+- **Create a page** for something that isn't documented yet.
+- **Update a page** that is wrong or out of date. Small, targeted edits are preferred over rewriting the whole page.
+- **Suggest an edit** for the page's reviewers to approve, when the person doesn't have edit rights on that page.
+- **Post a comment** to flag a problem. The comment can highlight the exact passages it refers to.
+- **Define or update glossary terms** so they can be referred to in pages.
+- **Upload an image or file**, such as a screenshot for a page *(optional, off by default)*.
+- **Move or delete pages**. This is optional and off by default. A deleted page goes to the recycle bin.
+
+An assistant's contribution is **an ordinary page edit**. It lives in the same tree, under the same page rules and in the same history as any other edit. It shows up in search and recent changes, it notifies the page's watchers, and it is mirrored to storage targets. Nothing an assistant writes is hidden, and anything it writes can be reviewed and reverted.
+
+> [!NOTE]
+> - **Every write needs a reason.** This applies even on sites where a reason for change is normally optional. The reason appears in the page history, and it becomes the commit message on a Git storage target.
+> - **Every write is marked as made through MCP.** The version shows an **AI** badge next to the author's name in the page history, and on the page itself while the latest version is the assistant's version. The author is still the person who owns the token, because they are accountable for it. The badge tells readers which edits that person typed and which an assistant made for them. This badge can be hidden in the Administration Area.
+> - **Writes are checked against the version the assistant read.** If someone saved the page in the meantime, the edit is refused and the assistant is shown the current version, so it never overwrites a change it didn't see.
+> - **An edit is refused while someone has the page open in the editor** to prevent an assistant overwriting an active editing session. The assistant is told to suggest the edit or try again later.
+> - **Broken links are reported.** After a write, the assistant is told about any links in the new content that don't lead to a page, so it can fix them in the same task.
+
+### What it does not do
+
+- **No administration.** There are no tools for users, groups, settings, storage or sites. A token can't reach the admin area, even if its owner is an administrator. This is by design and these actions are better served by the standard REST API.
+- **No AI inside the wiki.** The wiki itself doesn't run a model, and it doesn't summarise, embed or rewrite anything. It simply doesn't make sense to add such features at the moment, which are better served by dedicated AI tools that can instead read and write to the wiki as needed.
+
+# Getting Connected
+
+*todo*
