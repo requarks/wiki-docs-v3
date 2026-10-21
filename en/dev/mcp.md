@@ -2,7 +2,7 @@
 title: MCP
 description: Manage the Model Context Protocol server
 published: true
-date: '2026-10-21T04:05:26.281Z'
+date: '2026-10-21T04:21:34.180Z'
 tags: []
 editor: markdown
 dateCreated: '2026-08-29T02:01:45.818Z'
@@ -65,4 +65,62 @@ An assistant's contribution is **an ordinary page edit**. It lives in the same t
 
 # Getting Connected
 
-*todo*
+## Prerequisites
+
+- An administrator has **enabled MCP** and **allowed Personal Access Tokens** on your wiki.
+- You belong in a group that holds the **`use:mcp`** permission. Otherwise, the **Connect an AI Assistant** tab under the **Profile** :la:arrow-right: **Personal Access Tokens** page will not be shown.
+
+## Create a token
+
+::block-steps
+1. Go to the **Profile** :la:arrow-right: **Personal Access Tokens** page.
+2. Open the **Connect an AI Assistant** tab.
+3. Click the **Create a Token for an Assistant** button. This opens a dialog with read-only defaults preselected.
+    > [!NOTE]
+    > Any scope you select will be limited by the **AI Assistants (MCP)** scope. For example, to allow an assistant to write to pages, you must allow **Read & Write** on **BOTH** the **Pages** and **AI Assistants (MCP)** scopes.
+4. Give it a name (e.g. "*Claude Code Read-Only*"), select an expiry and create the token.
+5. Copy the token or use the provided commands/settings for your AI / IDE client.
+    > [!IMPORTANT]
+    > The token will **NOT** be shown again. Make sure to copy it before closing the dialog.
+::
+
+## Configure your client
+
+The server URL is the wiki's own address followed by `/_mcp`, for example `https://wiki.example.com/_mcp`. **Each site answers on its own hostname** and an assistant connected to one site sees only that site.
+
+**Claude Code**
+
+```sh
+claude mcp add --transport http wiki https://wiki.example.com/_mcp --header "Authorization: Bearer YOUR-TOKEN"
+```
+
+**VS Code**, in `.vscode/mcp.json`:
+
+```json
+{
+  "servers": {
+    "wiki": {
+      "type": "http",
+      "url": "https://wiki.example.com/_mcp",
+      "headers": { "Authorization": "Bearer YOUR-TOKEN" }
+    }
+  }
+}
+```
+
+**Cursor**, in `~/.cursor/mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "wiki": {
+      "url": "https://wiki.example.com/_mcp",
+      "headers": { "Authorization": "Bearer YOUR-TOKEN" }
+    }
+  }
+}
+```
+
+Some remote connectors, such as **claude.ai** and **ChatGPT** can't be given a token. Add the server URL as a custom connector and sign in when the connector asks. See [Signing in with OAuth](#signing-in-with-oauth) below.
+
+
