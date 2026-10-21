@@ -2,7 +2,7 @@
 title: MCP
 description: Manage the Model Context Protocol server
 published: true
-date: '2026-10-21T04:21:34.180Z'
+date: '2026-10-21T05:56:56.452Z'
 tags: []
 editor: markdown
 dateCreated: '2026-08-29T02:01:45.818Z'
@@ -123,4 +123,21 @@ claude mcp add --transport http wiki https://wiki.example.com/_mcp --header "Aut
 
 Some remote connectors, such as **claude.ai** and **ChatGPT** can't be given a token. Add the server URL as a custom connector and sign in when the connector asks. See [Signing in with OAuth](#signing-in-with-oauth) below.
 
+## Signing in with OAuth
 
+The remote connectors in claude.ai and ChatGPT use OAuth 2.1 to sign in. There's nothing to set up on the wiki for this:
+
+::block-steps
+1. Add `https://wiki.example.com/_mcp` *(replacing `wiki.example.com` with your wiki's hostname)* as a custom connector in the client.
+2. The client registers itself with the wiki and sends your browser to the wiki's **consent screen**. If you aren't signed in, you'll be prompted to sign in first.
+3. The consent screen names the client, the address it will send you back to, and the account it will act as. It shows the scope grid, starting from what the client asked for, or from the read-only defaults if it asked for nothing. **You can change any row** before approving and you choose how long the grant lasts.
+4. **Approve** and the connector is connected.
+::
+
+An OAuth grant behaves like a personal access token but with two differences: it works **only on the MCP server** and is refused on the REST API, and the tokens it issues last an hour and are refreshed automatically. Grants are listed under the **Profile** :la:arrow-right: **Personal Access Tokens** page with the client's name, marked *connected through OAuth*. Deleting one disconnects that client.
+
+OAuth is available only while MCP, the API and Personal Access Tokens are all enabled.
+
+## Disconnecting
+
+Delete the token (or the OAuth connection) under the **Profile** :la:arrow-right: **Personal Access Tokens** page. It stops working immediately. An administrator can also delete a user's tokens from the user editor.
