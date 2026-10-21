@@ -2,7 +2,7 @@
 title: MCP
 description: Manage the Model Context Protocol server
 published: true
-date: '2026-10-21T06:21:33.513Z'
+date: '2026-10-21T06:24:44.585Z'
 tags: []
 editor: markdown
 dateCreated: '2026-08-29T02:01:45.818Z'
@@ -181,3 +181,21 @@ The **Guidelines Page** is a page on your wiki site, in its primary locale, whos
 > - It is an ordinary page, so people and assistants can improve it like any other.
 > - Up to 6,000 characters are included. An assistant receives the page only if its token's owner can read it.
 > - Leave it empty for none. Assistants then get only the generic guidance.
+
+# Troubleshooting
+
+| Symptom | Likely cause |
+| --- | --- |
+| The client can't connect; `/_mcp` answers 404 or HTML | The URL is wrong. It must be the wiki's own address plus `/_mcp`, on the hostname of the site you want. |
+| Every call is refused | MCP is disabled, the API is off, or personal access tokens are off. See [**Prerequisites**](#prerequisites). |
+| 401 Unauthorized | The token is missing, mistyped, expired or deleted. |
+| 403, mentioning `use:mcp` | The token's owner isn't in a group that holds `use:mcp`. |
+| 403, mentioning the `mcp` scope | The token was created without the **AI Assistants (MCP)** scope. Scopes can't be changed, so create a new token. |
+| 403 with a system API key | System keys aren't accepted. Use a personal access token. |
+| The assistant can't see any write tools | The token has MCP **Read**, it lacks the category's **Write** scope, or the tool group is switched off. |
+| `create_page` / `update_page` say they are unavailable | The Puppeteer extension isn't installed. Use `suggest_edit`, or install the extension. |
+| An edit is refused because the page is open | Someone has the page open in the editor. Try again later, or suggest the edit. |
+| A new page is blank for a few seconds | It is waiting for the background renderer, and appears in search once it has been rendered. |
+| 429 Too Many Requests | The rate limit was reached. The client retries after the `Retry-After` delay. An administrator can raise **Burst** and **Refill Rate**. |
+| The glossary or comment tools are missing | The site has the glossary turned off, or comments are off or use a third-party provider. |
+| A page the user can see in the browser isn't found | Check the token's scopes, and whether the page is a draft, password-protected or in another locale. Search covers every locale unless the assistant asks for specific ones. |
