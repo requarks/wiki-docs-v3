@@ -2,7 +2,7 @@
 title: MCP
 description: Manage the Model Context Protocol server
 published: true
-date: '2026-10-21T05:59:44.768Z'
+date: '2026-10-21T06:11:52.107Z'
 tags: []
 editor: markdown
 dateCreated: '2026-08-29T02:01:45.818Z'
@@ -65,9 +65,9 @@ An assistant's contribution is **an ordinary page edit**. It lives in the same t
 
 # Getting Connected
 
-## Prerequisites
+## Requirements
 
-- An administrator has **enabled MCP** and **allowed Personal Access Tokens** on your wiki.
+- An administrator has enabled the necessary [prerequisites](#prerequisites) on your wiki.
 - You belong in a group that holds the **`use:mcp`** permission. Otherwise, the **Connect an AI Assistant** tab under the **Profile** :la:arrow-right: **Personal Access Tokens** page will not be shown.
 
 ## Create a token
@@ -152,3 +152,15 @@ MCP is configured under the **Administration Area** :la:arrow-right: **MCP** pag
 MCP is **one setting for the whole instance**. There is no per-site switch. Which sites and pages an assistant sees is decided by page rules, like everything else. The only per-site setting is the guidelines page.
 
 Most settings on this screen need **`manage:system`**. The guidelines page needs **`manage:sites`**. Changes apply on the next call, on every instance, with no restart required.
+
+## Enable / Disable
+
+The button in the header turns the MCP server on or off for everybody. It is **off by default**. While it is off, `/_mcp` refuses every request and OAuth isn't offered.
+
+## Prerequisites
+
+The following prerequisites must be met before **MCP** can be enabled:
+
+- **API** must be enabled. It can be enabled under the **Administration Area** :la:arrow-right: **API Access**. While the API is off, every token is refused and only anonymous access *(if enabled)* can work.
+- **Personal Access Tokens** must be allowed. It is set under the **Administration Area** :la:arrow-right: **Authentication** :la:arrow-right: **Configuration**. While personal tokens are off, every token is refused *(existing tokens are kept and work again once the setting is back on)*, and only anonymous access *(if enabled)* can work.
+- **Puppeteer** extension must be installed. It comes already installed in the container image; it can be installed via the **Administration Area** :la:arrow-right: **Extensions** if not. A page's HTML is normally produced by the editor's browser when it is saved. A page an assistant writes has no browser behind it, so it is rendered in the background by Puppeteer. A page that hasn't been rendered is blank to readers and invisible to search. Without the extension, `create_page` and `update_page` report that they are unavailable and point the assistant to `suggest_edit`. Comments, glossary terms, uploads and suggestions work without it.
