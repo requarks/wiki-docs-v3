@@ -2,7 +2,7 @@
 title: MCP
 description: Manage the Model Context Protocol server
 published: true
-date: '2026-10-21T06:11:52.107Z'
+date: '2026-10-21T06:20:04.798Z'
 tags: []
 editor: markdown
 dateCreated: '2026-08-29T02:01:45.818Z'
@@ -164,3 +164,20 @@ The following prerequisites must be met before **MCP** can be enabled:
 - **API** must be enabled. It can be enabled under the **Administration Area** :la:arrow-right: **API Access**. While the API is off, every token is refused and only anonymous access *(if enabled)* can work.
 - **Personal Access Tokens** must be allowed. It is set under the **Administration Area** :la:arrow-right: **Authentication** :la:arrow-right: **Configuration**. While personal tokens are off, every token is refused *(existing tokens are kept and work again once the setting is back on)*, and only anonymous access *(if enabled)* can work.
 - **Puppeteer** extension must be installed. It comes already installed in the container image; it can be installed via the **Administration Area** :la:arrow-right: **Extensions** if not. A page's HTML is normally produced by the editor's browser when it is saved. A page an assistant writes has no browser behind it, so it is rendered in the background by Puppeteer. A page that hasn't been rendered is blank to readers and invisible to search. Without the extension, `create_page` and `update_page` report that they are unavailable and point the assistant to `suggest_edit`. Comments, glossary terms, uploads and suggestions work without it.
+
+## Tools
+
+There is one switch per tool group, each labelled with the scopes its tools need. A group that is off is **offered to no one**, regardless of a token scopes.
+
+- **The groups with write tools are on by default.** The scopes given to each token is what determine whether write is allowed. Turn **Create & Edit Pages** off if no assistant should edit pages directly on this wiki, regardless of what the tokens allow.
+- **Assets** is off by default. Binary content is expensive in a model's context and an upload is the one write that isn't text a person can review in a diff.
+- **Move & Delete Pages** is off by default, and turning it on shows a warning. Moves and deletions reorganize the wiki rather than add to it so enable with caution.
+
+## Guidance
+
+The **Guidelines Page** is a page on your wiki site, in its primary locale, whose text is given to every assistant that connects. Use it for the site's own conventions: where new pages go, how they are named, which sections are reference and which are history, and the house style. Example: `meta/assistant-guidelines`.
+
+> [!TIP]
+> - It is an ordinary page, so people and assistants can improve it like any other.
+> - Up to 6,000 characters are included. An assistant receives the page only if its token's owner can read it.
+> - Leave it empty for none. Assistants then get only the generic guidance.
