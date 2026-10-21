@@ -2,7 +2,7 @@
 title: MCP
 description: Manage the Model Context Protocol server
 published: true
-date: '2026-10-21T05:56:56.452Z'
+date: '2026-10-21T05:59:44.768Z'
 tags: []
 editor: markdown
 dateCreated: '2026-08-29T02:01:45.818Z'
@@ -141,3 +141,14 @@ OAuth is available only while MCP, the API and Personal Access Tokens are all en
 ## Disconnecting
 
 Delete the token (or the OAuth connection) under the **Profile** :la:arrow-right: **Personal Access Tokens** page. It stops working immediately. An administrator can also delete a user's tokens from the user editor.
+
+# Administration
+
+MCP is configured under the **Administration Area** :la:arrow-right: **MCP** page.
+
+> [!TIP]
+> The sidebar light next to it shows whether the server is on. It turns amber when MCP is on but the API is off.
+
+MCP is **one setting for the whole instance**. There is no per-site switch. Which sites and pages an assistant sees is decided by page rules, like everything else. The only per-site setting is the guidelines page.
+
+Most settings on this screen need **`manage:system`**. The guidelines page needs **`manage:sites`**. Changes apply on the next call, on every instance, with no restart required.
