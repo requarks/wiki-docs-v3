@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-10-20T05:24:12.739Z'
+date: '2026-10-22T01:14:18.603Z'
 tags:
   - setup
 editor: markdown
@@ -216,7 +216,7 @@ In both cases, turn on **Administration Area :la:arrow-right: Security :la:arrow
 
 ### Replicas
 
-The number of replicas (via `replicaCount`) can be raised freely. Replicas coordinate through the database, collaborative editing included, so no sticky sessions are needed. Replicas don't need to be able to talk to each other, however, they **MUST** both connect to the same database / cluster.
+The number of replicas (via `replicaCount`) can be increased as needed (either manually or via auto-scaling). Replicas coordinate through the database, collaborative editing included, so no sticky sessions are needed. Replicas don't need to be able to talk to each other, however, they **MUST ALL** connect to the same database / cluster.
 ::
 
 ::block-tab{label="Guided Ubuntu Install" header="2" icon="mdi:ubuntu"}
