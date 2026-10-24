@@ -2,7 +2,7 @@
   "title": "Feedback",
   "description": "Submit ideas and vote on them to shape the future of Wiki.js",
   "published": true,
-  "date": "2026-10-24T10:51:45.167Z",
+  "date": "2026-10-24T10:52:18.962Z",
   "tags": [],
   "editor": "feedback",
   "dateCreated": "2026-10-24T02:38:02.081Z",
@@ -47,6 +47,6 @@
     "perPage": 20,
     "acceptsIdeas": true,
     "voting": true,
-    "submitNotice": "Do **NOT** submit bug reports here. Use [GitHub Discussions](https://github.com/requarks/wiki/discussions/categories/3-x-error-bug-report) instead."
+    "submitNotice": "Do **NOT** submit bug reports or questions here. Use [GitHub Discussions](https://github.com/requarks/wiki/discussions/categories/3-x-error-bug-report) instead."
   }
 }
