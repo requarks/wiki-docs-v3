@@ -2,12 +2,12 @@
   "title": "Feedback",
   "description": "Submit ideas and vote on them to shape the future of Wiki.js",
   "published": true,
-  "date": "2026-10-24T07:47:33.975Z",
+  "date": "2026-10-24T07:55:33.237Z",
   "tags": [],
   "editor": "feedback",
   "dateCreated": "2026-10-24T02:38:02.081Z",
   "content": {
-    "intro": "To submit new ideas, upvote and comment, a GitHub login is required. Click the **Submit Idea** below to get started.",
+    "intro": "To submit new ideas, upvote and comment, a GitHub login is required. Click the **Submit Idea** button below to get started.",
     "categories": [
       {
         "tag": "admin",
