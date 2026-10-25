@@ -2,7 +2,7 @@
 title: Wiki.js
 description: Official Documentation for 3.x
 published: true
-date: '2026-10-25T00:31:14.327Z'
+date: '2026-10-25T00:34:55.832Z'
 tags: []
 editor: markdown
 dateCreated: '2026-08-10T07:05:24.182Z'
@@ -17,7 +17,7 @@ Wiki.js is a powerful knowledge base platform to write and share documentation.
 
 Wiki.js is quick and easy to install. You'll be up and running in no time.
 
-::block-links-grid{maxWidth=".25fr"}
+::block-links-grid{minWidth="max(300px, 25% - 1rem)"}
 ```yaml
 - title: Requirements
   url: /setup/requirements
