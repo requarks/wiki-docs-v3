@@ -2,7 +2,7 @@
 title: Wiki.js
 description: Official Documentation for 3.x
 published: true
-date: '2026-10-24T05:22:10.825Z'
+date: '2026-10-25T00:29:56.807Z'
 tags: []
 editor: markdown
 dateCreated: '2026-08-10T07:05:24.182Z'
@@ -32,15 +32,32 @@ Wiki.js is quick and easy to install. You'll be up and running in no time.
 - title: Upgrade
   url: /setup/upgrade
   description: How to upgrade to the latest version
-  icon: 'mdi:package-variant-closed'
+  icon: 'mdi:package-up'
   color: violet
 - title: Release Notes
   url: https://github.com/requarks/wiki/releases
   description: Changelog of each release
   icon: 'mdi:fire'
   color: rose
+- title: Suggest New Features
+  url: /feedback
+  icon: 'mdi:bulb-outline'
+  color: amber
+- title: Report a Bug
+  url: https://github.com/requarks/wiki/discussions/categories/3-x-error-bug-report
+  icon: 'mdi:bug-outline'
+  color: cyan
+- title: Help / Support
+  url: https://github.com/requarks/wiki/discussions/categories/3-x-help-questions
+  icon: 'mdi:chat-help-outline'
+  color: lime
+- title: Donate
+  url: https://js.wiki/donate
+  icon: 'mdi:heart'
+  color: pink
 ```
 ::
+
 
 
 # User Guide
