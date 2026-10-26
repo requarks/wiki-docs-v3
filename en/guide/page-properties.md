@@ -2,7 +2,7 @@
 title: Page Properties
 description: Edit page metadata and configuration
 published: true
-date: '2026-10-09T06:47:45.304Z'
+date: '2026-10-26T01:28:50.210Z'
 tags:
   - user-guide
   - editing
@@ -52,6 +52,37 @@ An optional alias to quickly access the page regardless of its current location.
 The alias becomes accessible at `/a/` + the alias.
 
 For example, by setting an alias of `KB1000` for a page at path `network/knowledge-base/dns-cache-expiration`, a user can now access it by going to `https://wiki.example.com/a/KB1000`. The page can be renamed or moved elsewhere later on and that link will still work.
+
+# Lifecycle Rules
+
+Lifecycle rules are used to perform certain actions automatically on some condition.
+
+Click the **:la:plus: Add Rule** button to create a new rule.
+
+Give it a name and choose a trigger:
+- **Days since last content update**: Triggers after X days since the page body (not metadata) was last modified.
+- **Every number of days**: Triggers every X days, regardless of whether the page was modified or not.
+- **Days since last comment**: Triggers after X days since the last comment was posted to the page.
+
+Then enable one or more actions:
+- **Show banner**: Show a banner at the top of the article, with a custom text and icon. By default, the text warns the user that the information might be outdated and needs a review. The page owner and any user with write:pages permission can resolve it.
+- **Notify page owner(s)**: Send a notification to the page owner *(see [Ownership](#ownership) below)* that the page needs review.
+- **Move page to...**: Move the page to another location. The path can use variables **`{pagePathName}`** (only the last segment of the path, e.g. `foo-bar`) or **`{pagePath}`** (the full path to the page, e.g. `lorem/ipsum/foo-bar`).
+- **Apply tags...**: Add one or more tags to the page. Tags are added to existing ones, not replaced.
+- **Remove rule after...**: Remove this rule after X trigger(s). Note that you need to enable at least another action in addition to this one.
+
+A common example is to ask a review from the page owner every 90 days to ensure the information is still up to date. In this case, you would select the "**Days since last content update**" trigger with `90` days, and enable the "**Show banner**" and **Notify page owner(s)** actions.
+
+# Ownership
+
+Set who owns the page:
+
+- **Page Creator** *(default)*: the user who created the page.
+- **User(s)**: One or more users.
+- **Group(s)**: One or more groups.
+
+> [!IMPORTANT]
+> In order to use the **User(s)** and **Group(s)** options, you must have the `list:users` and `list:groups` permissions respectively.
 
 # Publishing State
 
