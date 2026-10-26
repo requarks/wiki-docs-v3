@@ -2,7 +2,7 @@
 title: Editors
 description: Manage editors and their configuration
 published: true
-date: '2026-10-26T02:05:26.608Z'
+date: '2026-10-26T02:05:48.613Z'
 tags:
   - admin
 editor: markdown
