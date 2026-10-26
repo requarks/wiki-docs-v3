@@ -2,7 +2,7 @@
 title: Permissions
 description: Manage access to your pages
 published: true
-date: '2026-10-09T05:48:19.606Z'
+date: '2026-10-26T01:42:43.663Z'
 tags:
   - admin
 editor: markdown
@@ -50,23 +50,24 @@ One or more permissions can be selected for a page rule:
 
 | Name | Key | Description | Note |
 | :-- | :-- | :-- | :-- |
-| Read Pages | `read:pages` | Can view and search pages. | |
-| Write Pages | `write:pages` | Can create and edit pages. | |
-| Review Pages | `review:pages` | Can review and approve edits submitted by users. | |
-| Manage Pages | `manage:pages` | Can move existing pages to other locations the user has write access to. | |
-| Delete Pages | `delete:pages` | Can delete existing pages and restore them from the recycle bin. | |
-| Assign Tags | `write:tags` | Can assign / unassign tags on pages. | |
-| Use CSS | `write:styles` | Can insert CSS styles in pages. | |
+| Read Pages | `read:pages` | Can view and search pages. |  |
+| Write Pages | `write:pages` | Can create and edit pages. |  |
+| Review Pages | `review:pages` | Can review and approve edits submitted by users. |  |
+| Manage Pages | `manage:pages` | Can move existing pages to other locations the user has write access to. |  |
+| Delete Pages | `delete:pages` | Can delete existing pages and restore them from the recycle bin. |  |
+| Assign Tags | `write:tags` | Can assign / unassign tags on pages. |  |
+| Use CSS | `write:styles` | Can insert CSS styles in pages. |  |
 | Use JavaScript | `write:scripts` | Can insert JavaScript in pages. | :warning: **Use with caution as users could inject malicious scripts into pages.**<br>Do **NOT** enable if you don't fully trust your users. |
-| View Page Source | `read:source` | Can view the pages source. | |
-| View Page History | `read:history` | Can view previous versions of pages. | |
-| Manage Navigation | `manage:navigation` | Can change how pages here resolve their sidebar, and edit the menu itself where this rule also covers the page the menu belongs to. | |
-| View Assets | `read:assets` | Can view / use assets *(such as images and files)* in pages. | |
-| Upload Assets | `write:assets` | Can upload new assets *(such as images and files)*. | |
-| Manage Assets | `manage:assets` | Can edit and delete existing assets *(such as images and files)*. | |
-| Read Comments | `read:comments` | Can view page comments. | |
-| Write Comments | `write:comments` | Can post new comments on pages, edit and delete their own comments. | |
-| Manage Comments | `manage:comments` | Can edit and delete any existing page comments. | |
+| View Page Source | `read:source` | Can view the pages source. |  |
+| View Page History | `read:history` | Can view previous versions of pages. |  |
+| Submit Feedback | `write:feedback` | Can submit ideas to a feedback board, and edit or withdraw their own while they are open. |  |
+| Manage Navigation | `manage:navigation` | Can change how pages here resolve their sidebar, and edit the menu itself where this rule also covers the page the menu belongs to. |  |
+| View Assets | `read:assets` | Can view / use assets *(such as images and files)* in pages. |  |
+| Upload Assets | `write:assets` | Can upload new assets *(such as images and files)*. |  |
+| Manage Assets | `manage:assets` | Can edit and delete existing assets *(such as images and files)*. |  |
+| Read Comments | `read:comments` | Can view page comments. |  |
+| Write Comments | `write:comments` | Can post new comments on pages, edit and delete their own comments. |  |
+| Manage Comments | `manage:comments` | Can edit and delete any existing page comments. |  |
 {.table-leading-col}
 
 ### Doesn't use the matching pattern
@@ -76,8 +77,10 @@ One or more permissions can be selected for a page rule:
 
 | Name | Key | Description | Note |
 | :-- | :-- | :-- | :-- |
-| Read Glossary | `read:glossary` | Can view the glossary and read terms definitions. | |
-| Manage Glossary | `manage:glossary` | Can create, edit and delete glossary entries. | |
+| Read Glossary | `read:glossary` | Can view the glossary and read terms definitions. |  |
+| Manage Glossary | `manage:glossary` | Can create, edit and delete glossary entries. |  |
+| Read Live Notes | `read:notes` | Can view live notes from a shared link. | Assumes the site primary locale. |
+| Write Live Notes | `write:notes` | Can create and contribute to live notes. Can delete own notes. | Assumes the site primary locale. |
 {.table-leading-col}
 
 ## Site Filter
