@@ -2,7 +2,7 @@
 title: Permissions
 description: Manage access to your pages
 published: true
-date: '2026-10-26T01:51:09.514Z'
+date: '2026-10-26T01:54:44.148Z'
 tags:
   - admin
 editor: markdown
@@ -161,11 +161,12 @@ Global permissions represents administrative actions a user can perform. They ar
 
 ## General Permissions Matrix
 
-| Action / Group | access:admin | read:audit | read:metrics | manage:system |
-| :-- | :-: | :-: | :-: | :-: |
-| Access the admin dashboard| :green_circle: |  |  | :green_circle: |
-| View / download the audit log |  | :green_circle: |  | :green_circle: |
-| Access the Prometheus metrics endpoint^1^ |  |  | :green_circle: | :green_circle: |
+| Action / Group | access:admin | read:audit | read:metrics | use:mcp | manage:system |
+| :-- | :-: | :-: | :-: | :-: | :-: |
+| Access the admin dashboard| :green_circle: |  |  |  | :green_circle: |
+| View / download the audit log |  | :green_circle: |  |  | :green_circle: |
+| Access the Prometheus metrics endpoint^1^ |  |  | :green_circle: |  | :green_circle: |
+| Use the MCP endpoint |  |  |  | :green_circle: | :green_circle: |
 {.table-leading-col}
 
 1. This is different than the [Metrics administration page](/admin/metrics) which requires the `manage:system` permission. The `read:metrics` permission is strictly for accessing the Prometheus metrics endpoint for sources that require authentication.
