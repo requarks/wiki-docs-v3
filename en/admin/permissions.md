@@ -2,7 +2,7 @@
 title: Permissions
 description: Manage access to your pages
 published: true
-date: '2026-10-26T01:42:43.663Z'
+date: '2026-10-26T01:51:09.514Z'
 tags:
   - admin
 editor: markdown
@@ -198,22 +198,24 @@ Global permissions represents administrative actions a user can perform. They ar
 
 ## User Management Matrix
 
-| Action / Group | read:users | write:users | manage:users | read:groups | write:groups | manage:groups | manage:scim | manage:system |
-| :-- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| List and view user info | :green_circle: |  | :green_circle: |  |  |  |  | :green_circle: |
-| Create new user |  | :green_circle: | :green_circle: |  |  |  |  | :green_circle: |
-| Edit user info^1^ |  |  | :green_circle: |  |  |  |  | :green_circle: |
-| Delete user^2^ |  |  | :green_circle: |  |  |  |  | :green_circle: |
-| Assign user to normal groups |  | :green_circle: | :green_circle: |  | :green_circle: | :green_circle: |  | :green_circle: |
-| Assign user to elevated groups |  |  | :green_circle: |  |  | :green_circle: |  | :green_circle: |
-| Assign user to root admin groups |  |  |  |  |  |  |  | :green_circle: |
-| View groups |  |  |  | :green_circle: | :green_circle: | :green_circle: |  | :green_circle: |
-| Create new group |  |  |  |  | :green_circle: | :green_circle: |  | :green_circle: |
-| Edit group |  |  |  |  | :green_circle: | :green_circle: |  | :green_circle: |
-| Set rules |  |  |  |  | :green_circle: | :green_circle: |  | :green_circle: |
-| Set permissions^3^ |  |  |  |  |  | :green_circle: |  | :green_circle: |
-| Delete group^4^ |  |  |  |  |  | :green_circle: |  | :green_circle: |
-| Use the `/_scim/v2` endpoint |  |  |  |  |  |  | :green_circle: | :green_circle: |
+| Action / Group | list:users | read:users | write:users | manage:users | list:groups | read:groups | write:groups | manage:groups | manage:scim | manage:system |
+| :-- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| List users | :green_circle: | :green_circle: |  | :green_circle: |  |  |  |  |  | :green_circle: |
+| View user info |  | :green_circle: |  | :green_circle: |  |  |  |  |  | :green_circle: |
+| Create new user |  |  | :green_circle: | :green_circle: |  |  |  |  |  | :green_circle: |
+| Edit user info^1^ |  |  |  | :green_circle: |  |  |  |  |  | :green_circle: |
+| Delete user^2^ |  |  |  | :green_circle: |  |  |  |  |  | :green_circle: |
+| Assign user to normal groups |  |  | :green_circle: | :green_circle: |  |  | :green_circle: | :green_circle: |  | :green_circle: |
+| Assign user to elevated groups |  |  |  | :green_circle: |  |  |  | :green_circle: |  | :green_circle: |
+| Assign user to root admin groups |  |  |  |  |  |  |  |  |  | :green_circle: |
+| List groups |  |  |  |  | :green_circle: | :green_circle: | :green_circle: | :green_circle: |  | :green_circle: |
+| View group info |  |  |  |  |  | :green_circle: | :green_circle: | :green_circle: |  | :green_circle: |
+| Create new group |  |  |  |  |  |  | :green_circle: | :green_circle: |  | :green_circle: |
+| Edit group |  |  |  |  |  |  | :green_circle: | :green_circle: |  | :green_circle: |
+| Set rules |  |  |  |  |  |  | :green_circle: | :green_circle: |  | :green_circle: |
+| Set permissions^3^ |  |  |  |  |  |  |  | :green_circle: |  | :green_circle: |
+| Delete group^4^ |  |  |  |  |  |  |  | :green_circle: |  | :green_circle: |
+| Use the `/_scim/v2` endpoint |  |  |  |  |  |  |  |  | :green_circle: | :green_circle: |
 {.table-leading-col}
 
 1. Unless the user is part of any group with the `manage:system` (root admin) permission.
