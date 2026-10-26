@@ -2,7 +2,7 @@
 title: Editors
 description: Manage editors and their configuration
 published: true
-date: '2026-10-26T02:03:42.471Z'
+date: '2026-10-26T02:05:26.608Z'
 tags:
   - admin
 editor: markdown
@@ -27,6 +27,7 @@ The alternative plain-text editor using AsciiDoc syntax.
 | Parameter | Description | Default Value | Notes |
 | :-- | :-- | :-- | :-- |
 | Math | Typeset LaTeX written with `latexmath:[…]` or `stem:[…]` within a line of text, and in `[latexmath]` or `[stem]` blocks, with the KaTeX or MathJax content block. stem always means LaTeX, and AsciiMath is shown as its source. When off, every formula is shown as its source. | `KaTeX` | That block ([KaTeX](/guide/blocks/katex) or [Mathjax](/guide/blocks/mathjax)) must also be enabled under Content Blocks. |
+| Show minimap | Show a zoomed-out overview of the whole document along the right edge of the editor, for scrolling through long pages. | `false` |  |
 {.table-leading-col}
 
 # Blog
@@ -62,6 +63,7 @@ The markdown editor is the fully-featured flagship editor for Wiki.js.
 | Code Block Tab Width | Amount of spaces for each tab in code blocks. | `2` |  |
 | Inline Math | Typeset TeX written as ``` $`E = mc^2`$ ``` within a line of text, with the KaTeX or MathJax content block. That block must also be enabled under Content Blocks. A dollar sign without the backticks is never treated as math. | `KaTeX` | That block ([KaTeX](/guide/blocks/katex) or [Mathjax](/guide/blocks/mathjax)) must also be enabled under Content Blocks. |
 | MultiMarkdown Table | Enable support for MultiMarkdown Table features. | :white_check_mark: |  |
+| Show minimap | Show a zoomed-out overview of the whole document along the right edge of the editor, for scrolling through long pages. | `false` |  |
 | Typographer | Enable some language-neutral replacement + quotes beautification. | :x: |  |
 | Quotes Styles | When typographer is enabled. Double + single quotes replacement pairs. e.g. `«»„“` for Russian, `„“‚‘` for German, etc. | `English` | *Only available when **Typographer** is enabled.* |
 | Underline Emphasis | Enable text underlining by using `_underline_` syntax. | :white_check_mark: |  |
