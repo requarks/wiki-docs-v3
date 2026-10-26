@@ -2,7 +2,7 @@
 title: Page Properties
 description: Edit page metadata and configuration
 published: true
-date: '2026-10-26T01:28:50.210Z'
+date: '2026-10-26T01:31:38.370Z'
 tags:
   - user-guide
   - editing
@@ -44,6 +44,12 @@ A subtitle for the page, shown in:
 ## Icon
 
 An icon or image shown to the left of the page title. Click the <kbd>:la:icons:</kbd> button on the right to open the icon picker dialog.
+
+## Color
+
+An optional color to assign the page. When set, the page icon takes this color and a faint background gradient is applied to the page header. The color is also used in some content blocks like the [block-index](/guide/blocks/index) to apply a colored border to each card.
+
+If not set, the page icon uses the site primary color.
 
 ## Alias
 
