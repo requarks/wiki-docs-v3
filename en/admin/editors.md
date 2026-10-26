@@ -2,7 +2,7 @@
 title: Editors
 description: Manage editors and their configuration
 published: true
-date: '2026-10-14T02:53:14.411Z'
+date: '2026-10-26T02:03:42.471Z'
 tags:
   - admin
 editor: markdown
@@ -36,6 +36,17 @@ Create a blog inside your wiki.
 ### Configuration
 
 *There's no configuration for this editor.*
+
+# Feedback Board Editor
+
+Collect ideas from your readers, let them vote, and tell them where each one stands.
+
+### Configuration
+
+| Parameter | Description | Default Value | Notes |
+| :-- | :-- | :-- | :-- |
+| Time Between Submissions | How long an account must wait after submitting an idea before it can submit another, on every board of this site. A duration such as 30s, 1m, 5m or 1h, or 0 for no limit. | `1m` | The rate limiter applies per user, not per IP. |
+{.table-leading-col}
 
 # Markdown Editor
 
