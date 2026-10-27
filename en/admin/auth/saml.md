@@ -2,7 +2,7 @@
 title: SAML 2.0
 description: Authentication strategy
 published: true
-date: '2026-10-27T22:53:25.761Z'
+date: '2026-10-27T22:56:11.481Z'
 tags:
   - admin
   - auth
@@ -16,9 +16,10 @@ Security Assertion Markup Language 2.0, the standard for exchanging authenticati
 
 # Configuration
 
-> [!TIP]
+> [!IMPORTANT]
 > - To obtain the **Assertion Consumer Service URL** and **Service Provider Metadata**, you must first click **Apply** on the newly added strategy *(It won't be active until you check the **Enabled** checkbox)*. The endpoint URL will then be displayed at the bottom of the page under the **Configuration Reference** section.
 > - **If you're using a reverse proxy**, make sure you followed the [Reverse Proxy](/setup/requirements#reverse-proxy) setup section first. Otherwise the service URL may be incorrect and result in authentication failures.
+> - To debug failed authentications, enable the **Auth Debug** flag under the **Administration Area** :la:arrow-right: **Flags** page. The server logs will now include more details.
 
 | Property | Description | Default Value |
 | :-- | :-- | :-- |
