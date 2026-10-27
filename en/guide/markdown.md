@@ -2,7 +2,7 @@
 title: Markdown
 description: Syntax to write Markdown content
 published: true
-date: '2026-10-18T07:22:49.667Z'
+date: '2026-10-27T08:39:41.727Z'
 tags:
   - user-guide
   - editing
@@ -135,6 +135,19 @@ becomes:
 
 > Lorem ipsum dolor sit amet
 > Consectetur adipiscing elit
+::
+
+::block-tab{label="Attribution"}
+A blockquote can be attributed to a person by using the `> [name=John Doe]` syntax.
+
+For example, the following code:
+```
+> [name=Arthur C. Clarke] Any sufficiently advanced technology is indistinguishable from magic.
+```
+
+becomes
+
+> [name=Arthur C. Clarke] Any sufficiently advanced technology is indistinguishable from magic.
 ::
 
 ::block-tab{label="Stylings"}
