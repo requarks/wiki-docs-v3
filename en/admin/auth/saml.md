@@ -2,7 +2,7 @@
 title: SAML 2.0
 description: Authentication strategy
 published: true
-date: '2026-10-27T22:53:09.664Z'
+date: '2026-10-27T22:53:25.761Z'
 tags:
   - admin
   - auth
@@ -34,7 +34,7 @@ Security Assertion Markup Language 2.0, the standard for exchanging authenticati
 | Digest Algorithm | Which algorithm digests the data being signed. Match it to the signature algorithm unless the provider asks otherwise. One of SHA-256, SHA-512 or SHA-1 (insecure). | SHA-256 |
 | Name Identifier Format | What kind of name the request asks the provider to identify people by. Leave empty to ask for no particular format, which is what a provider that objects to being asked wants. | `urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress` |
 | Require Signed Assertions | Refuse a response whose assertion is not signed in its own right. Worth leaving on — a signature over the response alone leaves the assertion inside it unprotected. | :white_check_mark: |
-| Require Signed Response | Also refuse a response that is not signed as a whole. Most providers sign only the assertion unless told otherwise — AD FS among them — and a signed assertion is checked regardless of this setting, so turn it on only for a provider configured to sign the response too. |  |
+| Require Signed Response | Also refuse a response that is not signed as a whole. Most providers sign only the assertion unless told otherwise — AD FS among them — and a signed assertion is checked regardless of this setting, so turn it on only for a provider configured to sign the response too. | :x: |
 | Accepted Clock Skew (ms) | How far this server's clock may differ from the provider's before an assertion is judged not yet valid or expired. Set to -1 to stop checking those timestamps entirely, which throws away the assertion's own expiry. | 0 |
 | Disable Requested Auth Context | Ask for no particular authentication method, rather than the one below. Known to be what AD FS wants. | :x: |
 | :mdi:subdirectory-arrow-right: Auth Context | Which authentication method the request asks for. Join several with the \| pipe symbol. | `urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport` |
