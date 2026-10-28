@@ -2,7 +2,7 @@
 title: Authentication
 description: Configure the authentication settings of your wiki
 published: true
-date: '2026-09-30T20:33:33.777Z'
+date: '2026-10-28T07:40:25.581Z'
 tags:
   - admin
   - auth
@@ -17,8 +17,8 @@ Wiki.js comes with local authentication by default. This is the standard email &
 However, it's possible add 3rd-party authentication providers in order to login using your pre-existing identity solution. You can add any number of strategies and select the ones that should be available for each site.
 
 > [!IMPORTANT]
-> Once an authentication strategy is enabled, it becomes ready to be associated to any site.
-> You **MUST** therefore first activate it under each site's **Administration** :la:arrow-right: **Login** page. Only then will it be displayed on the login screen.
+> Once an authentication strategy is enabled, it becomes **ready** to be associated to any site. It's not usable yet!
+> You **MUST** first activate it under each site's **Administration** :la:arrow-right: **Login** page. Only then will it be displayed on the login screen.
 
 # Strategies
 
