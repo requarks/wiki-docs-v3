@@ -2,7 +2,7 @@
 title: Upgrade
 description: How to upgrade to the latest version
 published: true
-date: '2026-10-28T23:07:05.906Z'
+date: '2026-10-28T23:08:12.454Z'
 tags:
   - setup
 editor: markdown
@@ -15,7 +15,7 @@ dateCreated: '2026-08-11T05:04:17.122Z'
 # In-place upgrade
 
 > [!WARNING] Do NOT use for 2.x installations
-> To upgrade from 2.x, refer to the [Upgrade from 2.x](#upgrade-from-2x) section instead.
+> To upgrade from 2.x, refer to the [Upgrade from 2.x](#upgrade-from-2x) section instead. The in-place upgrade is strictly for 3.x installations.
 
 :::block-tabs
 ::block-tab{label="Docker" header="2" icon="mdi:docker"}
