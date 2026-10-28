@@ -2,7 +2,7 @@
 title: Basics
 description: Learn the basics of Wiki.js
 published: true
-date: '2026-10-17T03:16:15.700Z'
+date: '2026-10-28T22:45:57.782Z'
 tags:
   - user-guide
 editor: markdown
@@ -15,7 +15,7 @@ dateCreated: '2026-08-13T22:40:50.191Z'
 
 ## Header
 
-![Header](/guide/images/basics-ui-header.png)
+![Header](/guide/images/basics-ui-header.png){.decor-shadow .decor-rounded}
 
 The site header is present on all pages.
 
@@ -37,7 +37,7 @@ The site header is present on all pages.
 
 ## Page Header
 
-![Page Header](/guide/images/basics-ui-page-header.png)
+![Page Header](/guide/images/basics-ui-page-header.png){.decor-shadow .decor-rounded .decor-border}
 
 The page header is composed of 4 components:
 
