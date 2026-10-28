@@ -2,7 +2,7 @@
 title: Requirements
 description: Prerequisites to install Wiki.js
 published: true
-date: '2026-10-16T04:42:23.703Z'
+date: '2026-10-28T22:52:16.204Z'
 tags:
   - setup
 editor: markdown
@@ -11,8 +11,7 @@ dateCreated: '2026-08-10T07:51:02.986Z'
 
 # Server
 
-Wiki.js runs on virtually any system where Node.js is supported.
-This means it runs on **Linux**, **macOS**, **Windows** as well as container solutions such as **Docker** / **Kubernetes**.
+Wiki.js runs on virtually any system where Node.js is supported, whether it's in **Docker** / **Kubernetes** or directly on **Linux**, **macOS** and **Windows**.
 
 > [!TIP]
 > It's highly recommended to run Wiki.js using **Docker**. It includes all necessary dependencies *(minus the database)* and provides the easiest ugprade path.
@@ -32,7 +31,7 @@ Storage requirements are based on the content you will enter. Wikis that consist
 **At least 1 GB of storage** dedicated to Wiki.js is recommended.
 
 > [!NOTE]
-> The Wiki.js docker image image is quite large *(~850MB)* as it includes all extensions. This is not included in the recommendations above.
+> The Wiki.js docker image image is quite large *(~850MB)* as it includes all extensions. This is on top of the recommendations above.
 
 ::
 
