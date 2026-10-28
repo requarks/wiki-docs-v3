@@ -2,7 +2,7 @@
 title: Locale
 description: Set localization options for your wiki
 published: true
-date: '2026-09-15T08:13:01.974Z'
+date: '2026-10-28T23:15:25.694Z'
 tags:
   - admin
 editor: markdown
@@ -11,7 +11,7 @@ dateCreated: '2026-08-21T07:59:28.259Z'
 
 # Overview
 
-Wiki.js offers strong multi-language capabilities:
+Wiki.js offers strong multilingual capabilities:
 
 - The user interface can be changed to a different language.
 - The ability to write content in multiple languages.
