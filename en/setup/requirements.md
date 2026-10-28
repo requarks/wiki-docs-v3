@@ -2,7 +2,7 @@
 title: Requirements
 description: Prerequisites to install Wiki.js
 published: true
-date: '2026-10-28T22:52:16.204Z'
+date: '2026-10-28T22:54:55.180Z'
 tags:
   - setup
 editor: markdown
@@ -100,7 +100,7 @@ The following browsers are supported:
 - Apple Safari *(including iOS version)*
 
 > [!NOTE]
-> Only the latest stable version of these browsers are supported.
+> Only the latest stable version of these browsers is supported.
 
 # Reverse Proxy
 
