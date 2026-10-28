@@ -2,7 +2,7 @@
 title: Upgrade
 description: How to upgrade to the latest version
 published: true
-date: '2026-10-28T22:57:51.140Z'
+date: '2026-10-28T23:03:01.640Z'
 tags:
   - setup
 editor: markdown
@@ -313,6 +313,16 @@ Draw.io diagrams must be converted to the XML format used by the [draw.io conten
     ````
 3. Save the page.
 ::
+
+### Inline KaTeX / MathJax
+
+Inline math formulas must be enclosed in both dollar signs **AND** backticks: ``` $`your math expression here`$ ```. Notice the backticks at the start and end of the expression. Both are now required.
+
+```md title="Example"
+Some inline $`x^2`$ math expression.
+```
+
+For block expressions, use the [KaTeX](/guide/blocks/katex) or [MathJax](/guide/blocks/mathjax) content blocks instead.
 
 ### Tabsets
 
