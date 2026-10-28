@@ -4,7 +4,7 @@ description: >-
   Watch pages, review submissions and be notified of pages requiring your
   attention
 published: true
-date: '2026-10-28T07:27:42.735Z'
+date: '2026-10-28T07:27:54.266Z'
 tags:
   - user-guide
 editor: markdown
