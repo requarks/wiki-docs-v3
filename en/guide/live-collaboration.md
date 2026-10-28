@@ -2,7 +2,7 @@
 title: Live Collaboration
 description: Write pages with other users in real-time
 published: true
-date: '2026-09-13T01:24:58.203Z'
+date: '2026-10-28T07:31:48.724Z'
 tags:
   - user-guide
   - editing
@@ -32,4 +32,4 @@ Wiki.js has built-in support for editing pages in real-time with other users. Se
 ::
 
 > [!IMPORTANT]
-> Ensure at least one user save the changes at the end. Otherwise any edits will be lost!
+> With the exception of the [Live Notes editor](/guide/editors/live-notes) which has a continuous history, always ensure at least one user **save the changes at the end**. Otherwise any edits will be lost!
