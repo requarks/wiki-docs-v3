@@ -2,7 +2,7 @@
 title: Upgrade
 description: How to upgrade to the latest version
 published: true
-date: '2026-10-17T01:09:16.841Z'
+date: '2026-10-28T22:57:51.140Z'
 tags:
   - setup
 editor: markdown
@@ -230,7 +230,7 @@ Because of the major differences between 2.x and 3.x, an in-place upgrade is not
 
 ::block-steps
 1. **Create a .wkbackup migration package**
-    1. Upgrade your Wiki.js 2.x installation to the latest version.
+    1. Upgrade your current Wiki.js 2.x installation to the latest 2.x version.
     2. Under **Administration Area** :la:arrow-right: **Utilities**, click the **Export for Wiki.js 3.x** tool.
     3. Leave all checkboxes checked and click the **Create Package** button.
     4. Download the package upon completion.
