@@ -2,7 +2,7 @@
 title: System Info
 description: Information about your server / client
 published: true
-date: '2026-08-20T07:07:57.656Z'
+date: '2026-10-29T01:38:10.720Z'
 tags:
   - admin
 editor: markdown
@@ -30,4 +30,4 @@ The **Wiki.js** section shows the currently **installed** version and the **late
 
 Click the **Copy System Info** button in the top-right corner of the page to copy all relevant info found on this page.
 
-This is useful when reporting a bug so the Wiki.js developers more easily determine the cause.
+This is useful when reporting a bug so the Wiki.js developers can more easily determine the cause.
