@@ -2,7 +2,7 @@
 title: Basics
 description: Learn the basics of Wiki.js
 published: true
-date: '2026-10-28T22:45:57.782Z'
+date: '2026-10-30T04:02:51.404Z'
 tags:
   - user-guide
 editor: markdown
@@ -79,3 +79,24 @@ The right section contains actions you can perform on this page, depending on th
 ## Page Contents
 
 # Writing a Page
+
+To write a new page, click the *:la:plus-circle:*{.text-blue} button in the top-right section of the site. You'll be prompted to select the editor to use. Most users will choose either the [Markdown editor](/guide/editors/markdown) *(best for technical documentation)* or the [Visual editor](/guide/editors/visual) *(best for non-technical users)*.
+
+Once you land into the editor, enter a **page title** and **description** at the top. You can optionally select a different **page icon** as well by clicking on it and searching for keywords.
+
+When you're ready to save the page, click the **Create Page** button in the top-right corner of the page. You'll be prompted where to save the page. This works exactly like a file system on your desktop, with files and folders. Create a folder to organize your pages or save it at the root of the site.
+
+> [!TIP]
+> You can right-click a folder in the left sidebar and select **New Folder** to create a folder under it.
+
+Click the **Save** button to publish the page. To go back to editing the page, simply click the **Edit** button in the top-right corner.
+
+# Comment on a Page
+
+On any page with comments enabled, click on the **Talk** tab to switch to the discussion view.
+
+You can either create a new comment by clicking the **New Comment** button on the right sidebar, or click the **Reply** button under an existing comment.
+
+The text area will be focused for you to write a comment. Click **Post Comment** when you're done to submit the comment.
+
+
