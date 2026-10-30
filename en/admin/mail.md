@@ -2,7 +2,7 @@
 title: Mail Configuration
 description: Configure the mail server to send emails from Wiki.js
 published: true
-date: '2026-08-20T07:07:21.376Z'
+date: '2026-10-30T00:27:13.190Z'
 tags:
   - admin
 editor: markdown
@@ -43,10 +43,6 @@ To enable DKIM, enable the toggle for **Use DKIM**. Additional configuration opt
 | Key Selector | Determines which key to use for DKIM in your DNS records.‍ |
 | Private Key | ‍Private key for the selector in PEM format. |
 {.table-leading-col}
-
-# Mail Templates
-
-*Coming soon*
 
 # Send a Test Email
 
