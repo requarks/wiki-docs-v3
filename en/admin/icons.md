@@ -2,7 +2,7 @@
 title: Icons
 description: Choose which icon sets can be used across the wiki
 published: true
-date: '2026-08-20T07:07:07.691Z'
+date: '2026-10-30T00:26:46.578Z'
 tags:
   - admin
 editor: markdown
@@ -10,6 +10,8 @@ dateCreated: '2026-08-14T08:07:53.354Z'
 ---
 
 # Overview
+
+Documentation coming soon
 
 # Icon Sets
 
