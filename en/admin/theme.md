@@ -2,7 +2,7 @@
 title: Theme
 description: Modify the look & feel of your wiki
 published: true
-date: '2026-10-30T04:40:35.308Z'
+date: '2026-10-30T04:43:06.128Z'
 tags:
   - admin
 editor: markdown
