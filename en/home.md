@@ -2,7 +2,7 @@
 title: Wiki.js
 description: Official Documentation for 3.x
 published: true
-date: '2026-10-25T00:35:59.498Z'
+date: '2026-10-30T03:38:04.252Z'
 tags: []
 editor: markdown
 dateCreated: '2026-08-10T07:05:24.182Z'
@@ -39,22 +39,8 @@ Wiki.js is quick and easy to install. You'll be up and running in no time.
   description: Changelog of each release
   icon: 'mdi:fire'
   color: rose
-- title: Suggest New Features
-  url: /feedback
-  icon: 'mdi:bulb-outline'
-- title: Report a Bug
-  url: https://github.com/requarks/wiki/discussions/categories/3-x-error-bug-report
-  icon: 'mdi:bug-outline'
-- title: Help / Support
-  url: https://github.com/requarks/wiki/discussions/categories/3-x-help-questions
-  icon: 'mdi:chat-help-outline'
-- title: Donate
-  url: https://js.wiki/donate
-  icon: 'mdi:heart'
 ```
 ::
-
-
 
 # User Guide
 
@@ -68,6 +54,33 @@ Check out the [basics](/guide/basics) page to get started.
 The administration area [dashboard](/admin/dashboard) is your entry point to managing your wiki.
 
 ::block-index{path="admin" limit="50" columns="3"}
+::
+
+# Contribute
+
+::block-links-grid{minWidth="max(300px, 25% - 1rem)"}
+```yaml
+- title: Suggest New Features
+  description: Post and upvote ideas
+  url: /feedback
+  icon: 'mdi:bulb-outline'
+  color: amber
+- title: Report a Bug
+  description: Something is broken?
+  url: https://github.com/requarks/wiki/discussions/categories/3-x-error-bug-report
+  icon: 'mdi:bug-outline'
+  color: red
+- title: Help / Support
+  description: Questions? Need help with something?
+  url: https://github.com/requarks/wiki/discussions/categories/3-x-help-questions
+  icon: 'mdi:chat-help-outline'
+  color: lime
+- title: Donate
+  description: Help fund the development of Wiki.js
+  url: https://js.wiki/donate
+  icon: 'mdi:heart'
+  color: pink
+```
 ::
 
 # Developers
