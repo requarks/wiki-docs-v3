@@ -2,7 +2,7 @@
 title: Theme
 description: Modify the look & feel of your wiki
 published: true
-date: '2026-10-30T04:38:38.602Z'
+date: '2026-10-30T04:40:35.308Z'
 tags:
   - admin
 editor: markdown
@@ -57,7 +57,7 @@ The theme options changes the look and feel of your wiki site.
 
 | Property | Description | Notes |
 | :-- | :-- | :-- |
-| CSS Override | DCSS code to inject after system default CSS. | :warning: **Injecting too much CSS code can result in poor page load performance!** |
-| Head HTML Injection | HTML code to be injected just before the closing head tag. Usually for script tags. Applied the next time a page is loaded. |  |
-| Body HTML Injection | HTML code to be injected just before the closing body tag. Applied the next time a page is loaded. |  |
+| CSS Override | DCSS code to inject after system default CSS. | :warning: Injecting too much CSS code can result in poor page load performance! |
+| Head HTML Injection | HTML code to be injected just before the closing head tag. Usually for script tags. Applied the next time a page is loaded. | :warning: A user with `manage:theme` permission can inject malicious scripts using this field. Use caution when handing out this permission. |
+| Body HTML Injection | HTML code to be injected just before the closing body tag. Applied the next time a page is loaded. | :warning: A user with `manage:theme` permission can inject malicious scripts using this field. Use caution when handing out this permission. |
 {.table-leading-col}
