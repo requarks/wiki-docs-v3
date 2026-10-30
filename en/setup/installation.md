@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-10-26T06:24:25.971Z'
+date: '2026-10-30T23:29:08.056Z'
 tags:
   - setup
 editor: markdown
@@ -76,7 +76,7 @@ All images are built for these architectures:
 | `DB_SSL_CA` | Database CA certificate content, as a single line string *(without spaces or new lines)*, without the prefix and suffix lines. |  |  |
 | `LOG_FORMAT` | Logging format<br>Accepted values: `default, json` |  | `default` |
 | `LOG_LEVEL` | Severity level for logging<br>Accepted values: `debug, info, warn, error` | | `info` |
-| `PORT` | HTTP Port to listen on | | `3000` |
+| `WIKI_PORT` | HTTP port the app should listen on. You should avoid changing this port and instead change the host port mapping at the container level. | | `3000` |
 
 ### Example
 
