@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-10-30T23:29:08.056Z'
+date: '2026-10-31T03:45:18.344Z'
 tags:
   - setup
 editor: markdown
@@ -502,7 +502,7 @@ There are several solutions to run Wiki.js as a background service. We'll focus 
     [Install]
     WantedBy=multi-user.target
     ```
-3. Save the service file ( <kbd>CTRL</kbd>+<kbd>X</kbd>, followed by <kbd>Y</kbd> ).
+3. Save the service file ( :block-kbd[CTRL+X], followed by :block-kbd[Y] ).
 4. Reload systemd:
     ```sh
     systemctl daemon-reload
