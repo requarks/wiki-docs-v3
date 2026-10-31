@@ -5,8 +5,9 @@ description: >-
   allowing a single passkey to work across multiple Wiki.js sites hosted on
   subdomains of the same parent domain. Currently…
 published: true
-date: '2026-10-31T19:32:05.495Z'
-tags: []
+date: '2026-10-31T22:40:15.357Z'
+tags:
+  - auth
 editor: markdown
 dateCreated: '2026-10-31T19:32:05.495Z'
 ---
