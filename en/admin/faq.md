@@ -2,7 +2,7 @@
 title: Troubleshooting / FAQs
 description: Solutions to common issues / Frequently Asked Questions
 published: true
-date: '2026-09-11T08:06:17.690Z'
+date: '2026-10-31T07:47:00.566Z'
 tags: []
 editor: markdown
 dateCreated: '2026-08-19T03:23:08.396Z'
@@ -119,11 +119,11 @@ No but it's highly recommended as it includes all the necessary dependencies. Ma
 
 ## Was AI used to generate code during development?
 
-Yes. Claude by Anthropic was used as a coding assistant. However, it was always used in a very directed manner for specific features. Every button, form element, API endpoint, DB schema fields, UX behavior, etc. is intentional and reasoned.
+Yes. Claude by Anthropic was used **as a coding assistant**. However, it was always used in a very directed manner for specific features. Every button, form element, API endpoint, DB schema fields, UX behavior, etc. is intentional and reasoned.
 
-Nothing was "vibe-coded" or done using AI agents left on their own with instructions to follow a plan. This is a recipe for disaster and a great way to end up with insecure, buggy and unmaintainable software.
+Nothing was "vibe-coded" or done using AI agents left on their own. This is a recipe for disaster and a great way to end up with insecure, buggy and unmaintainable software.
 
-All documentation is written by a human.
+All documentation is **written by a human**.
 
 ## Are Pull Requests with AI generated code accepted?
 
