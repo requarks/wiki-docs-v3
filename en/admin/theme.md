@@ -2,7 +2,7 @@
 title: Theme
 description: Modify the look & feel of your wiki
 published: true
-date: '2026-10-30T04:43:06.128Z'
+date: '2026-10-31T03:43:40.645Z'
 tags:
   - admin
 editor: markdown
@@ -18,11 +18,11 @@ The theme options changes the look and feel of your wiki site.
 | Property | Description | Default Value |
 | :-- | :-- | :-: |
 | Dark Mode | Whether the site should be in dark mode by default. Not recommended for accessibility. Can always be turned off by the user. | :x: |
-| Primary Color | The main color for primary action buttons and most form elements. | `#1976D2` |
-| Secondary Color | The alternate color for secondary action buttons and for some other elements. | `#02C39A` |
-| Accent Color | The accent color for elements that need to stand out or grab the user attention. | `#FF9800` |
-| Header Color | The background color for the site top header. | `#000000` |
-| Sidebar Color | The background color for the side navigation menu on content pages. | `#1976D2` |
+| Primary Color | The main color for primary action buttons and most form elements. | :block-color[#1976D2] |
+| Secondary Color | The alternate color for secondary action buttons and for some other elements. | :block-color[#02C39A] |
+| Accent Color | The accent color for elements that need to stand out or grab the user attention. | :block-color[#FF9800] |
+| Header Color | The background color for the site top header. | :block-color[#000000] |
+| Sidebar Color | The background color for the side navigation menu on content pages. | :block-color[#1976D2] |
 {.table-leading-col}
 
 > [!NOTE]
