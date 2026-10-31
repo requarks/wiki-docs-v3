@@ -2,7 +2,7 @@
 title: Markdown
 description: Syntax to write Markdown content
 published: true
-date: '2026-10-27T08:39:41.727Z'
+date: '2026-10-31T03:46:57.715Z'
 tags:
   - user-guide
   - editing
@@ -192,7 +192,7 @@ Using **double asterisks** symbols before and after the text selection.
 
 **Shortcuts**
 - By selecting text, then clicking the <kbd>:mdi:format-bold:</kbd> button in the top toolbar.
-- By selecting text, then pressing <kbd>CTRL</kbd> + <kbd>B</kbd>
+- By selecting text, then pressing :block-kbd[Ctrl+B]
 ::
 
 ::block-tab{label="Examples"}
@@ -337,8 +337,8 @@ Using between 1 and 6 **hashtag** symbol(s), followed by a space, before the tex
 
 **Shortcuts**
 - On the desired line, then clicking the <kbd>:mdi:format-header-pound:</kbd> dropdown button in the top toolbar.
-- On the desired line, press <kbd>CTRL</kbd> + <kbd>ALT</kbd> +  <kbd>Right</kbd> to increase the header level.
-- On the desired line, press <kbd>CTRL</kbd> + <kbd>ALT</kbd> +  <kbd>Left</kbd> to decrease the header level.
+- On the desired line, press :block-kbd[Ctrl+Alt+Right] to increase the header level.
+- On the desired line, press :block-kbd[Ctrl+Alt+Left] to decrease the header level.
 ::
 
 ::block-tab{label="Examples"}
@@ -473,7 +473,7 @@ Using a **single asterisk** symbol before and after the text selection.
 
 **Shortcuts**
 - By selecting text, then clicking the <kbd>:mdi:format-italic:</kbd> button in the top toolbar.
-- By selecting text, then pressing <kbd>CTRL</kbd> + <kbd>I</kbd>
+- By selecting text, then pressing :block-kbd[Ctrl+I]
 ::
 
 ::block-tab{label="Examples"}
