@@ -2,7 +2,7 @@
   "title": "Feedback",
   "description": "Submit ideas and vote on them to shape the future of Wiki.js",
   "published": true,
-  "date": "2026-10-24T10:53:32.936Z",
+  "date": "2026-10-31T02:29:36.379Z",
   "tags": [],
   "editor": "feedback",
   "dateCreated": "2026-10-24T02:38:02.081Z",
@@ -43,7 +43,7 @@
       }
     ],
     "submitterCategories": false,
-    "sort": "top",
+    "sort": "trending",
     "perPage": 20,
     "acceptsIdeas": true,
     "voting": true,
