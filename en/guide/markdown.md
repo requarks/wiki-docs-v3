@@ -2,7 +2,7 @@
 title: Markdown
 description: Syntax to write Markdown content
 published: true
-date: '2026-10-31T03:46:57.715Z'
+date: '2026-10-31T06:58:34.174Z'
 tags:
   - user-guide
   - editing
@@ -737,6 +737,17 @@ flowchart LR
 ```
 ::
 ````
+
+## Inline Blocks
+
+Some content blocks can be used inline with the text. They are defined using the `:block-name[value]{properties}` syntax. The `{properties}` part is optional and only used to change the default settings.
+
+For example, the following content would display `10 km` in both the metric and US customary units:
+```md
+The sun is about :block-unit[149600000 km]{show="both"} away.
+```
+
+The sun is about :block-unit[149600000 km]{show="both"} away.
 
 # Emojis
 
