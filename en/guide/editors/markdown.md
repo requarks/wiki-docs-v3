@@ -2,7 +2,7 @@
 title: Markdown Editor
 description: The flagship Markdown editor
 published: true
-date: '2026-09-14T23:59:28.797Z'
+date: '2026-10-31T03:48:56.427Z'
 tags:
   - user-guide
   - editing
@@ -43,16 +43,16 @@ Some elements (e.g. tables, content blocks, etc.) can be edited visually by clic
 
 ### Command Palette
 
-Press <kbd>F1</kbd> to show the **Command Palette**. It's a quick access dialog to all available commands and editor configurations.
+Press :block-kbd[F1] to show the **Command Palette**. It's a quick access dialog to all available commands and editor configurations.
 
 > [!NOTE]
 > The command palette may show keyboard shortcuts that are already registered by the browser / extensions and may not work as a result.
 
 ### Multi-cursor Tips
 
-- With a text selection, press <kbd>Ctrl</kbd> + <kbd>D</kbd> to select the next instance.
-- Hold <kbd>Alt</kbd> while clicking to insert multiple cursors.
-- Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Up/Down</kbd> to add a cursor above or below the current one.
+- With a text selection, press :block-kbd[Ctrl+D] to select the next instance.
+- Hold :block-kbd[Alt] while clicking to insert multiple cursors.
+- Press :block-kbd[Ctrl+Shift+Up] or :block-kbd[Ctrl+Shift+Down] to add a cursor above or below the current one.
 
 ## Render Preview
 
