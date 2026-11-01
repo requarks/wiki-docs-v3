@@ -2,7 +2,7 @@
 title: Basics
 description: Learn the basics of Wiki.js
 published: true
-date: '2026-11-01T09:08:32.885Z'
+date: '2026-11-01T09:09:15.276Z'
 tags:
   - user-guide
 editor: markdown
@@ -84,8 +84,8 @@ It contains actions for the current page:
 | :mdi:image-sync-outline: | Show Pending Uploads | **Only shown in edit mode.** Images that have been pasted or dropped into the editor that are awaiting upload. They get uploaded upon saving the page.
 | :la:history: | Show [Page History](/guide/history) | Show the page revisions overlay to browse and view previous versions of the page. |
 | :la:code: | Show [Page Source](/guide/source) | Show the page source overlay to see the original code of the page before render. |
-| :la:atom: | Convert Page | **Shown under the :la:ellipsis-h: Page Actions menu.** Change the editor of the page (e.g. Visual editor to Markdown editor). Not available for all pages. |
-| :la:magic: | Rerender Page | **Shown under the :la:ellipsis-h: Page Actions menu.** Trigger a re-render of the page on the server. This is only needed when the current render failed or is outdated. |
+| :la:atom: | Convert Page | **Shown under the extra Page Actions menu (:la:ellipsis-h:).** Change the editor of the page (e.g. Visual editor to Markdown editor). Not available for all pages. |
+| :la:magic: | Rerender Page | **Shown under the extra Page Actions menu (:la:ellipsis-h:).** Trigger a re-render of the page on the server. This is only needed when the current render failed or is outdated. |
 | :la:copy: | [Duplicate Page](/guide/pages#duplicate) | Create a copy of the page and start editing it. |
 | :la:share: | [Rename / Move Page](/guide/pages#rename-move) | Rename the page or move it to a different location. |
 | :la:trash: | [Delete Page](/guide/pages#delete) | Delete the page and send it to the recycle bin. |
