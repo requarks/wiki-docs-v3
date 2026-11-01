@@ -2,7 +2,7 @@
 title: Basics
 description: Learn the basics of Wiki.js
 published: true
-date: '2026-11-01T09:09:15.276Z'
+date: '2026-11-01T09:10:22.653Z'
 tags:
   - user-guide
 editor: markdown
@@ -32,6 +32,8 @@ The site header is present on all pages.
 > If you're not authenticated, you'll instead see a <kbd>:la:sign-in-alt: Login</kbd> button in the right section.
 
 ## Sidebar Navigation
+
+
 
 ## Page Header
 
