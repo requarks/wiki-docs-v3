@@ -2,7 +2,7 @@
 title: Basics
 description: Learn the basics of Wiki.js
 published: true
-date: '2026-10-30T04:02:51.404Z'
+date: '2026-11-01T08:48:25.387Z'
 tags:
   - user-guide
 editor: markdown
@@ -90,6 +90,10 @@ When you're ready to save the page, click the **Create Page** button in the top-
 > You can right-click a folder in the left sidebar and select **New Folder** to create a folder under it.
 
 Click the **Save** button to publish the page. To go back to editing the page, simply click the **Edit** button in the top-right corner.
+
+## Page Metadata
+
+Metadata and settings of a page can be changed via the [Page Properties](/guide/page-properties) dialog. Click the *:la:pen-nib:* button on the right side of the page to access it. It's present in both view and edit mode.
 
 # Comment on a Page
 
