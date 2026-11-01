@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-11-01T01:44:22.756Z'
+date: '2026-11-01T04:30:57.755Z'
 tags:
   - setup
 editor: markdown
@@ -26,26 +26,12 @@ dateCreated: '2026-08-10T07:53:50.826Z'
 Images are tagged to **major**, **major.minor** and **major.minor.patch** versions.
 It's recommended to use the **major** version, unless you have a specific requirement to pin your deployment to specific version.
 
-> [!WARNING]
-> Note that Wiki.js 3.x is in beta and images are currently tagged as `3.0.0-beta`. The non-beta tags below won't work until the beta phase has ended.
-
 ```sh
-# -----------------------------
-# BETA VERSION
-# -----------------------------
-ghcr.io/requarks/wiki:3.0.0-beta
+ghcr.io/requarks/wiki:3
 
 # or using a specific version:
-ghcr.io/requarks/wiki:3.0.0-beta.705
-
-# -----------------------------
-# NOT YET WORKING (read above)
-# -----------------------------
-#ghcr.io/requarks/wiki:3
-
-# or using a specific version:
-#ghcr.io/requarks/wiki:3.0
-#ghcr.io/requarks/wiki:3.0.1
+ghcr.io/requarks/wiki:3.0.1
+ghcr.io/requarks/wiki:3.0
 ```
 
 > [!CAUTION]
@@ -145,12 +131,9 @@ Deploys Wiki.js 3.x, with a bundled PostgreSQL 18 or an existing PostgreSQL 17+ 
 
 The chart is published as an OCI artifact, so no `helm repo add` is needed:
 
-> [!WARNING]
-> As this chart is still in beta, you **MUST** pass either the `--devel` flag or specify the version manually using the `--version 3.0.0-beta.<build>` flag.
-
 ```sh
 # Deploy Chart
-helm install wiki oci://ghcr.io/requarks/charts/wiki --devel
+helm install wiki oci://ghcr.io/requarks/charts/wiki
 
 # Monitor Deployment
 kubectl rollout status deployment/wiki
@@ -292,7 +275,7 @@ This guide provides an easy, no docker knowledge required, step-by-step instruct
           - ./.db-secret:/etc/wiki/.db-secret:ro
 
       wiki:
-        image: ghcr.io/requarks/wiki:3.0.0-beta
+        image: ghcr.io/requarks/wiki:3
         depends_on:
           - db
         environment:
@@ -368,7 +351,7 @@ By default, your wiki is accessible over unencrypted HTTP. This section adds aut
           - ./.db-secret:/etc/wiki/.db-secret:ro
 
       wiki:
-        image: ghcr.io/requarks/wiki:3.0.0-beta
+        image: ghcr.io/requarks/wiki:3
         depends_on:
           - db
         environment:
