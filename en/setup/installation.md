@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-11-01T04:30:57.755Z'
+date: '2026-11-01T04:32:37.012Z'
 tags:
   - setup
 editor: markdown
@@ -92,7 +92,7 @@ services:
       - db-data:/var/lib/postgresql
 
   wiki:
-    image: ghcr.io/requarks/wiki:3.0.0-beta
+    image: ghcr.io/requarks/wiki:3
     depends_on:
       - db
     environment:
