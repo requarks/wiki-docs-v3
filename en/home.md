@@ -2,14 +2,11 @@
 title: Wiki.js
 description: Official Documentation for 3.x
 published: true
-date: '2026-10-30T03:38:04.252Z'
+date: '2026-11-01T02:19:46.540Z'
 tags: []
 editor: markdown
 dateCreated: '2026-08-10T07:05:24.182Z'
 ---
-
-> [!CAUTION] BETA Warning
-> **This wiki is for the Wiki.js 3.0 BETA release.** For the stable 2.x version documentation, go to [docs.requarks.io](https://docs.requarks.io).
 
 Wiki.js is a powerful knowledge base platform to write and share documentation.
 
