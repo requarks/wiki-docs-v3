@@ -2,7 +2,7 @@
 title: Basics
 description: Learn the basics of Wiki.js
 published: true
-date: '2026-11-01T08:48:25.387Z'
+date: '2026-11-01T09:08:32.885Z'
 tags:
   - user-guide
 editor: markdown
@@ -32,8 +32,6 @@ The site header is present on all pages.
 > If you're not authenticated, you'll instead see a <kbd>:la:sign-in-alt: Login</kbd> button in the right section.
 
 ## Sidebar Navigation
-
-## Page Actions Bar
 
 ## Page Header
 
@@ -74,6 +72,27 @@ The right section contains actions you can perform on this page, depending on th
 - If you're creating a new page, click the green <kbd>:la:check: Create Page</kbd> to save the page.
 - If you're editing an existing page, click the green <kbd>:la:check: Save Changes</kbd> to save the page. A second <kbd>:la:check-double:</kbd> button is also available next to it as a shortcut to save and close (return to the view mode).
 
+## Page Rail
+
+The rail is an action side bar displayed on the right side of the screen. It's grey in view mode and becomes orange in edit mode.
+
+It contains actions for the current page:
+
+| Button | Action | Description |
+| :-: | :-- | :-- |
+| :la:pen-nib: | Open [Page Properties](/guide/page-properties) | Open the page properties dialog to modify page metadata. |
+| :mdi:image-sync-outline: | Show Pending Uploads | **Only shown in edit mode.** Images that have been pasted or dropped into the editor that are awaiting upload. They get uploaded upon saving the page.
+| :la:history: | Show [Page History](/guide/history) | Show the page revisions overlay to browse and view previous versions of the page. |
+| :la:code: | Show [Page Source](/guide/source) | Show the page source overlay to see the original code of the page before render. |
+| :la:atom: | Convert Page | **Shown under the :la:ellipsis-h: Page Actions menu.** Change the editor of the page (e.g. Visual editor to Markdown editor). Not available for all pages. |
+| :la:magic: | Rerender Page | **Shown under the :la:ellipsis-h: Page Actions menu.** Trigger a re-render of the page on the server. This is only needed when the current render failed or is outdated. |
+| :la:copy: | [Duplicate Page](/guide/pages#duplicate) | Create a copy of the page and start editing it. |
+| :la:share: | [Rename / Move Page](/guide/pages#rename-move) | Rename the page or move it to a different location. |
+| :la:trash: | [Delete Page](/guide/pages#delete) | Delete the page and send it to the recycle bin. |
+
+> [!NOTE]
+> Some actions may not be available depending on your group permissions.
+
 ## Page Sidebar
 
 ## Page Contents
@@ -93,7 +112,7 @@ Click the **Save** button to publish the page. To go back to editing the page, s
 
 ## Page Metadata
 
-Metadata and settings of a page can be changed via the [Page Properties](/guide/page-properties) dialog. Click the *:la:pen-nib:* button on the right side of the page to access it. It's present in both view and edit mode.
+Metadata and settings of a page can be changed via the [Page Properties](/guide/page-properties) dialog. Click the :la:pen-nib: button on the right side of the page (page rail) to access it. It's present in both view and edit mode.
 
 # Comment on a Page
 
