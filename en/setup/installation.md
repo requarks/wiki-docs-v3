@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-11-01T04:32:50.702Z'
+date: '2026-11-01T04:33:42.612Z'
 tags:
   - setup
 editor: markdown
@@ -35,7 +35,7 @@ ghcr.io/requarks/wiki:3.0
 ```
 
 > [!CAUTION]
-> **DO NOT** use the `latest` tag as it may break your installation when a new major version with breaking changes is released!
+> **DO NOT** use the `latest` tag as it may break your installation when a new major version with breaking changes is released! The `latest` tag is no longer assigned in 3.x or later.
 
 All images are built for these architectures:
 - **linux/amd64** *(Intel / AMD CPUs)*
