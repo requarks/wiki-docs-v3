@@ -2,7 +2,7 @@
 title: Upgrade
 description: How to upgrade to the latest version
 published: true
-date: '2026-11-01T04:31:08.898Z'
+date: '2026-11-01T04:31:39.926Z'
 tags:
   - setup
 editor: markdown
@@ -50,15 +50,12 @@ docker compose up --force-recreate -d
 ::block-tab{label="Kubernetes" header="2" icon="mdi:kubernetes"}
 Use the `helm upgrade` command to upgrade to the latest version:
 
-> [!WARNING]
-> As this chart is still in beta, you **MUST** pass either the `--devel` flag or specify the version manually using the `--version 3.0.0-beta.<build>` flag.
-
 ```sh
 # Without a values.yaml file:
-helm upgrade wiki oci://ghcr.io/requarks/charts/wiki --devel --reset-then-reuse-values
+helm upgrade wiki oci://ghcr.io/requarks/charts/wiki --reset-then-reuse-values
 
 # With a values.yaml file:
-helm upgrade wiki oci://ghcr.io/requarks/charts/wiki --devel -f values.yaml
+helm upgrade wiki oci://ghcr.io/requarks/charts/wiki -f values.yaml
 ```
 
 > [!NOTE] Reference
