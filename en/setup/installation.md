@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-11-01T04:32:37.012Z'
+date: '2026-11-01T04:32:50.702Z'
 tags:
   - setup
 editor: markdown
@@ -69,7 +69,7 @@ All images are built for these architectures:
 Assuming you have a PostgreSQL container named `db` on the same network *(replace the values with your own!)*:
 
 ```sh
-docker run -d -p 8080:3000 --name wiki --restart unless-stopped -e "ADMIN_EMAIL=user@example.com" -e "ADMIN_PASS=SuperSecret123" -e "DB_HOST=db" -e "DB_USER=wikijs" -e "DB_PASS=wikijsrocks" -e "DB_NAME=wiki" ghcr.io/requarks/wiki:3.0.0-beta
+docker run -d -p 8080:3000 --name wiki --restart unless-stopped -e "ADMIN_EMAIL=user@example.com" -e "ADMIN_PASS=SuperSecret123" -e "DB_HOST=db" -e "DB_USER=wikijs" -e "DB_PASS=wikijsrocks" -e "DB_NAME=wiki" ghcr.io/requarks/wiki:3
 ```
 
 Once the container is started, browse to `http://YOUR-IP-ADDRESS:8080` and login using the admin email and password you provided in the command above.
