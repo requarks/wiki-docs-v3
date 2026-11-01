@@ -2,7 +2,7 @@
 title: Upgrade
 description: How to upgrade to the latest version
 published: true
-date: '2026-10-28T23:08:12.454Z'
+date: '2026-11-01T04:31:08.898Z'
 tags:
   - setup
 editor: markdown
@@ -29,10 +29,10 @@ docker stop wiki
 docker rm wiki
 
 # Pull latest image of Wiki.js
-docker pull ghcr.io/requarks/wiki:3.0.0-beta
+docker pull ghcr.io/requarks/wiki:3
 
 # Create new container of Wiki.js based on latest image
-docker run -d -p 8080:3000 --name wiki --restart unless-stopped -e "DB_HOST=db" -e "DB_USER=wikijs" -e "DB_PASS=wikijsrocks" -e "DB_NAME=wiki" ghcr.io/requarks/wiki:3.0.0-beta
+docker run -d -p 8080:3000 --name wiki --restart unless-stopped -e "DB_HOST=db" -e "DB_USER=wikijs" -e "DB_PASS=wikijsrocks" -e "DB_NAME=wiki" ghcr.io/requarks/wiki:3
 ```
 
 Check out the [Docker installation guide](/setup/installation#environment-variables) for all the possible options when creating a Wiki.js container.
