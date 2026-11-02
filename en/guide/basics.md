@@ -2,7 +2,7 @@
 title: Basics
 description: Learn the basics of Wiki.js
 published: true
-date: '2026-11-02T07:03:11.746Z'
+date: '2026-11-02T07:13:14.653Z'
 tags:
   - user-guide
 editor: markdown
@@ -31,7 +31,20 @@ The site header is present on all pages.
 > [!NOTE]
 > If you're not authenticated, you'll instead see a <kbd>:la:sign-in-alt: Login</kbd> button in the right section.
 
-## Sidebar Navigation
+## Navigation Sidebar
+
+![Navigation Sidebar](/guide/images/basics-ui-nav-sidebar.webp =240x){.decor-shadow .decor-rounded .decor-border}
+
+The left sidebar is used for navigation. It contains the following elements:
+
+- **Locale**: Switch to another language.
+- **Browse**: View all pages and folders at the current level, and drill down into folders.
+- **Links**: List of links, headers, separators and menus.
+
+> [!NOTE]
+> The **Locale** and **Browse** button can be hidden by an administrator.
+
+There are several ways to organize a wiki navigation sidebar.
 
 
 
