@@ -2,14 +2,12 @@
 title: Basics
 description: Learn the basics of Wiki.js
 published: true
-date: '2026-11-02T07:29:36.987Z'
+date: '2026-11-02T07:30:20.402Z'
 tags:
   - user-guide
 editor: markdown
 dateCreated: '2026-08-13T22:40:50.191Z'
 ---
-
-*This wiki is incomplete and actively being populated.*
 
 # User Interface
 
