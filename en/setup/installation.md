@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-11-02T10:16:44.575Z'
+date: '2026-11-02T10:17:20.374Z'
 tags:
   - setup
 editor: markdown
@@ -150,7 +150,7 @@ Customize your deployment using a `values.yaml` file.
 
 You can then deploy the chart by referencing your values.yaml file:
 ```sh
-helm install wiki oci://ghcr.io/requarks/charts/wiki --devel -f values.yaml
+helm install wiki oci://ghcr.io/requarks/charts/wiki -f values.yaml
 ```
 
 ### Database
