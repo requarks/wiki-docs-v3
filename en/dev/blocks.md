@@ -2,7 +2,7 @@
 title: Custom Blocks
 description: Create your own content blocks
 published: true
-date: '2026-09-19T11:57:23.266Z'
+date: '2026-11-02T07:37:07.292Z'
 tags:
   - dev
 editor: markdown
@@ -162,6 +162,11 @@ export class BlockExampleElement extends LitElement {
      * package cannot bring an icon with it — so this only matters for a block shipping with the wiki.
      */
     icon: 'plugin',
+
+    /**
+     * Whether the content block is used inline or on multiple lines as a block.
+     */
+    // inline: true,
 
     /**
      * What the editor writes BETWEEN the opening and closing lines when inserting the block — the
@@ -506,6 +511,7 @@ A static `definition` object describes the configuration of the block.
 | name | The human readable name, shown in the admin and block picker. | `My Example` |
 | description | A short description of the block, shown in the admin and block picker. | `An example block that does X and Y.` |
 | icon | Icon key matching one of the bundled `ultraviolet-*` icons. Use `plugin` by default. | `plugin` |
+| inline | Whether the block is displayed inline (`true`) or as a block (`false` or omit). | `true` |
 | template | Sample content that gets inserted between the opening and closing tags of your block. **Omit if not needed.** | `Your content here.` |
 | asciidocTemplate | Sample content but in AsciiDoc syntax. **Omit if the same as template or not needed.** |  |
 | contentEditor | The editor to use to edit the content of the block. **Omit unless your block has nested code that needs an editor.** |  |
