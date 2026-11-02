@@ -2,7 +2,7 @@
 title: Basics
 description: Learn the basics of Wiki.js
 published: true
-date: '2026-11-02T07:28:55.147Z'
+date: '2026-11-02T07:29:36.987Z'
 tags:
   - user-guide
 editor: markdown
@@ -50,7 +50,7 @@ Refer to the [Navigation](/guide/navigation) page for more information.
 
 ## Page Header
 
-![Page Header](/guide/images/basics-ui-page-header.png){.decor-shadow .decor-rounded .decor-border}
+![Page Header](/guide/images/basics-ui-page-header.png =820x){.decor-shadow .decor-rounded .decor-border}
 
 The page header is composed of 4 components:
 
