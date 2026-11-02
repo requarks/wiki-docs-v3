@@ -2,7 +2,7 @@
 title: Basics
 description: Learn the basics of Wiki.js
 published: true
-date: '2026-11-01T09:10:22.653Z'
+date: '2026-11-02T02:30:30.545Z'
 tags:
   - user-guide
 editor: markdown
@@ -98,6 +98,17 @@ It contains actions for the current page:
 ## Page Sidebar
 
 ## Page Contents
+
+![Content Tabs](/guide/images/basics-ui-content-tabs.webp){.decor-shadow .decor-rounded .decor-border}
+
+In the top-right corner of the page contents, there are 3 tabs:
+
+- **Article**: The page contents
+- **Talk**: Discussions (comments and annotations)
+- **Links**: List of pages that link to this one.
+
+> [!NOTE]
+> Some tabs may not be displayed if comments and backlinks are disabled.
 
 # Writing a Page
 
