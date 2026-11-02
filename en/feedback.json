@@ -2,7 +2,7 @@
   "title": "Feedback",
   "description": "Submit ideas and vote on them to shape the future of Wiki.js",
   "published": true,
-  "date": "2026-10-31T02:29:36.379Z",
+  "date": "2026-11-02T03:32:05.844Z",
   "tags": [],
   "editor": "feedback",
   "dateCreated": "2026-10-24T02:38:02.081Z",
@@ -32,6 +32,10 @@
       {
         "tag": "file-manager",
         "label": "File Manager"
+      },
+      {
+        "tag": "mcp",
+        "label": "MCP"
       },
       {
         "tag": "storage",
