@@ -2,7 +2,7 @@
 title: Basics
 description: Learn the basics of Wiki.js
 published: true
-date: '2026-11-02T02:30:30.545Z'
+date: '2026-11-02T07:03:11.746Z'
 tags:
   - user-guide
 editor: markdown
@@ -96,6 +96,18 @@ It contains actions for the current page:
 > Some actions may not be available depending on your group permissions.
 
 ## Page Sidebar
+
+![Page Sidebar](/guide/images/basics-ui-page-sidebar.webp =240x){.decor-shadow .decor-rounded .decor-border}
+
+On the right side of the page is the **Page Sidebar**. It contains the following:
+
+- **Table of Contents**: Quick access to all sections of the article. An indicator is shown to the left of the heading currently in view.
+- **Tags**: Tags assigned to the page. Click on a tag to view all pages associated to it.
+- **Rating**: Either a thumbs up / down rating, or a 5 stars rating.
+- **Last Edited by**: The user that last edited the page.
+
+> [!NOTE]
+> The page sidebar can be hidden entirely (site-wide or per page), as well as individual sections. Ratings are hidden by default.
 
 ## Page Contents
 
