@@ -2,7 +2,7 @@
 title: Basics
 description: Learn the basics of Wiki.js
 published: true
-date: '2026-11-02T07:13:14.653Z'
+date: '2026-11-02T07:28:55.147Z'
 tags:
   - user-guide
 editor: markdown
@@ -44,9 +44,9 @@ The left sidebar is used for navigation. It contains the following elements:
 > [!NOTE]
 > The **Locale** and **Browse** button can be hidden by an administrator.
 
-There are several ways to organize a wiki navigation sidebar.
+There are several ways to organize a wiki navigation sidebar. Some prefer to have a static navigation for the whole site, while others prefer to reflect the pages in the current folder.
 
-
+Refer to the [Navigation](/guide/navigation) page for more information.
 
 ## Page Header
 
