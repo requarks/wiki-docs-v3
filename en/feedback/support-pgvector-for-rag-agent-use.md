@@ -5,8 +5,9 @@ description: >-
   (including open source) Configurable chunking strategies Configurable
   debouncing of index updates Search API MCP availab…
 published: true
-date: '2026-11-01T20:36:27.886Z'
-tags: []
+date: '2026-11-02T03:32:15.259Z'
+tags:
+  - mcp
 editor: markdown
 dateCreated: '2026-11-01T20:36:27.886Z'
 ---
