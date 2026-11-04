@@ -5,8 +5,9 @@ description: >-
   creating the caddyfile from shell. I might suggest the caddyfile should exist
   by default. https://docs.js.wiki/setup/installati…
 published: true
-date: '2026-11-03T17:50:38.698Z'
-tags: []
+date: '2026-11-04T05:53:56.173Z'
+tags:
+  - admin
 editor: markdown
 dateCreated: '2026-11-03T17:50:38.698Z'
 ---
