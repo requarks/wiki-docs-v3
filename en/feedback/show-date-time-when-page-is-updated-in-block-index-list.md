@@ -5,8 +5,9 @@ description: >-
   understanding that when a page is created it's also updated) Bonus: should not
   display a created/updated page, if user is…
 published: true
-date: '2026-11-03T19:32:49.983Z'
-tags: []
+date: '2026-11-04T05:52:37.210Z'
+tags:
+  - blocks
 editor: markdown
 dateCreated: '2026-11-03T19:32:49.983Z'
 ---
