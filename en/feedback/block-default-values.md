@@ -5,8 +5,10 @@ description: >-
   useful to define default values. I thinking specific for the kroki Server
   property. We use a self hosted instance for in…
 published: true
-date: '2026-11-03T19:10:53.507Z'
-tags: []
+date: '2026-11-04T05:53:00.768Z'
+tags:
+  - admin
+  - blocks
 editor: markdown
 dateCreated: '2026-11-03T19:10:53.507Z'
 ---
