@@ -5,8 +5,9 @@ description: >-
   be achievable without too much work, but will give it a try to the best of my
   abilities. Add theme/site wide scale/size d…
 published: true
-date: '2026-11-03T16:37:37.590Z'
-tags: []
+date: '2026-11-04T05:53:42.454Z'
+tags:
+  - ui
 editor: markdown
 dateCreated: '2026-11-03T16:37:37.590Z'
 ---
