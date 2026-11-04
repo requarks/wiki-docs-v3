@@ -2,7 +2,7 @@
 title: Upgrade
 description: How to upgrade to the latest version
 published: true
-date: '2026-11-01T04:31:39.926Z'
+date: '2026-11-04T23:11:15.232Z'
 tags:
   - setup
 editor: markdown
@@ -320,6 +320,21 @@ Some inline $`x^2`$ math expression.
 ```
 
 For block expressions, use the [KaTeX](/guide/blocks/katex) or [MathJax](/guide/blocks/mathjax) content blocks instead.
+
+### Relative Links
+
+Relative links from the current page are no longer prefixed with the path to the page, but rather to the parent folder, matching the behavior of platforms like GitHub.
+
+```md title="Example of a page at path /foo/bar"
+[ABC](xyz)
+
+# becomes in 2.x:
+/foo/bar/xyz
+
+# becomes in 3.x:
+/foo/xyz
+```
+
 
 ### Tabsets
 
