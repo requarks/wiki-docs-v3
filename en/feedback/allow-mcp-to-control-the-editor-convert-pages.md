@@ -5,8 +5,10 @@ description: >-
   convert between editors and create pages using a specified editor. Hopefully
   this is a straightforward change at least for mark…
 published: true
-date: '2026-11-04T02:19:56.041Z'
-tags: []
+date: '2026-11-04T05:52:26.328Z'
+tags:
+  - mcp
+  - editing
 editor: markdown
 dateCreated: '2026-11-04T02:18:02.888Z'
 ---
