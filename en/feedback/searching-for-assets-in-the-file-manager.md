@@ -5,8 +5,9 @@ description: >-
   currently selected folder. It does not search through nested folders, making
   it difficult to locate files and images when asset…
 published: true
-date: '2026-11-05T05:20:51.360Z'
-tags: []
+date: '2026-11-05T09:44:19.671Z'
+tags:
+  - file-manager
 editor: markdown
 dateCreated: '2026-11-05T05:20:51.360Z'
 ---
