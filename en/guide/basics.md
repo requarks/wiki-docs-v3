@@ -2,7 +2,7 @@
 title: Basics
 description: Learn the basics of Wiki.js
 published: true
-date: '2026-11-02T07:30:20.402Z'
+date: '2026-11-05T09:52:18.284Z'
 tags:
   - user-guide
 editor: markdown
@@ -72,7 +72,7 @@ The right section contains actions you can perform on this page, depending on th
 #### In View Mode
 
 - Click :la:bell: to watch the page. You'll be notified when it gets updated.
-- Click :la:print: to print the page. This button might not be visible if the administrator disabled it. You can always trigger a print from your browser menu or using <kbd>Ctrl/Cmd</kbd> + <kbd>P</kbd> on most systems.
+- Click :la:print: to print the page. This button might not be visible if the administrator disabled it. You can always trigger a print from your browser menu or using :block-kbd[Ctrl+P] on most systems.
 - Click :la:inbox: to view edit suggestions pending review. This button is only visible if [Approvals](/admin/approvals) are enabled and you're a reviewer for the page.
 - If you have write permissions to this page, click the orange <kbd>:la:edit: Edit</kbd> button to enter the Edit mode.
 - If you only have a read access but an [Approvals](/admin/approvals) rule cover this page, click the orange <kbd>:la:edit: Suggest Edits</kbd> button to enter a basic Edit mode to propose changes to the page. If you already submitted an edit proposal but it hasn't been reviewed yet, click the <kbd>:la:edit: Continue Suggestion</kbd> button to keep editing your suggestion.
