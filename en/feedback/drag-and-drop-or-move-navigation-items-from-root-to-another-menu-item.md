@@ -4,8 +4,9 @@ description: >-
   Add the ability to move links, headers, seperators from the root navigation
   into another menu that is located under other navigation
 published: true
-date: '2026-11-05T10:08:24.498Z'
-tags: []
+date: '2026-11-05T10:09:22.015Z'
+tags:
+  - navigation
 editor: markdown
 dateCreated: '2026-11-05T10:02:52.220Z'
 ---
