@@ -2,7 +2,7 @@
   "title": "Feedback",
   "description": "Submit ideas and vote on them to shape the future of Wiki.js",
   "published": true,
-  "date": "2026-11-05T09:43:59.332Z",
+  "date": "2026-11-05T10:09:12.965Z",
   "tags": [],
   "editor": "feedback",
   "dateCreated": "2026-10-24T02:38:02.081Z",
@@ -36,6 +36,10 @@
       {
         "tag": "mcp",
         "label": "MCP"
+      },
+      {
+        "tag": "navigation",
+        "label": "Navigation"
       },
       {
         "tag": "search",
