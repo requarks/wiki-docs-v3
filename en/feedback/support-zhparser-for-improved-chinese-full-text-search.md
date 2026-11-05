@@ -5,8 +5,9 @@ description: >-
   configuration based on each page’s locale. Chinese locales are not included in
   the default language mappings and fall back to Post…
 published: true
-date: '2026-11-05T02:36:43.457Z'
-tags: []
+date: '2026-11-05T09:44:10.101Z'
+tags:
+  - search
 editor: markdown
 dateCreated: '2026-11-05T02:36:43.457Z'
 ---
