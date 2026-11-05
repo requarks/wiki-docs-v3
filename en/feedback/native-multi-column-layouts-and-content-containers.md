@@ -5,8 +5,9 @@ description: >-
   through the Markdown editor using custom HTML and CSS. It would be beneficial
   to have these capabilities built directly…
 published: true
-date: '2026-11-05T06:04:06.147Z'
-tags: []
+date: '2026-11-05T09:44:40.755Z'
+tags:
+  - editing
 editor: markdown
 dateCreated: '2026-11-05T05:48:46.609Z'
 ---
