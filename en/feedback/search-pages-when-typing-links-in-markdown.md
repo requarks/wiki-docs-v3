@@ -5,8 +5,9 @@ description: >-
   popup would show search results for the text between the brackets, and if you
   selected one, it would complete the link. This…
 published: true
-date: '2026-11-04T16:28:26.737Z'
-tags: []
+date: '2026-11-05T09:43:33.395Z'
+tags:
+  - editing
 editor: markdown
 dateCreated: '2026-11-04T16:28:26.737Z'
 ---
