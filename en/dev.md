@@ -2,7 +2,7 @@
 title: Dev Environment
 description: Guide to setup a development environment for Wiki.js
 published: true
-date: '2026-09-20T03:18:46.506Z'
+date: '2026-11-05T10:06:27.224Z'
 tags:
   - dev
 editor: markdown
@@ -56,12 +56,12 @@ It's very easy to run a development instance of Wiki.js with all the necessary d
 ::block-steps
 1. Clone the project on your local machine.
 1. Open the project in Visual Studio Code.
-1. Reopen the project in container (from the popup in the lower-right corner of the screen when opening the project, or via the Command Palette (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> *or* <kbd>F1</kbd>) afterwards).
+1. Reopen the project in container (from the popup in the lower-right corner of the screen when opening the project, or via the Command Palette (:block-kbd[Ctrl+Shift+P] *or* :block-kbd[F1]) afterwards).
 1. Once in container mode, make a copy of `config.sample.yml` and rename it to `config.yml`. There's no need to edit the file, the default values are ok.
 1. Two terminals should automatically launch in the lower part of the screen. If this isn't the case, from the Command Palette, run the task "Create terminals":
-    1. Launch the Command Palette (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> *or* <kbd>F1</kbd>)
-    1. Type `Run Task` and press <kbd>Enter</kbd>
-    1. Select the task "Create terminals" and press Enter
+    1. Launch the Command Palette (:block-kbd[Ctrl+Shift+P] *or* :block-kbd[F1])
+    1. Type `Run Task` and press :block-kbd[Enter]
+    1. Select the task "Create terminals" and press :block-kbd[Enter]
 1. In the right-side terminal (Frontend), run the command:
     ```sh
     npm run build
