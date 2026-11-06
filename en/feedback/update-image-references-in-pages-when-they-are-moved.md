@@ -5,8 +5,9 @@ description: >-
   to that image to be updated by the system. Alternatively, if images could
   display all the pages that reference them, tha…
 published: true
-date: '2026-11-05T23:32:43.611Z'
-tags: []
+date: '2026-11-06T00:00:51.900Z'
+tags:
+  - file-manager
 editor: markdown
 dateCreated: '2026-11-05T23:32:43.611Z'
 ---
