@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-11-06T07:13:19.809Z'
+date: '2026-11-06T07:14:00.564Z'
 tags:
   - setup
 editor: markdown
@@ -27,6 +27,7 @@ Images are tagged to **major**, **major.minor** and **major.minor.patch** versio
 It's recommended to use the **major** version, unless you have a specific requirement to pin your deployment to specific version.
 
 ```sh
+# using the latest 3.x version:
 ghcr.io/requarks/wiki:3
 
 # or using a specific version:
