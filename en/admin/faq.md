@@ -2,7 +2,7 @@
 title: Troubleshooting / FAQs
 description: Solutions to common issues / Frequently Asked Questions
 published: true
-date: '2026-11-06T01:33:14.216Z'
+date: '2026-11-06T01:38:57.822Z'
 tags: []
 editor: markdown
 dateCreated: '2026-08-19T03:23:08.396Z'
@@ -129,7 +129,7 @@ All documentation is **written by a human**.
 
 Yes **BUT only for small fixes**. If your PR touches 20 files and adds 500 lines of code, it becomes impossible to review in a reasonable manner, especially when AI can generate them in minutes. It will be rejected in most cases.
 
-If there's a bug that require major changes to many files, submit a bug report instead. It's easier to create a patch from there, in a way where the maintainer can control the output and review the changes.
+If there's a bug that require major changes to many files, submit a bug report instead. It's easier to create a patch from there, in a way where the maintainer can control the output and review the changes. This is basically a case of "*my AI can replicate your AI work just as quick*", but at least I know how mine works, its limitations and what to review in more details.
 
 For new features / enhancements, open a discussion **FIRST** to sketch out the details before starting any implementation.
 
