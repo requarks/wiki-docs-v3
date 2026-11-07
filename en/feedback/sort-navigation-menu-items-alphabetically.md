@@ -5,8 +5,9 @@ description: >-
   manually by dragging each one with its handle in Edit Menu Items. On large
   wikis with many links and submenus, keeping menu…
 published: true
-date: '2026-11-06T12:58:30.440Z'
-tags: []
+date: '2026-11-07T03:58:43.348Z'
+tags:
+  - navigation
 editor: markdown
 dateCreated: '2026-11-06T12:58:30.440Z'
 ---
