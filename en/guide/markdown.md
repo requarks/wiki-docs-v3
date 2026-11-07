@@ -2,7 +2,7 @@
 title: Markdown
 description: Syntax to write Markdown content
 published: true
-date: '2026-10-31T06:58:34.174Z'
+date: '2026-11-07T01:11:41.271Z'
 tags:
   - user-guide
   - editing
@@ -492,6 +492,9 @@ Lorem *ipsum* dolor
 :::block-tabs
 ::block-tab{label="Usage"}
 Using `<kbd>` before and `</kbd>` after the text selection.
+
+> [!NOTE]
+> Consider using the [Keyboard Shortcuts (block-kbd)](/guide/blocks/kbd) content block instead, which automatically display the correct keys depending on the OS of the reader.
 
 **Shortcuts**
 - By selecting text, then clicking the <kbd>:mdi:keyboard-variant:</kbd> button in the top toolbar.
