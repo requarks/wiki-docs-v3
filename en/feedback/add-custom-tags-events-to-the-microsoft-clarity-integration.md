@@ -5,8 +5,9 @@ description: >-
   optionally send Wiki.js-specific context through Clarity's custom tags and
   events. Wiki.js already has useful information s…
 published: true
-date: '2026-11-06T17:09:16.703Z'
-tags: []
+date: '2026-11-07T03:58:51.655Z'
+tags:
+  - analytics
 editor: markdown
 dateCreated: '2026-11-06T17:09:16.703Z'
 ---
