@@ -2,7 +2,7 @@
 title: Search Engine
 description: Configure the search capabilities of your wiki
 published: true
-date: '2026-11-07T11:02:08.025Z'
+date: '2026-11-07T11:02:30.969Z'
 tags:
   - admin
 editor: markdown
@@ -11,7 +11,7 @@ dateCreated: '2026-08-17T19:13:48.304Z'
 
 # Overview
 
-Wiki.js has a powerful search engine to quickly find what you're looking for across your wiki. It relies on PostgreSQL's pg_trgm extension for trigram text matching.
+Wiki.js has a powerful search engine to quickly find what you're looking for across your wiki. It relies on PostgreSQL's `pg_trgm` extension for trigram text matching.
 
 # Parameters
 
