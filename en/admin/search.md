@@ -2,7 +2,7 @@
 title: Search Engine
 description: Configure the search capabilities of your wiki
 published: true
-date: '2026-11-07T11:00:19.041Z'
+date: '2026-11-07T11:01:48.828Z'
 tags:
   - admin
 editor: markdown
@@ -18,7 +18,7 @@ Wiki.js has a powerful search engine to quickly find what you're looking for acr
 | Parameter | Description | Default |
 | :-- | :-- | :-- |
 | Enable Term Highlighting | Whether to show the highlighted terms in search results. There is a slight performance impact when enabled. | `True` |
-| PostgreSQL Dictionary Mapping Overrides | JSON object of 2 letters locale codes and their PostgreSQL dictionary association. | `{ "en": "english" }` |
+| PostgreSQL Dictionary Mapping Overrides | JSON object of 2 letters locale codes and their PostgreSQL dictionary association to override. Built-in PostgreSQL languages do not need to be defined here and are automatically mapped. | `{}` |
 {.table-leading-col}
 
 # Operations
