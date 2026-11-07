@@ -2,7 +2,7 @@
 title: Search
 description: Search across all pages and filter results
 published: true
-date: '2026-11-07T04:27:47.784Z'
+date: '2026-11-07T04:38:40.613Z'
 tags: []
 editor: markdown
 dateCreated: '2026-08-27T06:17:53.011Z'
@@ -28,7 +28,9 @@ Some languages may require extra configuration / extensions to support full-text
     ```
 3. In Wiki.js, under the **Administration Area** :la:arrow-right: **Search Engine** page, add the following to the **PostgreSQL Dictionary Mapping Overrides** field:
     ```json title="JSON"
-    {"zh": "chinese"}
+    {
+      "zh": "chinese"
+    }
     ```
 4. Click **Apply**.
 5. Click **Rebuild Index**.
