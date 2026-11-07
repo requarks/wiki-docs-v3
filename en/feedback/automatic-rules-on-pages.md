@@ -5,8 +5,9 @@ description: >-
   Say we have a folder with multiple routines that certain users create. We want
   these to have rules that send out notices…
 published: true
-date: '2026-11-06T15:09:30.293Z'
-tags: []
+date: '2026-11-07T03:59:10.597Z'
+tags:
+  - misc
 editor: markdown
 dateCreated: '2026-11-06T14:25:02.410Z'
 ---
