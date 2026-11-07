@@ -2,7 +2,7 @@
   "title": "Feedback",
   "description": "Submit ideas and vote on them to shape the future of Wiki.js",
   "published": true,
-  "date": "2026-11-05T10:09:12.965Z",
+  "date": "2026-11-07T03:57:52.777Z",
   "tags": [],
   "editor": "feedback",
   "dateCreated": "2026-10-24T02:38:02.081Z",
@@ -10,12 +10,16 @@
     "intro": "To submit new ideas, upvote and comment, you'll be prompted to login using a **GitHub** account. Click the **Submit Idea** button below or upvote an existing idea to get started.\n\nDo **NOT** submit bug reports or questions here. Use [GitHub Discussions](https://github.com/requarks/wiki/discussions/categories/3-x-error-bug-report) instead.",
     "categories": [
       {
-        "tag": "admin",
-        "label": "Administration"
-      },
-      {
         "tag": "auth",
         "label": "Authentication"
+      },
+      {
+        "tag": "analytics",
+        "label": "Analytics"
+      },
+      {
+        "tag": "admin",
+        "label": "Administration"
       },
       {
         "tag": "blocks",
@@ -36,6 +40,10 @@
       {
         "tag": "mcp",
         "label": "MCP"
+      },
+      {
+        "tag": "misc",
+        "label": "Miscellaneous"
       },
       {
         "tag": "navigation",
