@@ -2,7 +2,7 @@
 title: Search Engine
 description: Configure the search capabilities of your wiki
 published: true
-date: '2026-08-20T07:07:43.731Z'
+date: '2026-11-07T11:00:19.041Z'
 tags:
   - admin
 editor: markdown
@@ -24,3 +24,28 @@ Wiki.js has a powerful search engine to quickly find what you're looking for acr
 # Operations
 
 - Click the **Rebuild Index** button in the top-right corner to fully rebuild the search index. This should only be done for maintenance / fixing errors, as this is done automatically as content change.
+
+# Additional Configs
+
+Some languages may require extra configuration / extensions to support full-text search.
+
+## Chinese
+
+::block-steps
+1. Install [zhparser](https://github.com/amutu/zhparser). The official postgres image doesn't include it.
+2. Create the config in your database:
+    ```sql title="SQL"
+    CREATE EXTENSION zhparser;
+    CREATE TEXT SEARCH CONFIGURATION chinese (PARSER = zhparser);
+    ALTER TEXT SEARCH CONFIGURATION chinese ADD MAPPING FOR n,v,a,i,e,l WITH simple;
+    ```
+3. In Wiki.js, under the **Administration Area** :la:arrow-right: **Search Engine** page, add the following to the **PostgreSQL Dictionary Mapping Overrides** field:
+    ```json title="JSON"
+    {
+      "zh": "chinese"
+    }
+    ```
+4. Click **Apply**.
+5. Click **Rebuild Index**.
+::
+
