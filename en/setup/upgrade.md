@@ -2,7 +2,7 @@
 title: Upgrade
 description: How to upgrade to the latest version
 published: true
-date: '2026-11-06T07:49:32.066Z'
+date: '2026-11-08T02:23:38.429Z'
 tags:
   - setup
 editor: markdown
@@ -251,6 +251,9 @@ Because of the major differences between 2.x and 3.x, an in-place upgrade is not
 > - Security settings because of potential differences in behavior.
 > - Site logo, as it's uploaded rather than linked externally in 3.x.
 > - Site hostname to avoid locking you out of your new installation by pointing to the 2.x installation hostname.
+
+> [!IMPORTANT]
+> Imported users will not be linked to any authentication strategies. **This is normal.** Users are no longer locked to only a single authentication strategy in 3.x. They will automatically be linked again on first login by email address matching. 
 
 > [!TIP]
 > The import is idempotent and can safely be performed multiple times. Existing items will be skipped unless the **Overwrite on conflict** option is checked.
