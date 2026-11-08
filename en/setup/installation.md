@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-11-08T10:37:49.783Z'
+date: '2026-11-08T10:45:06.091Z'
 tags:
   - setup
 editor: markdown
@@ -50,7 +50,7 @@ All images are built for these architectures:
 | :-- | :-- | :-: | :-- |
 | `ADMIN_EMAIL` | Email address to use to create the root administrator account.<br>*Has no effect if the root administrator account is already created.* | ✴️ | `admin@example.com ` |
 | `ADMIN_PASS` | Initial password to use to create the root administrator account.<br>*Has no effect if the root administrator account is already created.* | ✴️ | `12345678` |
-| `CONFIG_FILE` | Path to the config file |  | `./config.yml` |
+| `CONFIG_FILE` | Path to the config file, if using a custom one. |  | `./config.yml` |
 | `DATABASE_URL` | Database Connection String *(overrides all `DB_` prefixed env vars if set)* |  |  |
 | `DB_HOST` | Database Hostname / IP Address | ✅ |  |
 | `DB_NAME` | Database Name | ✅ |  |
@@ -121,7 +121,9 @@ Once both containers are started, browse to `http://YOUR-IP-ADDRESS` and login u
 
 By default, the Wiki.js docker image runs as the user `wiki`. Some deployments require the container to run as root. Simply add the `-u root` parameter when creating the container to do so.
 
-This is however **NOT** a secure way to run containers. **Make sure you understand the security implications before doing so.**
+> [!CAUTION]
+> Running as root is **NOT** a secure way to run containers. **Make sure you understand the security implications before doing so.**
+
 ::
 
 ::block-tab{label="Kubernetes" header="2" icon="mdi:kubernetes"}
