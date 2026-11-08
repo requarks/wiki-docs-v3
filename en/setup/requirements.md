@@ -2,7 +2,7 @@
 title: Requirements
 description: Prerequisites to install Wiki.js
 published: true
-date: '2026-10-28T22:54:55.180Z'
+date: '2026-11-08T03:40:25.811Z'
 tags:
   - setup
 editor: markdown
@@ -14,7 +14,7 @@ dateCreated: '2026-08-10T07:51:02.986Z'
 Wiki.js runs on virtually any system where Node.js is supported, whether it's in **Docker** / **Kubernetes** or directly on **Linux**, **macOS** and **Windows**.
 
 > [!TIP]
-> It's highly recommended to run Wiki.js using **Docker**. It includes all necessary dependencies *(minus the database)* and provides the easiest ugprade path.
+> It's highly recommended to run Wiki.js using **Docker**. It includes all necessary dependencies *(minus the database)* and provides the easiest upgrade path.
 
 :::block-tabs
 ::block-tab{label="Recommended Specs" header="2" icon="mdi:server"}
