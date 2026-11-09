@@ -5,8 +5,9 @@ description: >-
   to be able to copy a page the user needs to have the authorization to edit the
   page, which is not helpful at all for Templ…
 published: true
-date: '2026-11-08T18:36:54.139Z'
-tags: []
+date: '2026-11-09T05:15:45.411Z'
+tags:
+  - editing
 editor: markdown
 dateCreated: '2026-11-08T18:36:54.139Z'
 ---
