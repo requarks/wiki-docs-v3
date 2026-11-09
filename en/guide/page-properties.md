@@ -2,7 +2,7 @@
 title: Page Properties
 description: Edit page metadata and configuration
 published: true
-date: '2026-10-26T01:31:38.370Z'
+date: '2026-11-09T10:51:49.372Z'
 tags:
   - user-guide
   - editing
@@ -58,6 +58,15 @@ An optional alias to quickly access the page regardless of its current location.
 The alias becomes accessible at `/a/` + the alias.
 
 For example, by setting an alias of `KB1000` for a page at path `network/knowledge-base/dns-cache-expiration`, a user can now access it by going to `https://wiki.example.com/a/KB1000`. The page can be renamed or moved elsewhere later on and that link will still work.
+
+# Lock
+
+Users with the `manage:pages` permission can lock the page to prevent edits by clicking the <kbd>:la:lock:</kbd> button in the header. Once locked, the **Edit** button is disabled, edits are refused (including changes to page properties), submissions are disabled and it's not possible to move or delete the page / parent folder.
+
+Click the <kbd>:la:lock-open:</kbd> button again to unlock the page.
+
+> [!IMPORTANT]
+> Changes coming from a remote Git repository are still **accepted**. The page will however stay locked. Moving or deleting a page from git is also accepted. This is necessary as preventing these operations would result in drift and the repo becoming out of sync.
 
 # Lifecycle Rules
 
