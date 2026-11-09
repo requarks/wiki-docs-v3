@@ -5,8 +5,9 @@ description: >-
   Wiki.js blocks and n8n. I think similar functionality could be useful to other
   Wiki.js users as a native feature. A list is…
 published: true
-date: '2026-11-09T09:13:08.827Z'
-tags: []
+date: '2026-11-09T09:30:05.361Z'
+tags:
+  - blocks
 editor: markdown
 dateCreated: '2026-11-09T09:13:08.827Z'
 ---
