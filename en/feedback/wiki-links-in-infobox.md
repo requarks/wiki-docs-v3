@@ -5,8 +5,9 @@ description: >-
   several of my wikis over to 3.x, I've run into an annoyance with the current
   infobox. The only links supported are full u…
 published: true
-date: '2026-11-09T20:27:52.205Z'
-tags: []
+date: '2026-11-09T21:42:06.223Z'
+tags:
+  - blocks
 editor: markdown
 dateCreated: '2026-11-09T20:27:52.205Z'
 ---
