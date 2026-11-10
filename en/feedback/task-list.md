@@ -1,12 +1,13 @@
 ---
-title: Task list
+title: Interactive Task list
 description: >-
   Addition to checked/unchecked task list. Interactive task list, where you can
   tick a task on/off. Not persistent, only until page is reloaded. Can be useful
   when presenting user to a guide, so they c…
 published: true
-date: '2026-11-10T07:47:31.675Z'
-tags: []
+date: '2026-11-10T07:49:03.689Z'
+tags:
+  - editing
 editor: markdown
 dateCreated: '2026-11-10T07:47:31.675Z'
 ---
