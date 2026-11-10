@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-11-10T21:13:41.205Z'
+date: '2026-11-10T21:18:36.163Z'
 tags:
   - setup
 editor: markdown
@@ -438,17 +438,24 @@ Before going any further, make sure your system meets all the [requirements](/se
     cd ./wiki
     ```
 
-3. Rename the sample config file to `config.yml`:
+3. Install native backend dependencies:
+    ```powershell
+    cd backend
+    npm ci --omit=dev
+    cd ..
+    ```
+
+4. Rename the sample config file to `config.yml`:
     ```sh
     mv config.sample.yml config.yml
     ```
 
-4. Edit the config file and fill in your database and port settings (refer to the [configuration reference](/setup/config)):
+5. Edit the config file and fill in your database and port settings (refer to the [configuration reference](/setup/config)):
     ```sh
     nano config.yml
     ```
 
-4. Run Wiki.js
+6. Run Wiki.js
     ```sh
     # First run only (replace the email address with your own):
     ADMIN_EMAIL=admin@example.com node --no-experimental-webstorage backend
@@ -456,9 +463,9 @@ Before going any further, make sure your system meets all the [requirements](/se
     # Subsequent runs:
     node --no-experimental-webstorage backend
     ```
-5. Navigate to `http://localhost:3000` *(or the IP / port you configured)*, and login using the email address you entered in the last step and the password `12345678`. You'll be prompted to choose a new password.
+7. Navigate to `http://localhost:3000` *(or the IP / port you configured)*, and login using the email address you entered in the last step and the password `12345678`. You'll be prompted to choose a new password.
 
-6. Go the **Administration Area** :la:arrow-right: **Extensions** page and make sure the necessary [extensions](/admin/extensions) are installed, especially **Sharp** and **Puppeteer** which enables basic capabilities.
+8. Go the **Administration Area** :la:arrow-right: **Extensions** page and make sure the necessary [extensions](/admin/extensions) are installed, especially **Sharp** and **Puppeteer** which enables basic capabilities.
 ::
 
 #### Run as service
