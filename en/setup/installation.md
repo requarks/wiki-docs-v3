@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-11-10T00:22:01.340Z'
+date: '2026-11-10T07:10:34.745Z'
 tags:
   - setup
 editor: markdown
@@ -599,7 +599,11 @@ Before going any further, make sure your system meets all the [requirements](/se
 
 :::block-tabs
 ::block-tab{label="DigitalOcean" header="2" icon="mdi:digital-ocean"}
+We provide a preconfigured Wiki.js droplet image on DigitalOcean which includes everything to get started.
+
+
 *Coming soon*
+<!-- Go to the [Wiki.js 1-Click Droplet on DigitalOcean](https://marketplace.digitalocean.com/apps/wiki-js?refcode=5f7445bfa4d0&action=deploy) page. -->
 
 > [!TIP] Status
 > This image is officially maintained by the Wiki.js team.
