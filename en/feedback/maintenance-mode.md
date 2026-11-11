@@ -5,8 +5,9 @@ description: >-
   people in the administration group (or a switch in group authorization) has
   access to the site. It would be helpful when u…
 published: true
-date: '2026-11-10T09:47:07.451Z'
-tags: []
+date: '2026-11-11T09:30:08.639Z'
+tags:
+  - admin
 editor: markdown
 dateCreated: '2026-11-10T09:47:07.451Z'
 ---
