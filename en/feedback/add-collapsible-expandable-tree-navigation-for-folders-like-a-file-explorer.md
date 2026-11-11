@@ -5,8 +5,9 @@ description: >-
   that the page tree in the sidebar (and in any custom tree representation) does
   not support expand/collapse behavior for fold…
 published: true
-date: '2026-11-11T10:19:43.821Z'
-tags: []
+date: '2026-11-11T12:01:31.410Z'
+tags:
+  - navigation
 editor: markdown
 dateCreated: '2026-11-11T10:19:43.821Z'
 ---
