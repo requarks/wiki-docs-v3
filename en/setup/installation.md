@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-11-10T21:18:36.163Z'
+date: '2026-11-11T08:55:13.722Z'
 tags:
   - setup
 editor: markdown
@@ -438,7 +438,7 @@ Before going any further, make sure your system meets all the [requirements](/se
     cd ./wiki
     ```
 
-3. Install native backend dependencies:
+3. Install backend dependencies:
     ```powershell
     cd backend
     npm ci --omit=dev
@@ -533,7 +533,7 @@ Before going any further, make sure your system meets all the [requirements](/se
     cd ./wiki
     ```
 
-4. Install native backend dependencies:
+4. Install backend dependencies:
     ```powershell
     cd backend
     npm ci --omit=dev
@@ -583,7 +583,7 @@ Before going any further, make sure your system meets all the [requirements](/se
     cd C:\wiki
     ```
 
-4. Install native backend dependencies:
+4. Install backend dependencies:
     ```powershell
     cd backend
     npm ci --omit=dev
