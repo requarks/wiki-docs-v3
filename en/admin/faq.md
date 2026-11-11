@@ -2,7 +2,7 @@
 title: Troubleshooting / FAQs
 description: Solutions to common issues / Frequently Asked Questions
 published: true
-date: '2026-11-06T01:38:57.822Z'
+date: '2026-11-11T09:44:14.148Z'
 tags: []
 editor: markdown
 dateCreated: '2026-08-19T03:23:08.396Z'
@@ -49,7 +49,7 @@ Users with javascript disabled are also able to view the page contents, but with
 For these reasons, there's no plan to support subfolder installations for the foreseeable future.
 Use a subdomain. If you absolutely can't, then sorry, use something else.
 
-# Authentication
+# Administration
 
 ## Reset admin password manually
 
@@ -110,6 +110,30 @@ SET auth = jsonb_set(
 WHERE email = 'admin@example.com';
 EOF
 ```
+
+## Change site hostname manually
+
+Each site's hostname is stored in the sites table. Connect to the wiki's PostgreSQL database using [pgAdmin](https://www.pgadmin.org/) or **psql**, then follow these steps:
+
+::block-steps
+1. **Find the site.** The tables are in the schema set as `db.schema` in `config.yml`, which is `wiki` by default. If yours is different, replace `wiki.` in the queries below.
+    ```sql
+    SELECT id, hostname FROM wiki.sites ORDER BY hostname;
+    ```
+
+2. **Set the correct hostname.** Use the bare hostname: lowercase, with no scheme, port or path (for example `wiki.example.org`, not `https://wiki.example.org:3000/`).
+
+    ```sql
+    UPDATE wiki.sites
+    SET hostname = 'wiki.example.org'
+    WHERE id = '00000000-0000-0000-0000-000000000000';  -- the id from step 1
+    ```
+
+    > [!NOTE]
+    > If the instance has only one site, you can set the hostname to `*` instead. That makes it the catch-all site, so it answers on any hostname. Only one site can be the catch-all, so this fails with a unique-constraint error if another site already is.
+
+3. **Restart Wiki.js.** Each instance loads its sites into memory at startup and matches every request against that copy. It does not see a change made directly in the database until it restarts. If you run more than one instance, restart all of them.
+::
 
 # Development
 
