@@ -1,8 +1,8 @@
 ---
-title: Admin Management CLI
-description: Command-line maintenance tool
+title: CLI
+description: Command-line maintenance and recovery tool
 published: true
-date: '2026-11-12T09:16:55.566Z'
+date: '2026-11-12T10:48:49.199Z'
 tags:
   - admin
 editor: markdown
