@@ -2,7 +2,7 @@
 title: Troubleshooting / FAQs
 description: Solutions to common issues / Frequently Asked Questions
 published: true
-date: '2026-11-11T09:44:14.148Z'
+date: '2026-11-12T09:19:03.388Z'
 tags: []
 editor: markdown
 dateCreated: '2026-08-19T03:23:08.396Z'
@@ -53,7 +53,7 @@ Use a subdomain. If you absolutely can't, then sorry, use something else.
 
 ## Reset admin password manually
 
-The only way to change a password, without access to the administration web UI, is via the database. Use a tool like [pgAdmin](https://www.pgadmin.org/) if you're not comfortable with shell commands.
+To change a password, without access to the administration web UI, either use the [Admin Management CLI](/admin/cli) or make the edits directly via the database. Use a tool like [pgAdmin](https://www.pgadmin.org/) if you're not comfortable with shell commands.
 
 > [!WARNING]
 > **It's NOT possible to read the current password value.** Passwords are stored using a one-way bcrypt hashing process, which is not reversible. You can only overwrite it with a new value.
@@ -112,6 +112,8 @@ EOF
 ```
 
 ## Change site hostname manually
+
+To change a site's hostname, without access to the administration web UI, either use the [Admin Management CLI](/admin/cli) or make the edits directly via the database.
 
 Each site's hostname is stored in the sites table. Connect to the wiki's PostgreSQL database using [pgAdmin](https://www.pgadmin.org/) or **psql**, then follow these steps:
 
