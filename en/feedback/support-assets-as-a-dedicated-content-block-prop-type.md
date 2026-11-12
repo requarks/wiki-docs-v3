@@ -5,8 +5,9 @@ description: >-
   path/url string, since that is the only appropriate prop type. It is quite
   inconvenient to add these blocks for assets w…
 published: true
-date: '2026-11-12T05:55:55.504Z'
-tags: []
+date: '2026-11-12T07:27:59.875Z'
+tags:
+  - blocks
 editor: markdown
 dateCreated: '2026-11-12T05:55:01.678Z'
 ---
