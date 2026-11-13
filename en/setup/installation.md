@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-11-13T09:03:30.621Z'
+date: '2026-11-13T09:16:48.223Z'
 tags:
   - setup
 editor: markdown
@@ -24,7 +24,7 @@ dateCreated: '2026-08-10T07:53:50.826Z'
 ### Tags
 
 Images are tagged to **major**, **major.minor** and **major.minor.patch** versions.
-It's recommended to use the **major** version, unless you have a specific requirement to pin your deployment to specific version.
+It's recommended to use the **major** version, unless you have a specific requirement to pin your deployment to a specific version.
 
 ```sh
 # using the latest 3.x version:
