@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-11-11T10:19:08.620Z'
+date: '2026-11-13T09:03:30.621Z'
 tags:
   - setup
 editor: markdown
@@ -622,18 +622,15 @@ Before going any further, make sure your system meets all the [requirements](/se
 ::block-tab{label="DigitalOcean" header="2" icon="mdi:digital-ocean"}
 We provide a preconfigured Wiki.js droplet image on DigitalOcean which includes everything to get started.
 
+Go to the [Wiki.js 1-Click Droplet on DigitalOcean](https://marketplace.digitalocean.com/apps/wiki-js?refcode=5f7445bfa4d0&action=deploy) page.
 
-*Coming soon*
-<!-- Go to the [Wiki.js 1-Click Droplet on DigitalOcean](https://marketplace.digitalocean.com/apps/wiki-js?refcode=5f7445bfa4d0&action=deploy) page. -->
-
-> [!TIP] Status
+> [!TIP] Official Image
 > This image is officially maintained by the Wiki.js team.
 ::
 ::block-tab{label="PikaPods" header="2"}
-> [!WARNING] Status
-> - Only the 2.x image available at the moment.
-> - This image is maintained by PikaPods.
-
 See the [Wiki.js page on PikaPods](https://www.pikapods.com/pods?run=wiki-js)
+
+> [!WARNING] 3rd-Party Image
+> This image is maintained by PikaPods.
 ::
 :::
