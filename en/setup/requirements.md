@@ -2,7 +2,7 @@
 title: Requirements
 description: Prerequisites to install Wiki.js
 published: true
-date: '2026-11-10T08:09:59.783Z'
+date: '2026-11-15T02:16:42.253Z'
 tags:
   - setup
 editor: markdown
@@ -51,7 +51,7 @@ The following endpoints called by Wiki.js for various functions:
 | :-- | :-- | :-- |
 | `api.github.com` | `443` (HTTPS) | Check for new versions / updates. |
 | `github.com` | `443` (HTTPS) | Fetch locales metadata and strings. |
-| `api.iconify.design` | `443` (HTTPS) | Fetch and search icon sets. This can be replaced with your own self-hosted Iconify instance via the `config.yml` file. |
+| `api.iconify.design` | `443` (HTTPS) | Fetch and search icon sets. This can be replaced with your own [self-hosted Iconify instance](/setup/custom-iconify-server) via the `config.yml` file. |
 
 > [!IMPORTANT]
 > In addition to the endpoints above, you must also allow the endpoints required for the authentication and storage modules you enable. Refer the each module documentation for the endpoints to allow.
