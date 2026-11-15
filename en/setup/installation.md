@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-11-15T03:41:37.143Z'
+date: '2026-11-15T08:47:25.268Z'
 tags:
   - setup
 editor: markdown
@@ -31,8 +31,8 @@ It's recommended to use the **major** version, unless you have a specific requir
 ghcr.io/requarks/wiki:3
 
 # or using a specific version:
-ghcr.io/requarks/wiki:3.3.1
-ghcr.io/requarks/wiki:3.3
+ghcr.io/requarks/wiki:3.4.0
+ghcr.io/requarks/wiki:3.4
 ```
 
 > [!CAUTION]
