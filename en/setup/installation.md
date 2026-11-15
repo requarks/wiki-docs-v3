@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-11-15T03:39:50.286Z'
+date: '2026-11-15T03:41:37.143Z'
 tags:
   - setup
 editor: markdown
@@ -41,6 +41,8 @@ ghcr.io/requarks/wiki:3.3
 All images are built for these architectures:
 - **linux/amd64** *(Intel / AMD CPUs)*
 - **linux/arm64** *(Apple silicon, Gravitron, Raspberry Pi, etc.)*
+
+All images are also available from DockerHub as a fallback (e.g. `requarks/wiki:3`).
 
 ### Environment Variables
 
