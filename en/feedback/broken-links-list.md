@@ -5,8 +5,9 @@ description: >-
   non-existent pages both internally and externally (404 or timeout). If we
   re-name something or move a page, links do not auto update…
 published: true
-date: '2026-11-12T17:19:21.443Z'
-tags: []
+date: '2026-11-15T01:08:46.475Z'
+tags:
+  - misc
 editor: markdown
 dateCreated: '2026-11-12T17:19:21.443Z'
 ---
