@@ -7,8 +7,9 @@ description: >-
   enjoying the multi-site model, live collaboration and the new editors. There’s
   one thing we keep running into with the Git…
 published: true
-date: '2026-11-14T18:37:44.556Z'
-tags: []
+date: '2026-11-15T00:55:42.201Z'
+tags:
+  - storage
 editor: markdown
 dateCreated: '2026-11-14T18:37:44.556Z'
 ---
