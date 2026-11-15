@@ -5,8 +5,9 @@ description: >-
   everyone. Once the TOC is hidden, it’s gone for all readers. There is no way
   for an individual reader to collapse the TOC…
 published: true
-date: '2026-11-12T21:09:42.547Z'
-tags: []
+date: '2026-11-15T01:08:21.144Z'
+tags:
+  - ui
 editor: markdown
 dateCreated: '2026-11-12T21:09:42.547Z'
 ---
