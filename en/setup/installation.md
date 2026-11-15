@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-11-13T09:16:48.223Z'
+date: '2026-11-15T02:20:06.056Z'
 tags:
   - setup
 editor: markdown
@@ -61,8 +61,10 @@ All images are built for these architectures:
 | `DB_SCHEMA` | Database Schema |  | `wiki` |
 | `DB_SSL` | Whether to use SSL to connect to the database.<br>Accepted values: `0, 1, true, false` |  | `false` |
 | `DB_SSL_CA` | Database CA certificate content, as a single line string *(without spaces or new lines)*, without the prefix and suffix lines. |  |  |
+| `ICONIFY_API_URL` | Url of the Iconify API server to use for searching and fetching icons. Refer to the [Custom Iconify Server](/setup/custom-iconify-server) guide to setup your own instance. | | `https://api.iconify.design` |
 | `LOG_FORMAT` | Logging format<br>Accepted values: `default, json` |  | `default` |
 | `LOG_LEVEL` | Severity level for logging<br>Accepted values: `debug, info, warn, error` | | `info` |
+| `OFFLINE` | Whether to disable outbound network calls (e.g. checking for updates, fetching locales and icon sets). | | `false` |
 | `WIKI_PORT` | HTTP port the app should listen on. You should avoid changing this port and instead change the host port mapping at the container level. | | `3000` |
 
 ### Example
