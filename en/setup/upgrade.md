@@ -2,7 +2,7 @@
 title: Upgrade
 description: How to upgrade to the latest version
 published: true
-date: '2026-11-11T10:00:34.928Z'
+date: '2026-11-15T00:25:21.726Z'
 tags:
   - setup
 editor: markdown
@@ -248,8 +248,8 @@ Because of the major differences between 2.x and 3.x, an in-place upgrade is not
 > [!IMPORTANT]
 > Some settings are deliberatly **NOT** imported:
 > - Module settings *(like storage, authentication, comments, analytics, etc.)* to avoid unwanted conflicts with your old Wiki.js 2.x installation.
-> - Security settings because of potential differences in behavior.
-> - Site logo, as it's uploaded rather than linked externally in 3.x.
+> - Security and mail settings because of potential differences in behavior.
+> - Site logo and login background, as it's uploaded rather than linked externally in 3.x.
 > - Site hostname to avoid locking you out of your new installation by pointing to the 2.x installation hostname.
 
 > [!IMPORTANT]
