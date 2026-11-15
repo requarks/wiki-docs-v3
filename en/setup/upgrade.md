@@ -2,7 +2,7 @@
 title: Upgrade
 description: How to upgrade to the latest version
 published: true
-date: '2026-11-15T00:25:21.726Z'
+date: '2026-11-15T00:31:37.283Z'
 tags:
   - setup
 editor: markdown
@@ -220,6 +220,9 @@ helm upgrade wiki oci://ghcr.io/requarks/charts/wiki -f values.yaml
 :::
 
 # Upgrade from 2.x
+
+> [!WARNING] READ CAREFULLY
+> Please take the time to **fully read** this section **before** upgrading. There are multiple major differences between the two versions to take into consideration first.
 
 ## Migration Process
 
