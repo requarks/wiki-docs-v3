@@ -2,7 +2,7 @@
 title: Custom Iconify Server
 description: How to setup your own Iconify server
 published: true
-date: '2026-11-15T02:15:56.801Z'
+date: '2026-11-15T03:46:13.344Z'
 tags: []
 editor: markdown
 dateCreated: '2026-11-15T02:15:56.801Z'
@@ -18,7 +18,7 @@ By default, Wiki.js calls the public `api.iconify.com` endpoint to search and fe
 
 # Setup
 
-There [multiple options](https://iconify.design/docs/api/hosting.html) for running an Iconify API server.
+There [multiple options](https://iconify.design/docs/api/hosting.html) for running an Iconify API server. The simplest one is to use the `iconify/api` docker image.
 
 ## Download Icon Sets
 
