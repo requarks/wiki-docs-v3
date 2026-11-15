@@ -7,8 +7,9 @@ description: >-
   a few days ago and we’re really enjoying it, especially multi-site and live
   collaboration. While setting up our instance,…
 published: true
-date: '2026-11-14T18:42:29.497Z'
-tags: []
+date: '2026-11-15T00:54:31.031Z'
+tags:
+  - auth
 editor: markdown
 dateCreated: '2026-11-14T18:42:29.497Z'
 ---
