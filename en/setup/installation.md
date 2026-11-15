@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-11-15T03:37:52.609Z'
+date: '2026-11-15T03:39:50.286Z'
 tags:
   - setup
 editor: markdown
@@ -50,7 +50,7 @@ All images are built for these architectures:
 | :-- | :-- | :-: | :-- |
 | `ADMIN_EMAIL` | Email address to use to create the root administrator account.<br>*Has no effect if the root administrator account is already created.* | ✴️ | `admin@example.com ` |
 | `ADMIN_PASS` | Initial password to use to create the root administrator account.<br>*Has no effect if the root administrator account is already created.* | ✴️ | `12345678` |
-| `CONFIG_FILE` | Path to the config file, if using a custom one. |  | `./config.yml` |
+| `CONFIG_FILE` | Path to the [config](/setup/config) file, if using a custom one. |  | `./config.yml` |
 | `DATABASE_URL` | Database Connection String *(overrides all `DB_` prefixed env vars if set)* |  |  |
 | `DB_HOST` | Database Hostname / IP Address | ✅ |  |
 | `DB_NAME` | Database Name | ✅ |  |
