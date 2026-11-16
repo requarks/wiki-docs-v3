@@ -1,8 +1,8 @@
 ---
-title: OpenID Connect / OAuth2
+title: OIDC / OpenID Connect
 description: Authentication strategy
 published: true
-date: '2026-09-30T20:29:18.542Z'
+date: '2026-11-16T08:05:27.110Z'
 tags:
   - admin
   - auth
