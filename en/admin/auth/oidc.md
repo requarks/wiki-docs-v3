@@ -2,7 +2,7 @@
 title: OIDC / OpenID Connect
 description: Authentication strategy
 published: true
-date: '2026-11-16T08:27:55.161Z'
+date: '2026-11-16T08:28:12.064Z'
 tags:
   - admin
   - auth
@@ -76,6 +76,5 @@ Below are some of the most popular OIDC / OAuth2 providers compatible with this 
 - [GitLab](https://docs.gitlab.com/integration/openid_connect_provider/){rel="nofollow" target=_blank}
 - [Keycloak](https://www.keycloak.org/securing-apps/oidc-layers){rel="nofollow" target=_blank}
 - [Okta](https://developer.okta.com/docs/api/openapi/okta-oauth/guides/overview){rel="nofollow" target=_blank}
-- [Rocket.chat](https://docs.rocket.chat/docs/third-party-login){rel="nofollow" target=_blank}
 - [Slack](https://docs.slack.dev/authentication/sign-in-with-slack/){rel="nofollow" target=_blank}
 - [Twitch](https://dev.twitch.tv/docs/authentication/){rel="nofollow" target=_blank}
