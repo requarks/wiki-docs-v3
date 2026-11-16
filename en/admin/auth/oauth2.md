@@ -2,7 +2,7 @@
 title: OAuth2
 description: Authentication strategy
 published: true
-date: '2026-11-16T08:23:26.917Z'
+date: '2026-11-16T08:28:52.291Z'
 tags:
   - admin
   - auth
@@ -68,4 +68,5 @@ By enabling the **Unassign from groups no longer present in claim** as well, the
 
 Below are some of the most popular OAuth2 providers compatible with this strategy; with links to their documentation:
 
+- [Mattermost](https://docs.mattermost.com/developers/integrate/apps/authentication/oauth2){rel="nofollow" target=_blank}
 - [Rocket.chat](https://docs.rocket.chat/docs/third-party-login){rel="nofollow" target=_blank}
