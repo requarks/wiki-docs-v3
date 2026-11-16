@@ -2,7 +2,7 @@
 title: OIDC / OpenID Connect
 description: Authentication strategy
 published: true
-date: '2026-11-16T08:27:04.529Z'
+date: '2026-11-16T08:27:55.161Z'
 tags:
   - admin
   - auth
@@ -42,6 +42,8 @@ Unless there's a dedicated strategy for your authentication provider already (e.
 | :mdi:subdirectory-arrow-right: Require the authentication context | Refuse a login whose `acr` claim is not one of the values above. Off, they are only a request — OpenID Connect lets a provider ignore them and still answer with a valid token, so without this the setting expresses a preference rather than a requirement. Turn it on once the provider is known to return the claim, since one that returns none refuses everybody. | :x: |
 | ID Claim | Which claim carries the provider's own identifier for the account. Usually sub or id, which never changes. | `sub` |
 | Email Claim | Which claim carries the email address. | `email` |
+| Require Verified Email | Refuse a login or registration unless the provider says it has verified the email address. An account here is matched by address, so an unverified one says nothing about who holds the mailbox — on a provider that lets people type in any address they like, it is a way into somebody else's account. | :x: |
+| :mdi:subdirectory-arrow-right: Verified Email Claim | Which claim says the email address was verified. Only `true` (also as the string "true", in any casing) or `1` counts; anything else, the claim missing included, refuses the login. | `email_verified` |
 | Display Name Claim | Which claim carries the name to show. Falls back to the email address when the claim is absent. | `name` |
 | Picture Claim | Which claim carries the URL of the account's picture, fetched on login and stored as the avatar. Leave empty to let people keep whatever avatar they set here. | `picture` |
 | Handle Claim | Optional - Which claim carries the person's mention handle, e.g. `preferred_username`. Copied to their profile on every login, replacing what was set here. A value that is not 3 to 32 letters, digits, hyphens and underscores, or that another account already holds, is skipped and the handle left as it was. Leave empty to let people pick their own. | |
