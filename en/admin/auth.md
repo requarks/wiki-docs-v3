@@ -2,7 +2,7 @@
 title: Authentication
 description: Configure the authentication settings of your wiki
 published: true
-date: '2026-10-28T07:40:25.581Z'
+date: '2026-11-16T08:24:59.568Z'
 tags:
   - admin
   - auth
@@ -26,7 +26,7 @@ However, it's possible add 3rd-party authentication providers in order to login 
 ::
 
 > [!TIP]
-> If you're looking for strategies previously found in Wiki.js 2.x, such as **Dropbox**, **Facebook**, **GitLab**, **Keycloak**, **Okta**, **Rocket.chat**, **Slack** or **Twitch**, use the [OpenID Connect / OAuth2](/admin/auth/oidc) strategy instead.
+> If you're looking for strategies previously found in Wiki.js 2.x, such as **Dropbox**, **Facebook**, **GitLab**, **Keycloak**, **Okta**, **Slack** or **Twitch**, use the [OIDC / OpenID Connect](/admin/auth/oidc) strategy instead. For **Rocket.chat**, use the [OAuth2](/admin/auth/oauth2) strategy.
 
 # Reverse Proxies
 
