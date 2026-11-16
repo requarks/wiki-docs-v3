@@ -2,7 +2,7 @@
 title: OIDC / OpenID Connect
 description: Authentication strategy
 published: true
-date: '2026-11-16T08:05:27.110Z'
+date: '2026-11-16T08:27:04.529Z'
 tags:
   - admin
   - auth
@@ -44,6 +44,10 @@ Unless there's a dedicated strategy for your authentication provider already (e.
 | Email Claim | Which claim carries the email address. | `email` |
 | Display Name Claim | Which claim carries the name to show. Falls back to the email address when the claim is absent. | `name` |
 | Picture Claim | Which claim carries the URL of the account's picture, fetched on login and stored as the avatar. Leave empty to let people keep whatever avatar they set here. | `picture` |
+| Handle Claim | Optional - Which claim carries the person's mention handle, e.g. `preferred_username`. Copied to their profile on every login, replacing what was set here. A value that is not 3 to 32 letters, digits, hyphens and underscores, or that another account already holds, is skipped and the handle left as it was. Leave empty to let people pick their own. | |
+| Location Claim | Optional - Which claim carries where the person is, e.g. a custom `office` claim. Copied to their profile on every login, replacing what was set here. Leave empty to let people set their own. | |
+| Job Title Claim | Optional - Which claim carries the person's job title, e.g. `job_title`. Copied to their profile on every login, replacing what was set here. Leave empty to let people set their own. | |
+| Pronouns Claim | Optional - Which claim carries the person's pronouns. Copied to their profile on every login, replacing what was set here. Leave empty to let people set their own. | |
 | Map Groups | Put the user in the wiki groups a claim names, on every login. Only groups that already exist here are matched, by name and ignoring case — nothing is created. | :x: |
 | :mdi:subdirectory-arrow-right: Groups Claim | Which claim carries the group names. Either one name or a list of them. | `groups` |
 | :mdi:subdirectory-arrow-right: Unassign from groups no longer present in claim | Off adds what the claim names and takes nothing away, so a membership granted here survives. On makes the provider the authority instead, and a group it stops naming is taken back — bar the ones this strategy auto-enrolls into, which are granted here to everyone it lets in. | :x: |
