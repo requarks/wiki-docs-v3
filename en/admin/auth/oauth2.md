@@ -2,7 +2,7 @@
 title: OAuth2
 description: Authentication strategy
 published: true
-date: '2026-11-16T08:28:52.291Z'
+date: '2026-11-16T08:29:30.368Z'
 tags:
   - admin
   - auth
@@ -12,10 +12,10 @@ dateCreated: '2026-11-16T08:23:26.917Z'
 
 # Overview
 
-Sign in through any OAuth 2.0 provider that answers who the user is from a user info endpoint, without an ID token (e.g Mattermost and Rocket.Chat).
+Sign in through any OAuth 2.0 provider that answers who the user is from a user info endpoint, without an ID token.
 
 > [!IMPORTANT]
-> In most cases, you should instead use the [OIDC / OpenID Connect](/admin/auth/oidc) strategy. Only use the OAuth2 strategy for providers that don't support the ID token
+> In most cases, you should instead use the [OIDC / OpenID Connect](/admin/auth/oidc) strategy. Only use the OAuth2 strategy for providers that don't support the ID token (e.g Mattermost and Rocket.Chat).
 
 [View guides for common providers :la:chevron-right:](#providers-docs)
 
