@@ -5,8 +5,9 @@ description: >-
   with multiple sites. I’d like to discuss optional per-site quotas to prevent
   one site from consuming a disproportionate s…
 published: true
-date: '2026-11-16T21:44:09.157Z'
-tags: []
+date: '2026-11-17T21:09:22.892Z'
+tags:
+  - storage
 editor: markdown
 dateCreated: '2026-11-16T21:44:09.157Z'
 ---
