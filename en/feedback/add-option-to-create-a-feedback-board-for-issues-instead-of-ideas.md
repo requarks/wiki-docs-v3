@@ -5,8 +5,10 @@ description: >-
   to choose a board type, to allow for a board for issues to be created, instead
   of one for ideas. All that this would chang…
 published: true
-date: '2026-11-16T05:32:12.226Z'
-tags: []
+date: '2026-11-17T21:12:36.776Z'
+tags:
+  - ui
+  - editing
 editor: markdown
 dateCreated: '2026-11-16T05:30:33.981Z'
 ---
