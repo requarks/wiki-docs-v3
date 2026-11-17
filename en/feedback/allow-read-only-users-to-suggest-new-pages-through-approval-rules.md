@@ -5,8 +5,9 @@ description: >-
   existing pages, which a reviewer group can accept or reject. This works well
   for changes, but there is no equivalent for new pag…
 published: true
-date: '2026-11-16T13:30:16.273Z'
-tags: []
+date: '2026-11-17T21:11:36.116Z'
+tags:
+  - editing
 editor: markdown
 dateCreated: '2026-11-16T13:30:16.273Z'
 ---
