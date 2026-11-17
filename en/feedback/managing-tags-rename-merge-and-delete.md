@@ -5,8 +5,9 @@ description: >-
   network, networks, networking). Right now, fixing or updating these requires
   manually editing every individual page. Proposed…
 published: true
-date: '2026-11-17T18:38:48.876Z'
-tags: []
+date: '2026-11-17T21:07:23.514Z'
+tags:
+  - admin
 editor: markdown
 dateCreated: '2026-11-17T18:26:22.860Z'
 ---
