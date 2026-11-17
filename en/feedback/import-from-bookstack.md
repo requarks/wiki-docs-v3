@@ -5,8 +5,9 @@ description: >-
   Bookstack offers a wide range of export options. Perhaps it would be possible
   to find a way to transfer pages.
 published: true
-date: '2026-11-17T11:06:20.055Z'
-tags: []
+date: '2026-11-17T21:08:03.267Z'
+tags:
+  - admin
 editor: markdown
 dateCreated: '2026-11-17T11:05:30.752Z'
 ---
