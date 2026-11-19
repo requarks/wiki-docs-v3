@@ -2,7 +2,7 @@
 title: Custom Blocks
 description: Create your own content blocks
 published: true
-date: '2026-11-02T07:37:07.292Z'
+date: '2026-11-19T09:47:09.620Z'
 tags:
   - dev
 editor: markdown
@@ -21,10 +21,11 @@ Content blocks are built using web standards and offer infinite flexibility.
     > [!IMPORTANT] Requirements
     > Either open the project inside the [devcontainer](/dev)
     > **or** install **Node.js 26.x or later** on your system
-2. Open the `blocks` directory into your editor.
-3. Create a new directory named `block-xyz` *(where `xyz` is the name of your custom block)*.
-4. Inside this new directory, create a file named `component.js`.
-5. Use one of the base templates below to write your block.
+2. Open the `blocks` directory.
+3. Run `npm ci` to install dependencies.
+4. Create a new directory named `block-xyz` *(where `xyz` is the name of your custom block)*.
+5. Inside this new directory, create a file named `component.js`.
+6. Use one of the base templates below to write your block.
 ::
 
 # Base Templates
