@@ -3,17 +3,15 @@ title: >-
   Restoring Wiki.js 2.x capability of opening the editor pre-filled from an
   existing page via URL
 description: >-
-  Title: Open the editor pre-filled from an existing page via URL
-  (/create/<editor?path=…&from=<pageId) Hi Wiki.js team! I'm a big fan of
-  Wiki.js and really grateful for all your work. I've been testin…
+  Hi Wiki.js team! I'm a big fan of Wiki.js and really grateful for all your
+  work. I've been testing a migration of our 2.x instance to 3.4.0, and it's
+  going smoothly. We're planning to make it the cen…
 published: true
-date: '2026-11-19T06:35:37.897Z'
+date: '2026-11-19T06:36:19.561Z'
 tags: []
 editor: markdown
 dateCreated: '2026-11-19T05:49:44.174Z'
 ---
-
-**Title:** Open the editor pre-filled from an existing page via URL (`/_create/<editor>?path=…&from=<pageId>`)
 
 Hi Wiki.js team!
 
