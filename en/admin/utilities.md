@@ -2,7 +2,7 @@
 title: Utilities
 description: Maintenance and miscellaneous tools
 published: true
-date: '2026-11-20T08:24:09.220Z'
+date: '2026-11-20T08:27:32.697Z'
 tags: []
 editor: markdown
 dateCreated: '2026-08-14T06:23:44.054Z'
@@ -97,6 +97,9 @@ Migrate content from a Wiki.js 2.x backup. Refer to the [Upgrade from 2.x](/setu
 
 Migrate spaces, pages and comments from a Confluence backup (Cloud or Server / Data Center).
 
+> [!WARNING]
+> Confluence and Wiki.js work in very different ways, so not everything can be imported, and imported pages may look different from the originals. The import log lists what could not be carried over.
+
 ### Inputs
 
 | Section | Parameter | Description |
@@ -116,6 +119,9 @@ Migrate spaces, pages and comments from a Confluence backup (Cloud or Server / D
 ## Import from DokuWiki
 
 Migrate pages, history and media from a DokuWiki data directory.
+
+> [!WARNING]
+> DokuWiki and Wiki.js work in different ways, so not everything can be imported, and imported pages may look different from the originals. The import log lists what could not be carried over.
 
 ### Inputs
 
@@ -151,6 +157,9 @@ Bring the notes and accounts of a HedgeDoc instance in as live notes.
 ## Import from XWiki
 
 Migrate pages, history, attachments and comments from an XWiki XAR export.
+
+> [!WARNING]
+> XWiki and Wiki.js work in different ways, so not everything can be imported, and imported pages may look different from the originals. The import log lists what could not be carried over.
 
 ### Inputs
 
