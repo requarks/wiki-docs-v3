@@ -5,8 +5,9 @@ description: >-
   doesn't provide the Microsoft 365 profile photo as an image URL in the token.
   The photo is only available through Microsoft Gra…
 published: true
-date: '2026-11-19T12:24:26.592Z'
-tags: []
+date: '2026-11-20T03:29:45.730Z'
+tags:
+  - auth
 editor: markdown
 dateCreated: '2026-11-19T12:24:26.592Z'
 ---
