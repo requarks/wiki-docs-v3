@@ -5,8 +5,10 @@ description: >-
   set a default. A new page or folder always starts with the built-in icon, and
   has to be changed by hand in the page propert…
 published: true
-date: '2026-11-19T10:57:01.078Z'
-tags: []
+date: '2026-11-20T03:25:26.749Z'
+tags:
+  - navigation
+  - misc
 editor: markdown
 dateCreated: '2026-11-19T10:57:01.078Z'
 ---
