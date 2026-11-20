@@ -2,7 +2,7 @@
 title: Custom Blocks
 description: Create your own content blocks
 published: true
-date: '2026-11-19T09:47:09.620Z'
+date: '2026-11-20T07:42:08.041Z'
 tags:
   - dev
 editor: markdown
@@ -44,6 +44,7 @@ export class BlockExampleElement extends LitElement {
    */
   static definition = {
     block: 'example',
+    version: '1.0.0',
     name: 'Example',
     description: 'A minimal block.',
     icon: 'plugin',
@@ -150,6 +151,9 @@ export class BlockExampleElement extends LitElement {
   static definition = {
     /** The key. Must match this directory's name, minus `block-`. Lowercase, digits and dashes. */
     block: 'example',
+
+    /** Version of the content block. Must be semver format. */
+    version: '1.0.0',
 
     /** What the admin area and the picker call it. */
     name: 'Example',
@@ -509,6 +513,7 @@ A static `definition` object describes the configuration of the block.
 | Attribute | Description | Example Value |
 | :-- | :-- | :-- |
 | block | The key. Must match this directory's name, minus `block-`. Lowercase, digits and dashes. | `example` |
+| version | The version of the content block. Must be semver format. | `1.0.0` |
 | name | The human readable name, shown in the admin and block picker. | `My Example` |
 | description | A short description of the block, shown in the admin and block picker. | `An example block that does X and Y.` |
 | icon | Icon key matching one of the bundled `ultraviolet-*` icons. Use `plugin` by default. | `plugin` |
