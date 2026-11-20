@@ -7,8 +7,9 @@ description: >-
   work. I've been testing a migration of our 2.x instance to 3.4.0, and it's
   going smoothly. We're planning to make it the cen…
 published: true
-date: '2026-11-19T06:36:19.561Z'
-tags: []
+date: '2026-11-20T03:30:00.774Z'
+tags:
+  - editing
 editor: markdown
 dateCreated: '2026-11-19T05:49:44.174Z'
 ---
