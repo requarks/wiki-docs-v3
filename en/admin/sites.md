@@ -2,7 +2,7 @@
 title: Site Management
 description: Host multiple wikis on the same Wiki.js server
 published: true
-date: '2026-08-20T07:05:54.560Z'
+date: '2026-11-20T08:35:20.862Z'
 tags:
   - admin
 editor: markdown
@@ -59,5 +59,6 @@ To re-enable a site, click on the same toggle again.
 To delete a site, click the red delete button next to the desired site. You'll be prompted to confirm your choice.
 
 > [!CAUTION]
-> This will permanently delete all pages, comments, assets and settings associated to this site!
-> Note that users **will** NOT be affected as they are global to the instance and **NOT** tied to a specific site.
+> - You cannot delete a site that still contains pages or assets, unless the **Force delete** toggle is enabled (only available to users with `manage:system` permission).
+> - This will permanently delete all pages, comments, assets and settings associated to this site! It cannot be undone!
+> - Note that users will **NOT** be affected as they are global to the instance and **NOT** tied to a specific site.
