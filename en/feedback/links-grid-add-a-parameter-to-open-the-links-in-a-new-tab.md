@@ -5,8 +5,9 @@ description: >-
   opens the page in the same browser window. But when I have external links in
   that section, I would like to open them in a n…
 published: true
-date: '2026-11-19T21:08:47.904Z'
-tags: []
+date: '2026-11-20T03:29:34.656Z'
+tags:
+  - blocks
 editor: markdown
 dateCreated: '2026-11-19T21:08:47.904Z'
 ---
