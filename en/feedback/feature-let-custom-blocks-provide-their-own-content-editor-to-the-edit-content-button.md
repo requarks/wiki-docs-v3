@@ -1,13 +1,13 @@
 ---
 title: >-
-  Feature: Let custom blocks provide their own content editor to the "Edit
-  Content" button
+  Let custom blocks provide their own content editor to the "Edit Content"
+  button
 description: >-
   Background contentEditor is a first-class key of a block definition (spec:
   dev/specs/wkblock.md §5), and backend/helpers/wkblock.ts reads it off an
   imported package. But the only place the key is res…
 published: true
-date: '2026-11-20T13:12:58.186Z'
+date: '2026-11-20T13:14:38.268Z'
 tags: []
 editor: markdown
 dateCreated: '2026-11-20T13:12:58.186Z'
