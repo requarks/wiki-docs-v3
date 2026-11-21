@@ -5,8 +5,9 @@ description: >-
   where the page is located. Now, it opens at the root When a second asset is
   inserted, "File manager" should open when it w…
 published: true
-date: '2026-11-20T14:29:22.146Z'
-tags: []
+date: '2026-11-21T07:44:58.854Z'
+tags:
+  - file-manager
 editor: markdown
 dateCreated: '2026-11-20T14:29:22.146Z'
 ---
