@@ -5,8 +5,9 @@ description: >-
   I'm thinking about dark mode specifically, since that black is a bit too
   contrasty for my taste and I preferred the grey…
 published: true
-date: '2026-11-20T16:05:52.806Z'
-tags: []
+date: '2026-11-21T07:45:31.575Z'
+tags:
+  - ui
 editor: markdown
 dateCreated: '2026-11-20T16:05:20.352Z'
 ---
