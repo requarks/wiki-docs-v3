@@ -1,11 +1,11 @@
 ---
-title: 'Discussion: optional per-site storage and file-count quotas'
+title: Optional per-site storage and file-count quotas
 description: >-
   Hi Wiki.js team, I’m Ludovic, and I manage a self-hosted Wiki.js installation
   with multiple sites. I’d like to discuss optional per-site quotas to prevent
   one site from consuming a disproportionate s…
 published: true
-date: '2026-11-17T21:09:22.892Z'
+date: '2026-11-21T07:46:05.392Z'
 tags:
   - storage
 editor: markdown
