@@ -5,8 +5,9 @@ description: >-
   default and none of them get hidden while scrolling down. This means the space
   for actual content is quite a bit less compared…
 published: true
-date: '2026-11-20T15:54:29.951Z'
-tags: []
+date: '2026-11-21T07:45:16.271Z'
+tags:
+  - ui
 editor: markdown
 dateCreated: '2026-11-20T15:54:29.951Z'
 ---
