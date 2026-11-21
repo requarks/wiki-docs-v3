@@ -7,9 +7,10 @@ description: >-
   dev/specs/wkblock.md §5), and backend/helpers/wkblock.ts reads it off an
   imported package. But the only place the key is res…
 published: true
-date: '2026-11-21T07:43:38.136Z'
+date: '2026-11-21T07:43:43.504Z'
 tags:
   - blocks
+  - editing
 editor: markdown
 dateCreated: '2026-11-20T13:12:58.186Z'
 ---
