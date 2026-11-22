@@ -2,7 +2,7 @@
 title: Page Properties
 description: Edit page metadata and configuration
 published: true
-date: '2026-11-09T10:51:49.372Z'
+date: '2026-11-22T09:41:27.569Z'
 tags:
   - user-guide
   - editing
@@ -214,6 +214,10 @@ Whether to show this page in the Browse menu. It will still appear in the [File 
 ## Include in Search Results
 
 Whether to show this page in search results.
+
+## Use as Template
+
+Mark the page as a template. Templates can be selected as a starting point from the :la:plus-circle: new page menu :la:arrow-right: **From Template...** option.
 
 ## Require Password
 
