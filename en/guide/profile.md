@@ -2,7 +2,7 @@
 title: Profile
 description: Manage your user info and settings
 published: true
-date: '2026-11-22T17:49:31.042Z'
+date: '2026-11-22T17:50:44.769Z'
 tags:
   - user-guide
 editor: markdown
@@ -34,6 +34,7 @@ dateCreated: '2026-08-14T07:19:08.906Z'
 | Date Format | Set your preferred format to display dates. | *The default value is set by your administrator.* |
 | Time Format | Set your preferred format to display time. | *The default value is set by your administrator.* |
 | Site Appearance | Use the light or dark theme. | **Site Default** *(default)*, Light or Dark |
+| Preferred Language for Communications | The language to use for emails and notifications that are not locale-specific. | **Site Default** *(default)* or any available site locale |
 {.table-leading-col}
 
 ## Accessibility
