@@ -2,7 +2,7 @@
 title: Links Grid
 description: A custom grid of cards, each linking to a page or an external URL.
 published: true
-date: '2026-10-05T03:52:47.219Z'
+date: '2026-11-22T10:19:01.105Z'
 tags:
   - user-guide
 editor: markdown
@@ -71,6 +71,7 @@ The body consists of a **YAML** list in a code block.
 | image | Path / URL to an image. The image will use a cover fill at the top of the card. |  |
 | color | Any valid [TailwindCSS color](https://tailwindcss.com/docs/colors) name (in lowercase), e.g. `violet`. |  |
 | tags | A list of tags to display (or a single string). If `color` is provided, the tags will be displayed using that color. |  |
+| openInNewTab | Whether to open the link in a new tab (boolean, default is `false`). |  |
 {.table-leading-col}
 
 
