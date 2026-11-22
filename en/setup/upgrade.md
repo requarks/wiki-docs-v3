@@ -2,7 +2,7 @@
 title: Upgrade
 description: How to upgrade to the latest version
 published: true
-date: '2026-11-15T00:31:37.283Z'
+date: '2026-11-22T09:44:55.823Z'
 tags:
   - setup
 editor: markdown
@@ -226,7 +226,7 @@ helm upgrade wiki oci://ghcr.io/requarks/charts/wiki -f values.yaml
 
 ## Migration Process
 
-Because of the major differences between 2.x and 3.x, an in-place upgrade is not possible. Instead, a migration process is provided to easily transfer all data between your old 2.x installation and a new 3.x installation.
+Because of the major differences between 2.x and 3.x, an in-place upgrade is **NOT** possible. Instead, a migration process is provided to easily transfer all data between your old 2.x installation and a new 3.x installation.
 
 ::block-steps
 1. **Create a .wkbackup migration package**
