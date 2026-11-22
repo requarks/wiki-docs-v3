@@ -2,7 +2,7 @@
 title: Page Operations
 description: Move, duplicate and delete pages
 published: true
-date: '2026-09-25T20:59:34.021Z'
+date: '2026-11-22T17:40:33.763Z'
 tags:
   - user-guide
 editor: markdown
@@ -33,3 +33,23 @@ The page can still be recovered from the history, unless the history has been pu
 
 > [!IMPORTANT]
 > You must have the **Delete Pages** (`delete:pages`) permission to use this feature.
+
+# Create via URL
+
+You can prepopulate a new page editor, path, locale, title and template via the URL. This is useful for linking dynamically to future pages where the path is generated automatically.
+
+```xml
+/_create/<editor>?path=<path>&locale=<locale>&template=<template-uuid-or-path>&title=<title>
+```
+
+All parameters except `<editor>` are optional.
+
+| Parameter | Description | Example |
+| :-- | :-- | :-- |
+| editor | The editor to use. *(e.g. `markdown`, `visual`, `asciidoc`, etc.)* | `markdown` |
+| path | The path of the page to create. | `foo/bar` |
+| locale | The locale of the page to create *(uses site default if not specified)* | `en` |
+| template | The template to use as a starting point. Must be the UUID or path of the template. | `templates/abc` |
+| title | The title of the page to create. | `My New Page` |
+{.table-leading-col}
+
