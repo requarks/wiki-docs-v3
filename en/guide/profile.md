@@ -2,7 +2,7 @@
 title: Profile
 description: Manage your user info and settings
 published: true
-date: '2026-10-17T03:29:28.237Z'
+date: '2026-11-22T17:49:31.042Z'
 tags:
   - user-guide
 editor: markdown
@@ -40,10 +40,11 @@ dateCreated: '2026-08-14T07:19:08.906Z'
 
 | Field | Description | Options / Default |
 | :-- | :-- | :-- |
+| Collapse Header on Scroll | Hide the breadcrumbs and shrink the page title while scrolling down a page, for more room to read. Scroll back up to bring them back. On a phone or tablet this is always on. | **Off** *(default)* or On |
 | Color Vision Deficiency | Alter the color scheme of certain UI elements to account for certain color vision dificiencies. | **None** *(default)*, Protanopia, Deuteranopia or Tritanopia |
+| Content Text Size | Enlarge the text of page content. The rest of the interface keeps its size. | **Default** *(default)*, Large or Larger |
 | Reduce Motion | Turn off most animations and smooth scrolling. Always on if your operating system asks for reduced motion. | **Follow System** *(default)* or On |
 | Underline Links | Always underline links in page content, so they can be told apart without relying on color. | **Off** *(default)* or On |
-| Content Text Size | Enlarge the text of page content. The rest of the interface keeps its size. | **Default** *(default)*, Large or Larger |
 {.table-leading-col}
 
 # Avatar
