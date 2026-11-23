@@ -2,7 +2,7 @@
 title: Installation
 description: How to install Wiki.js
 published: true
-date: '2026-11-23T10:36:37.958Z'
+date: '2026-11-23T15:56:29.457Z'
 tags:
   - setup
 editor: markdown
@@ -132,7 +132,7 @@ By default, the Wiki.js docker image runs as the user `wiki`. Some deployments r
 
 ::block-tab{label="Kubernetes" header="2" icon="mdi:kubernetes"}
 
-Deploys Wiki.js 3.x, with a bundled PostgreSQL 18 or use an existing PostgreSQL 17+ server.
+Deploys Wiki.js 3.x, with either a bundled PostgreSQL 18 or using an existing PostgreSQL 17+ server.
 
 ### Quickstart
 
