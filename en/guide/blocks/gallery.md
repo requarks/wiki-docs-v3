@@ -2,7 +2,7 @@
 title: Image Gallery
 description: Displays a grid of images, each opening full size in a lightbox.
 published: true
-date: '2026-08-17T00:00:03.276Z'
+date: '2026-11-23T10:17:22.149Z'
 tags: []
 editor: markdown
 dateCreated: '2026-08-14T23:57:05.026Z'
@@ -36,7 +36,7 @@ Displays a grid of images, each opening full size in a lightbox.
 The body consists of a list of image paths or URLs.
 
 - Paths can be relative (e.g. `/images/photo.jpg`) or absolute URLs (e.g. `https://example.com/photo.jpg`).
-- Paths can be optionally prefixed with a dash for code readability.
+- Paths can be optionally prefixed with a dash or asterisk for code readability.
 
 # Default Code
 
