@@ -7,7 +7,7 @@ description: >-
   reviewer as its author. The person who actually wrote the change disappears
   from the page entirely: no mention in the si…
 published: true
-date: '2026-11-25T11:32:12.188Z'
+date: '2026-11-25T11:32:42.626Z'
 tags: []
 editor: markdown
 dateCreated: '2026-11-25T11:32:12.188Z'
@@ -26,7 +26,9 @@ The suggestion itself is then discarded, so the submitter's name is no longer as
 The sidebar shows a single author — the reviewer — with no indication that the change originated as a suggestion.
 Nothing in the version history, the source view or anywhere on the page names the submitter.
 The only surviving trace is outside the page (an administrative audit entry, a webhook event). Neither is visible to a reader, and the audit trail expires on schedule.
-Proposed behaviour
+
+## Proposed behaviour
+
 Two tiers, so the first can ship without committing to the second.
 
 ### Tier 1 — credit the submitter alongside the edit
